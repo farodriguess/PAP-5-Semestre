@@ -22,16 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".Tela_Inicial"></activity>
-        
-         <activity android:name=".Tela_Principal"></activity>
-         <activity android:name=".Tela_Cadastro"></activity>
-         <activity android:name=".Tela_Criar_Partida"></activity>
-         <activity android:name=".Tela_Perfil"></activity>
-         <activity android:name=".Tela_Meus_Campeonatos"></activity>
-        
-        
+        <activity android:name=".Tela_Inicial" >
+        </activity>
+        <activity android:name=".Tela_Principal" >
+        </activity>
+        <activity android:name=".Tela_Cadastro" >
+        </activity>
+        <activity android:name=".Tela_Criar_Partida" >
+        </activity>
+        <activity android:name=".Tela_Perfil" >
+        </activity>
+        <activity android:name=".Tela_Meus_Campeonatos" >
+        </activity>
+        <activity
+            android:name=".TelaEditarCampeonato"
+            android:label="@string/title_activity_tela_editar_campeonato" >
+        </activity>
     </application>
 
 </manifest>

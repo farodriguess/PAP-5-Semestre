@@ -31,4 +31,12 @@ public class Tela_Principal extends Tela_Inicial{
 			
 			
 		}
+		
+		public void btnMeusCampeonatos (View view){
+			Intent it5 = new Intent(Tela_Principal.this, Tela_Meus_Campeonatos.class);
+			startActivity(it5);
+			
+			
+			
+		}
 }

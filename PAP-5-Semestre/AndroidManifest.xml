@@ -29,6 +29,7 @@
          <activity android:name=".Tela_Cadastro"></activity>
          <activity android:name=".Tela_Criar_Partida"></activity>
          <activity android:name=".Tela_Perfil"></activity>
+         <activity android:name=".Tela_Meus_Campeonatos"></activity>
         
         
     </application>

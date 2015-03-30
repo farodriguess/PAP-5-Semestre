@@ -55,26 +55,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="btnPerfil"
-                android:text="PERFIL" />
+                android:text="ALTERAR PERFIL" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CRIAR PARTIDA" 
-                android:onClick="btnCriarPartida"/>
+                android:onClick="btnCriarPartida"
+                android:text="CRIAR PARTIDA" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="match_parent"
+                android:layout_width="191dp"
                 android:layout_height="wrap_content"
-                android:text="BOLÕES" />
+                android:layout_weight="1"
+                android:onClick="btnMeusCampeonatos"
+                android:text="MEUS CAMPEONATOS" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SAIR" />
+                android:text="MEUS TIMES" />
         </LinearLayout>
 
     </RelativeLayout>

@@ -4,8 +4,6 @@
     <string name="app_name">Pap</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
-       
- 
+    <string name="title_activity_tela_editar_campeonato">TelaEditarCampeonato</string>
 
 </resources>

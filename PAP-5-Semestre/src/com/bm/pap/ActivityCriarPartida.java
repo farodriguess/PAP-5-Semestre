@@ -1,8 +1,10 @@
-package com.example.pap;
+package com.bm.pap;
+
+import com.bm.pap.R;
 
 import android.os.Bundle;
 
-public class Tela_Criar_Partida extends Tela_Principal {
+public class ActivityCriarPartida extends ActivityPrincipal {
 	
 	
 	protected void onCreate(Bundle savedInstanceState) {

@@ -1,8 +1,10 @@
-package com.example.pap;
+package com.bm.pap;
+
+import com.bm.pap.R;
 
 import android.os.Bundle;
 
-public class Tela_Perfil extends Tela_Principal{
+public class ActivityPerfil extends ActivityPrincipal{
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

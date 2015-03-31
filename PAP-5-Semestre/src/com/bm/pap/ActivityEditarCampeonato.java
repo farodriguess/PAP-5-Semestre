@@ -1,4 +1,6 @@
-package com.example.pap;
+package com.bm.pap;
+
+import com.bm.pap.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -7,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class TelaEditarCampeonato extends Tela_Meus_Campeonatos {
+public class ActivityEditarCampeonato extends ActivityMeusCampeonatos {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

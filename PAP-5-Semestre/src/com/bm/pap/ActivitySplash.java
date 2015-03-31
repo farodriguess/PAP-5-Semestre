@@ -1,4 +1,6 @@
-package com.example.pap;
+package com.bm.pap;
+
+import com.bm.pap.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -7,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class Splash extends ActionBarActivity {
+public class ActivitySplash extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class Splash extends ActionBarActivity {
     		e.printStackTrace();
     		
     	}finally{
-    		startActivity(new Intent(getApplicationContext(),Tela_Inicial.class));
+    		startActivity(new Intent(getApplicationContext(),ActivityInicial.class));
     		
     	finish();
     	

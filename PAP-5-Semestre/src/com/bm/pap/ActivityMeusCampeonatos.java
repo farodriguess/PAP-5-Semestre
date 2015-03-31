@@ -1,10 +1,12 @@
-package com.example.pap;
+package com.bm.pap;
+
+import com.bm.pap.R;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Tela_Meus_Campeonatos extends Tela_Principal{
+public class ActivityMeusCampeonatos extends ActivityPrincipal{
 	
 	
 	protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +16,7 @@ public class Tela_Meus_Campeonatos extends Tela_Principal{
 
 }
 	public void botaoNovo(View view){
-		Intent intent = new Intent(this, TelaEditarCampeonato.class);
+		Intent intent = new Intent(this, ActivityEditarCampeonato.class);
 		startActivity(intent);
 	}
 

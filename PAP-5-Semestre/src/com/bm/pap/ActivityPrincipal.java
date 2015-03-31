@@ -1,10 +1,12 @@
-package com.example.pap;
+package com.bm.pap;
+
+import com.bm.pap.R;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Tela_Principal extends Tela_Inicial{
+public class ActivityPrincipal extends ActivityInicial{
 	
 
 		protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +19,7 @@ public class Tela_Principal extends Tela_Inicial{
 		
 		
 		public void btnCriarPartida (View view){
-			Intent it3 = new Intent(Tela_Principal.this, Tela_Criar_Partida.class);
+			Intent it3 = new Intent(ActivityPrincipal.this, ActivityCriarPartida.class);
 			startActivity(it3);
 			
 			
@@ -25,7 +27,7 @@ public class Tela_Principal extends Tela_Inicial{
 		}
 		
 		public void btnPerfil (View view){
-			Intent it4 = new Intent(Tela_Principal.this, Tela_Perfil.class);
+			Intent it4 = new Intent(ActivityPrincipal.this, ActivityPerfil.class);
 			startActivity(it4);
 			
 			
@@ -33,7 +35,7 @@ public class Tela_Principal extends Tela_Inicial{
 		}
 		
 		public void btnMeusCampeonatos (View view){
-			Intent it5 = new Intent(Tela_Principal.this, Tela_Meus_Campeonatos.class);
+			Intent it5 = new Intent(ActivityPrincipal.this, ActivityMeusCampeonatos.class);
 			startActivity(it5);
 			
 			

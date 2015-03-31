@@ -11,12 +11,12 @@
 # Generated files
 bin/
 */bin/
-
+PAP-5-Semestre/bin/
 
 # Gradle files
 .gradle/
 build/
-PAP-5-Semestre/build/
+
 
 # Local configuration file (sdk path, etc)
 local.properties

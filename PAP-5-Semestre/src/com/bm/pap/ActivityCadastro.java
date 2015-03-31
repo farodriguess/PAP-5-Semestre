@@ -1,8 +1,10 @@
-package com.example.pap;
+package com.bm.pap;
+
+import com.bm.pap.R;
 
 import android.os.Bundle;
 
-public class Tela_Cadastro  extends Tela_Inicial{
+public class ActivityCadastro  extends ActivityInicial{
 	
 	
 	protected void onCreate(Bundle savedInstanceState) {

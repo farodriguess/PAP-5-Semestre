@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pap"
+    package="com.bm.pap"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Splash"
+            android:name="com.bm.pap.ActivitySplash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,20 +22,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Tela_Inicial" >
+        <activity android:name="com.bm.pap.ActivityInicial" >
         </activity>
-        <activity android:name=".Tela_Principal" >
+        <activity android:name="com.bm.pap.ActivityPrincipal" >
         </activity>
-        <activity android:name=".Tela_Cadastro" >
+        <activity android:name="com.bm.pap.ActivityCadastro" >
         </activity>
-        <activity android:name=".Tela_Criar_Partida" >
+        <activity android:name="com.bm.pap.ActivityCriarPartida" >
         </activity>
-        <activity android:name=".Tela_Perfil" >
+        <activity android:name="com.bm.pap.ActivityPerfil" >
         </activity>
-        <activity android:name=".Tela_Meus_Campeonatos" >
+        <activity android:name="com.bm.pap.ActivityMeusCampeonatos" >
         </activity>
         <activity
-            android:name=".TelaEditarCampeonato"
+            android:name="com.bm.pap.ActivityEditarCampeonato"
             android:label="@string/title_activity_tela_editar_campeonato" >
         </activity>
     </application>

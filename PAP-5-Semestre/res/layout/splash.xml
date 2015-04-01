@@ -32,7 +32,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:text="Versão 1.0.0"
+        android:text="Versão 1.0.1"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView

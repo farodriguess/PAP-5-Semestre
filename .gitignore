@@ -13,6 +13,13 @@ bin/
 */bin/
 PAP-5-Semestre/bin/
 PAP-5-Semestre/gen/
+PAP-5-Semestre/libs/
+.metadata/
+.recommenders/
+appcompat_v7/
+gridlayout_v7/
+
+
 
 # Gradle files
 .gradle/

@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.bm.pap.ActivitySplash"
+            android:name=".ActivitySplash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,21 +22,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.bm.pap.ActivityInicial" >
+        <activity android:name=".ActivityInicial" >
         </activity>
-        <activity android:name="com.bm.pap.ActivityPrincipal" >
+        <activity android:name=".ActivityPrincipal" >
         </activity>
-        <activity android:name="com.bm.pap.ActivityCadastro" >
+        <activity android:name=".ActivityCadastro" >
         </activity>
-        <activity android:name="com.bm.pap.ActivityCriarPartida" >
+        <activity android:name=".ActivityCriarPartida" >
         </activity>
-        <activity android:name="com.bm.pap.ActivityPerfil" >
+        <activity android:name=".ActivityPerfil" >
         </activity>
-        <activity android:name="com.bm.pap.ActivityMeusCampeonatos" >
+        <activity android:name=".ActivityMeusCampeonatos" >
         </activity>
         <activity
-            android:name="com.bm.pap.ActivityEditarCampeonato"
+            android:name=".ActivityEditarCampeonato"
             android:label="@string/title_activity_tela_editar_campeonato" >
+        </activity>
+        <activity
+            android:name=".ActivityNovoCampeonato"
+            android:label="@string/title_activity_activity_novo_campeonato" >
         </activity>
     </application>
 

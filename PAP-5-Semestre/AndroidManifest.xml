@@ -46,6 +46,10 @@
             android:name=".RegrasActivity"
             android:label="@string/title_activity_regras" >
         </activity>
+        <activity
+            android:name=".MeusTimesActivity"
+            android:label="@string/title_activity_meus_times" >
+        </activity>
     </application>
 
 </manifest>

@@ -41,4 +41,8 @@ public class PrincipalActivity extends InicialActivity{
 			
 			
 		}
+		public void botaoMeusTimes (View view){
+			Intent intent = new Intent(this,MeusTimesActivity.class);
+			startActivity(intent);
+		}
 }

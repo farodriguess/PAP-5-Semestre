@@ -4,17 +4,15 @@ import com.bm.pap.R;
 
 import android.os.Bundle;
 
-public class ActivityCadastro  extends ActivityInicial{
-	
-	
+public class PerfilActivity extends PrincipalActivity{
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.activity_cadastro);
+		setContentView(R.layout.activity_perfil);
+
+}
 
 
 }
-	
-	
-	
-}
+

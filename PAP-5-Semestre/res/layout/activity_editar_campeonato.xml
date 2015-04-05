@@ -51,6 +51,7 @@
         android:id="@+id/button6"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Regras" />
+        android:text="Regras"
+        android:onClick="botaoAjustarRegras" />
 
 </LinearLayout>

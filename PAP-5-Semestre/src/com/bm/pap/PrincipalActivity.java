@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ActivityPrincipal extends ActivityInicial{
+public class PrincipalActivity extends InicialActivity{
 	
 
 		protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class ActivityPrincipal extends ActivityInicial{
 		
 		
 		public void btnCriarPartida (View view){
-			Intent it3 = new Intent(ActivityPrincipal.this, ActivityCriarPartida.class);
+			Intent it3 = new Intent(PrincipalActivity.this, CriarPartidaActivity.class);
 			startActivity(it3);
 			
 			
@@ -27,7 +27,7 @@ public class ActivityPrincipal extends ActivityInicial{
 		}
 		
 		public void btnPerfil (View view){
-			Intent it4 = new Intent(ActivityPrincipal.this, ActivityPerfil.class);
+			Intent it4 = new Intent(PrincipalActivity.this, PerfilActivity.class);
 			startActivity(it4);
 			
 			
@@ -35,7 +35,7 @@ public class ActivityPrincipal extends ActivityInicial{
 		}
 		
 		public void btnMeusCampeonatos (View view){
-			Intent it5 = new Intent(ActivityPrincipal.this, ActivityMeusCampeonatos.class);
+			Intent it5 = new Intent(PrincipalActivity.this, MeusCampeonatosActivity.class);
 			startActivity(it5);
 			
 			

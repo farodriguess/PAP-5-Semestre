@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ActivityMeusCampeonatos extends ActivityPrincipal{
+public class MeusCampeonatosActivity extends PrincipalActivity{
 	
 	
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,13 @@ public class ActivityMeusCampeonatos extends ActivityPrincipal{
 
 }
 	public void botaoNovo(View view){
-		Intent intent = new Intent(this, ActivityEditarCampeonato.class);
+		Intent intent = new Intent(this, NovoCampeonatoActivity.class);
+		startActivity(intent);
+		
+	}
+	
+	public void botaoEditar(View view){
+		Intent intent = new Intent(this, EditarCampeonatoActivity.class);
 		startActivity(intent);
 	}
 

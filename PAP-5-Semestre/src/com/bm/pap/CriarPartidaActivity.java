@@ -4,7 +4,7 @@ import com.bm.pap.R;
 
 import android.os.Bundle;
 
-public class ActivityCriarPartida extends ActivityPrincipal {
+public class CriarPartidaActivity extends PrincipalActivity {
 	
 	
 	protected void onCreate(Bundle savedInstanceState) {

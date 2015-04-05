@@ -12,7 +12,7 @@ public class ActivityMeusCampeonatos extends ActivityPrincipal{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.tela_meus_campeonatos);
+		setContentView(R.layout.activity_meus_campeonatos);
 
 }
 	public void botaoNovo(View view){

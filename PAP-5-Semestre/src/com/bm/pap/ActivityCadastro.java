@@ -10,7 +10,7 @@ public class ActivityCadastro  extends ActivityInicial{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.tela_cadastro);
+		setContentView(R.layout.activity_cadastro);
 
 
 }

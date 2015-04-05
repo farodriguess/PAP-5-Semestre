@@ -11,7 +11,7 @@ public class ActivityPrincipal extends ActivityInicial{
 
 		protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
-			setContentView(R.layout.tela_principal);
+			setContentView(R.layout.activity_principal);
 
 			
 			

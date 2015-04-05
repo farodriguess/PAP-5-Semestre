@@ -14,7 +14,7 @@ public class ActivityEditarCampeonato extends ActivityMeusCampeonatos {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.tela_editar_campeonato);
+		setContentView(R.layout.activity_editar_campeonato);
 	}
 	
 	

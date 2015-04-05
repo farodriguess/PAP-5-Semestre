@@ -10,7 +10,7 @@ public class ActivityCriarPartida extends ActivityPrincipal {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.tela_criar_partida);
+		setContentView(R.layout.activity_criar_partida);
 
 }
  

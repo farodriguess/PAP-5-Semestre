@@ -10,6 +10,6 @@ public class ActivityNovoCampeonato extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_activity_novo_campeonato);
+		setContentView(R.layout.activity_novo_campeonato);
 	}
 }

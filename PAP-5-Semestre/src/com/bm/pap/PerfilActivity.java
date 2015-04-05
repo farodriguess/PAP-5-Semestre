@@ -4,12 +4,12 @@ import com.bm.pap.R;
 
 import android.os.Bundle;
 
-public class ActivityPerfil extends ActivityPrincipal{
+public class PerfilActivity extends PrincipalActivity{
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.tela_perfil);
+		setContentView(R.layout.activity_perfil);
 
 }
 

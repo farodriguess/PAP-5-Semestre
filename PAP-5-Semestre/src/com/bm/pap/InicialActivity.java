@@ -9,13 +9,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class ActivityInicial extends Activity{
+public class InicialActivity extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-	    setContentView(R.layout.tela_inicial);
+	    setContentView(R.layout.activity_inicial);
 	
 	}
 	
@@ -28,7 +28,7 @@ public class ActivityInicial extends Activity{
 
 	//	 if("ads2pap@outlook.com".equals(email.getText().toString()) &&
 		//"123456db".equals(senha.getText().toString())) {
-		Intent it = new Intent(ActivityInicial.this, ActivityPrincipal.class);
+		Intent it = new Intent(InicialActivity.this, PrincipalActivity.class);
 		startActivity(it);
 	// 	}else{
 		//	Toast.makeText(this, "E-mail ou senha errado!",Toast.LENGTH_SHORT).show();
@@ -38,7 +38,7 @@ public class ActivityInicial extends Activity{
 	
 	
 	public void btnCadastro(View view){
-		Intent it2 = new Intent(ActivityInicial.this, ActivityCadastro.class);
+		Intent it2 = new Intent(InicialActivity.this, CadastroActivity.class);
 		startActivity(it2);
 		
 		

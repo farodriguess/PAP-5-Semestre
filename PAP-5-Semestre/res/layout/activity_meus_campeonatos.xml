@@ -111,14 +111,14 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NOVO" 
             android:onClick="botaoNovo"
-            />
+            android:text="NOVO" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="botaoEditar"
             android:text="ALTERAR" />
 
         <Button

@@ -9,12 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class ActivitySplash extends ActionBarActivity {
+public class SplashActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
+        setContentView(R.layout.activity_splash);
     
         
         
@@ -27,7 +27,7 @@ public class ActivitySplash extends ActionBarActivity {
     		e.printStackTrace();
     		
     	}finally{
-    		startActivity(new Intent(getApplicationContext(),ActivityInicial.class));
+    		startActivity(new Intent(getApplicationContext(),InicialActivity.class));
     		
     	finish();
     	

@@ -6,5 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_tela_editar_campeonato">TelaEditarCampeonato</string>
     <string name="title_activity_activity_novo_campeonato">ActivityNovoCampeonato</string>
+    <string name="title_activity_regras">RegrasActivity</string>
+    <string name="title_activity_meus_times">MeusTimesActivity</string>
 
 </resources>

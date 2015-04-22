@@ -34,6 +34,14 @@
         </activity>
         <activity android:name=".MeusCampeonatosActivity" >
         </activity>
+         <activity android:name=".ApostaFinal" >
+        </activity>
+          <activity android:name=".CriarPartidaGrupoA" >
+        </activity>
+       
+          <activity android:name=".CriarPartidaGrupoB" >
+        </activity>
+         
         <activity
             android:name=".EditarCampeonatoActivity"
             android:label="@string/title_activity_tela_editar_campeonato" >

@@ -8,5 +8,16 @@
     <string name="title_activity_activity_novo_campeonato">ActivityNovoCampeonato</string>
     <string name="title_activity_regras">RegrasActivity</string>
     <string name="title_activity_meus_times">MeusTimesActivity</string>
+   
+    <string-array name="Times">
+        <item >Brasil</item>
+        <item >Japão</item>
+        <item >México</item>
+        <item >Itália</item>
+        <item >Espanha</item>
+        <item >Urugai</item>
+        <item >Argentina</item>
+        
+    </string-array>
 
 </resources>

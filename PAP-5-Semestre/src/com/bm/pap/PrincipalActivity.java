@@ -41,6 +41,18 @@ public class PrincipalActivity extends InicialActivity{
 			
 			
 		}
+		
+		public void btnTelaApostaFinal (View view){
+			Intent itApostaFinal = new Intent(PrincipalActivity.this, ApostaFinal.class);
+			startActivity(itApostaFinal);
+					
+		}
+		
+		public void btnCriarPartidaGrupoB (View view){
+			Intent itCriarPartidaGrupoB = new Intent(PrincipalActivity.this, CriarPartidaGrupoB.class);
+			startActivity(itCriarPartidaGrupoB);
+		}
+				
 		public void botaoMeusTimes (View view){
 			Intent intent = new Intent(this,MeusTimesActivity.class);
 			startActivity(intent);

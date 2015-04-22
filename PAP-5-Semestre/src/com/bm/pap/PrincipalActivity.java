@@ -48,11 +48,29 @@ public class PrincipalActivity extends InicialActivity{
 					
 		}
 		
+		public void btnCriarPartidaGrupoA (View view){
+			Intent itCriarPartidaGrupoA = new Intent(PrincipalActivity.this, CriarPartidaGrupoA.class);
+			startActivity(itCriarPartidaGrupoA);
+		}
+		
 		public void btnCriarPartidaGrupoB (View view){
 			Intent itCriarPartidaGrupoB = new Intent(PrincipalActivity.this, CriarPartidaGrupoB.class);
 			startActivity(itCriarPartidaGrupoB);
 		}
 				
+		
+		public void btnCriarPartidaGrupoC (View view){
+			Intent itCriarPartidaGrupoC = new Intent(PrincipalActivity.this, CriarPartidaGrupoC.class);
+			startActivity(itCriarPartidaGrupoC);
+		}
+		
+		public void btnCriarPartidaGrupoD (View view){
+			Intent itCriarPartidaGrupoD = new Intent(PrincipalActivity.this, CriarPartidaGrupoD.class);
+			startActivity(itCriarPartidaGrupoD);
+		}
+		
+		
+		
 		public void botaoMeusTimes (View view){
 			Intent intent = new Intent(this,MeusTimesActivity.class);
 			startActivity(intent);

@@ -42,12 +42,35 @@ public class PrincipalActivity extends InicialActivity{
 			
 		}
 		
-		public void btnTelaApostaFinal (View view){
-			Intent itApostaFinal = new Intent(PrincipalActivity.this, ApostaFinal.class);
-			startActivity(itApostaFinal);
+		// INICIO ALLAN teste criar APOSTA grupos A B C D
+		
+		public void btnTelaAposta_G_A(View view){
+			Intent itAposta_G_A = new Intent(PrincipalActivity.this, ApostaGrupo_A.class);
+			startActivity(itAposta_G_A );
 					
 		}
+		public void btnTelaAposta_G_B(View view){
+			Intent itAposta_G_B = new Intent(PrincipalActivity.this, ApostaGrupo_B.class);
+			startActivity(itAposta_G_B );
+					
+		}
+		public void btnTelaAposta_G_C(View view){
+			Intent itAposta_G_C = new Intent(PrincipalActivity.this, ApostaGrupo_C.class);
+			startActivity(itAposta_G_C );
+					
+		}
+		public void btnTelaAposta_G_D(View view){
+			Intent itAposta_G_D = new Intent(PrincipalActivity.this, ApostaGrupo_D.class);
+			startActivity(itAposta_G_D);
+					
+		}
+		// FIM ALLAN teste criar APOSTA grupos A B C D
 		
+		
+		//
+		
+		
+		// INICIO ALLAN teste criar partida grupos A B C D
 		public void btnCriarPartidaGrupoA (View view){
 			Intent itCriarPartidaGrupoA = new Intent(PrincipalActivity.this, CriarPartidaGrupoA.class);
 			startActivity(itCriarPartidaGrupoA);
@@ -69,7 +92,7 @@ public class PrincipalActivity extends InicialActivity{
 			startActivity(itCriarPartidaGrupoD);
 		}
 		
-		
+		// FIM ALLAN teste criar partida grupos A B C D
 		
 		public void botaoMeusTimes (View view){
 			Intent intent = new Intent(this,MeusTimesActivity.class);

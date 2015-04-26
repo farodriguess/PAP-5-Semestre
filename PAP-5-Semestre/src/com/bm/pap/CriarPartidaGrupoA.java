@@ -17,17 +17,30 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 			 //items = getResources().getStringArray(R.array.Times);
 			 
 			 
-			Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
+			Spinner spinner1CGrupoA = (Spinner) findViewById(R.id.spinner1CGrupoA);
 		    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-		    this, R.array.Times, android.R.layout.simple_spinner_item);
+		    this, R.array.Grupo_A, android.R.layout.simple_spinner_item);
 		    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		    spinner1.setAdapter(adapter);
+		    spinner1CGrupoA.setAdapter(adapter);
 		    
-		    Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
+		    Spinner spinner2CGrupoA = (Spinner) findViewById(R.id.spinner2CGrupoA);
 		    ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(
-		    this, R.array.Times, android.R.layout.simple_spinner_item);
+		    this, R.array.Grupo_A, android.R.layout.simple_spinner_item);
 		    adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		    spinner3.setAdapter(adapter2);
+		    spinner2CGrupoA.setAdapter(adapter2);
+		    
+		    
+		    Spinner spinner3CGrupoA = (Spinner) findViewById(R.id.spinner3CGrupoA);
+		    ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(
+		    this, R.array.Grupo_A, android.R.layout.simple_spinner_item);
+		    adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		    spinner3CGrupoA.setAdapter(adapter3);
+		    
+		    Spinner spinner4CGrupoA = (Spinner) findViewById(R.id.spinner4CGrupoA);
+		    ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(
+		    this, R.array.Grupo_A, android.R.layout.simple_spinner_item);
+		    adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		    spinner4CGrupoA.setAdapter(adapter4);
 		    
 		    
 }

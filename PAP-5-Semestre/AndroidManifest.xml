@@ -34,8 +34,19 @@
         </activity>
         <activity android:name=".MeusCampeonatosActivity" >
         </activity>
-         <activity android:name=".ApostaFinal" >
+        
+         <activity android:name=".ApostaGrupo_A" >
         </activity>
+        
+             <activity android:name=".ApostaGrupo_B" >
+        </activity>
+        
+             <activity android:name=".ApostaGrupo_C" >
+        </activity>
+        
+             <activity android:name=".ApostaGrupo_D" >
+        </activity>
+         
           <activity android:name=".CriarPartidaGrupoA" >
         </activity>
        

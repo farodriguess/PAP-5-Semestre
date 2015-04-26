@@ -81,13 +81,47 @@
                 android:onClick="btnPerfil"
                 android:text="ALTERAR PERFIL" />
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="btnTelaApostaFinal"
-                android:text="teste a tela final" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button13"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnTelaAposta_G_A"
+                    android:text="Aposta G A" />
+
+                <Button
+                    android:id="@+id/button10"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnTelaAposta_G_B"
+                    android:text="Aposta G B" />
+
+                <Button
+                    android:id="@+id/button11"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnTelaAposta_G_C"
+                    android:layout_weight="1"
+                    android:text="Aposta G C" />
+
+                <Button
+                    android:id="@+id/button12"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnTelaAposta_G_D"
+                    android:layout_weight="1"
+                    android:text="Aposta G D" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="281dp"

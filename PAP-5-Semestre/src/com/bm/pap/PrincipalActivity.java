@@ -94,6 +94,42 @@ public class PrincipalActivity extends InicialActivity{
 		
 		// FIM ALLAN teste criar partida grupos A B C D
 		
+		// INICIO ALLAN teste criar aposta final
+		public void btnApostaFinal (View view){
+			Intent itApostaFinal= new Intent(PrincipalActivity.this, ApostaFinal.class);
+			startActivity(itApostaFinal);
+		}
+		// FIM ALLAN
+		
+		// INICIO ALLAN teste criar aposta terceiro lugar
+				public void btnApostaTerceiroLugar (View view){
+					Intent itApostaTerceiroLugar= new Intent(PrincipalActivity.this, ApostaTerceiroLugar.class);
+					startActivity(itApostaTerceiroLugar);
+				}
+				// FIM ALLAN 
+				
+				// INICIO ALLAN teste criar aposta semifinal
+				public void btnApostaSemifinal (View view){
+					Intent itApostaSemifinal= new Intent(PrincipalActivity.this, ApostaSemifinal.class);
+					startActivity(itApostaSemifinal);
+				}
+				// FIM ALLAN  btnApostaQuartas
+				
+				// INICIO ALLAN teste criar aposta quartas
+				public void btnApostaQuartas (View view){
+					Intent itApostaQuartas= new Intent(PrincipalActivity.this, ApostaQuartasDeFinais.class);
+					startActivity(itApostaQuartas);
+				}
+				// FIM ALLAN 
+				
+				// INICIO ALLAN teste criar aposta oitavas
+				public void btnApostaOitavas (View view){
+					Intent itApostaOitavas= new Intent(PrincipalActivity.this, ApostaOitavaDeFinais.class);
+					startActivity(itApostaOitavas);
+				}
+				// FIM ALLAN 
+
+		
 		public void botaoMeusTimes (View view){
 			Intent intent = new Intent(this,MeusTimesActivity.class);
 			startActivity(intent);

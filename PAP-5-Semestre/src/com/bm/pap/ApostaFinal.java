@@ -2,33 +2,43 @@ package com.bm.pap;
 
 import android.app.Fragment.SavedState;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
+import android.widget.Spinner;
 
 public class ApostaFinal extends PrincipalActivity {
 	
 	
-	NumberPicker np;
 	
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
 		setContentView(R.layout.activity_aposta_final);
-		np = (NumberPicker) findViewById(R.id.numberPicker1);
-		np.setMinValue(0);
-        np.setMaxValue(99);
-                
-		np = (NumberPicker) findViewById(R.id.numberPicker2);
-		np.setMinValue(0);
-        np.setMaxValue(99);
-        
-        np = (NumberPicker) findViewById(R.id.numberPicker3);
-		np.setMinValue(0);
-        np.setMaxValue(99);
-        
-        np = (NumberPicker) findViewById(R.id.numberPicker4);
-		np.setMinValue(0);
-        np.setMaxValue(99);
- 
+		
+		
+		Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
+	    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	    this, R.array.Gols, android.R.layout.simple_spinner_item);
+	    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	    spinner1.setAdapter(adapter);
+	    
+	    Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+	    ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(
+	    this, R.array.Gols, android.R.layout.simple_spinner_item);
+	    adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	    spinner2.setAdapter(adapter2);
+	    
+	    Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
+	    ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(
+	    this, R.array.Gols, android.R.layout.simple_spinner_item);
+	    adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	    spinner3.setAdapter(adapter3);
+
+	    
+	    Spinner spinner4 = (Spinner) findViewById(R.id.spinner4);
+	    ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(
+	    this, R.array.Gols, android.R.layout.simple_spinner_item);
+	    adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	    spinner4.setAdapter(adapter4);
 }
 }

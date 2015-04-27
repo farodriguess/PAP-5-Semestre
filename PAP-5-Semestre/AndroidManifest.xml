@@ -46,6 +46,22 @@
         
              <activity android:name=".ApostaGrupo_D" >
         </activity>
+        
+              <activity android:name=".ApostaFinal" >
+        </activity>
+        
+               <activity android:name=".ApostaTerceiroLugar" >
+        </activity>
+        
+                <activity android:name=".ApostaSemifinal" >
+                    
+        </activity>
+        
+        
+        <activity android:name=".ApostaQuartasDeFinais" >
+        </activity>
+                <activity android:name=".ApostaOitavaDeFinais" >
+        </activity>
          
           <activity android:name=".CriarPartidaGrupoA" >
         </activity>

@@ -27,143 +27,212 @@
             android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/linearLayout1"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView1"
-            android:orientation="vertical" >
+        <ScrollView
+            android:id="@+id/scrollView1"
+              android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true">
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/football" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
+            <LinearLayout
+               android:layout_width="288dp"
+            android:layout_height="534dp"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="286dp"
-                android:layout_height="wrap_content"
-                android:onClick="btnMeusCampeonatos"
-                android:text="MEUS CAMPEONATOS" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="btnCriarPartida"
-                android:text="PARTICIPAR DE CAMPEONATOS"
-                android:textSize="11sp" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="botaoMeusTimes"
-                android:text="MEUS TIMES" />
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="btnPerfil"
-                android:text="ALTERAR PERFIL" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <Button
-                    android:id="@+id/button13"
-                    style="?android:attr/buttonStyleSmall"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="btnTelaAposta_G_A"
-                    android:text="Aposta G A" />
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
 
-                <Button
-                    android:id="@+id/button10"
-                    style="?android:attr/buttonStyleSmall"
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/football" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="btnTelaAposta_G_B"
-                    android:text="Aposta G B" />
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
 
-                <Button
-                    android:id="@+id/button11"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="btnTelaAposta_G_C"
-                    android:layout_weight="1"
-                    android:text="Aposta G C" />
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="btnMeusCampeonatos"
+                        android:text="MEUS CAMPEONATOS" />
 
-                <Button
-                    android:id="@+id/button12"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="btnTelaAposta_G_D"
-                    android:layout_weight="1"
-                    android:text="Aposta G D" />
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="btnCriarPartida"
+                        android:text="PARTICIPAR DE CAMPEONATOS"
+                        android:textSize="11sp" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="botaoMeusTimes"
+                        android:text="MEUS TIMES" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="btnPerfil"
+                        android:text="ALTERAR PERFIL" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/button5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="btnApostaFinal"
+                            android:text="Aposta final" />
+
+                        <Button
+                            android:id="@+id/button14"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="btnApostaTerceiroLugar"
+                            android:text="3°" />
+
+                        <Button
+                            android:id="@+id/button15"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="btnApostaSemifinal"
+                            android:text="Semi" />
+
+                        <Button
+                            android:id="@+id/button17"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="btnApostaQuartas"
+                            android:text="Quartas" />
+
+                        <Button
+                            android:id="@+id/button16"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="btnApostaOitavas"
+                            android:text="Oita" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/button13"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnTelaAposta_G_A"
+                            android:text="Aposta G A" />
+
+                        <Button
+                            android:id="@+id/button10"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnTelaAposta_G_B"
+                            android:text="Aposta G B" />
+
+                        <Button
+                            android:id="@+id/button11"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnTelaAposta_G_C"
+                            android:text="Aposta G C" />
+
+                        <Button
+                            android:id="@+id/button12"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnTelaAposta_G_D"
+                            android:text="Aposta G D" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="281dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <Button
+                            android:id="@+id/button6"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnCriarPartidaGrupoA"
+                            android:text="Criar G_A" />
+
+                        <Button
+                            android:id="@+id/button7"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnCriarPartidaGrupoB"
+                            android:text="Criar G_B" />
+
+                        <Button
+                            android:id="@+id/button8"
+                           style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnCriarPartidaGrupoC"
+                            android:text="Criar G_C" />
+
+                        <Button
+                            android:id="@+id/button9"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnCriarPartidaGrupoD"
+                            android:text="Criar G_D" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="botoes de teste de criar partida" />
+                </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="281dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal" >
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="btnCriarPartidaGrupoA"
-                    android:text="A" />
-
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="btnCriarPartidaGrupoB"
-                    android:text="B" />
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="btnCriarPartidaGrupoC"
-                    android:text="C" />
-
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="btnCriarPartidaGrupoD"
-                    android:text="D" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="botoes de teste de criar partida" />
-        </LinearLayout>
+        </ScrollView>
 
     </RelativeLayout>
 

@@ -75,6 +75,11 @@
           <activity android:name=".CriarPartidaGrupoD" >
         </activity>
           
+         
+          
+          <activity android:name=".ResultadoOitavas" >
+        </activity>
+          
         <activity
             android:name=".EditarCampeonatoActivity"
             android:label="@string/title_activity_tela_editar_campeonato" >

@@ -128,6 +128,15 @@ public class PrincipalActivity extends InicialActivity{
 					startActivity(itApostaOitavas);
 				}
 				// FIM ALLAN 
+				
+				
+				
+				// INICIO ALLAN teste ver resultado oitavas
+				public void btnResult8 (View view){
+					Intent itResultOitavas= new Intent(PrincipalActivity.this, ResultadoOitavas.class);
+					startActivity(itResultOitavas);
+				}
+				// FIM ALLAN 
 
 		
 		public void botaoMeusTimes (View view){

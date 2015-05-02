@@ -223,12 +223,14 @@
                             android:text="Criar G_D" />
                     </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/textView2"
+                    <Button
+                        android:id="@+id/button18"
+                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="botoes de teste de criar partida" />
+                        android:text="Teste result 8°"
+                        android:onClick="btnResult8" />
+
                 </LinearLayout>
             </LinearLayout>
 

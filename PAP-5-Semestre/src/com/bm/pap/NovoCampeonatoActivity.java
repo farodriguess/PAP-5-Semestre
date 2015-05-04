@@ -15,8 +15,15 @@ public class NovoCampeonatoActivity extends Activity {
 		setContentView(R.layout.activity_novo_campeonato);
 	}
 	
-	public void botaoAjutarRegras(View view){
-		Intent intent = new Intent(this,RegrasActivity.class);
-		startActivity(intent);
+	public void btnAjustarRegras(View view){
+		Intent intent_ajustar_regras = new Intent(this,RegrasActivity.class);
+		startActivity(intent_ajustar_regras);
+	}
+	
+	
+	
+	public void btnCriarPartida(View view){
+		Intent intent_criarpartida = new Intent(this,SelecionarTimeCriarPartidas.class);
+		startActivity(intent_criarpartida);
 	}
 }

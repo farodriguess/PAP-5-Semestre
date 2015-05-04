@@ -45,4 +45,10 @@ public class InicialActivity extends Activity{
 		
 	}
 
+	//btnRecuerarSenha
+	
+	public void btnRecuperarSenha(View view){
+		Intent itent_rec_Senha = new Intent(InicialActivity.this, RecuperarSenha.class);
+		startActivity(itent_rec_Senha);
+	}
 }

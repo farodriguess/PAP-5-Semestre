@@ -71,7 +71,7 @@
                         android:id="@+id/button2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="btnCriarPartida"
+                        android:onClick="btnPartiparDeCampeonatos"
                         android:text="PARTICIPAR DE CAMPEONATOS"
                         android:textSize="11sp" />
 

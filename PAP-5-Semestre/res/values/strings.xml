@@ -56,6 +56,33 @@
         
     </string-array>
     
+       <string-array name="TodosOsTimes">
+        <item >Brasil</item>
+        <item >Colômbia</item>
+        <item >Grécia</item>
+        <item >Costa do Marfim</item>
+        <item >Japão</item>
+        <item >Argentina</item>
+        <item >Nigéria</item>
+        <item >México</item>
+        <item >Cróacia</item>
+        <item >Camarões</item>
+        <item >Alemanha</item>
+        <item >Gana</item>
+        <item >Costa Rica</item>
+        <item >Urugai</item>
+        <item >Itália</item>
+        <item >Inglaterra</item>
+        <item >França</item>
+        <item >Suíça</item>
+         <item >Holanda</item>
+        <item >Chile</item>
+        <item >Espanha</item>
+        <item >Austrália</item>
+        <item >Bósnia-Herzegovina</item>
+        <item >Irã</item>
+     </string-array>
+    
        
    <string-array name="Gols">
         <item >0</item>

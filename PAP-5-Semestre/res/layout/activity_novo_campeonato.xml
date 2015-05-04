@@ -134,12 +134,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Ajustar Regras" 
-        android:onClick="botaoAjustarRegras"/>
+        android:onClick="btnAjustarRegras"/>
      
       <Button
         android:id="@+id/botaoCriarPartidas"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:onClick="btnCriarPartida"
         android:text="Criar Partidas" />
 
 </LinearLayout>

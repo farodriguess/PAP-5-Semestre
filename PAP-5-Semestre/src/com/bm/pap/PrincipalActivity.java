@@ -18,9 +18,9 @@ public class PrincipalActivity extends InicialActivity{
 		}
 		
 		
-		public void btnCriarPartida (View view){
-			Intent it3 = new Intent(PrincipalActivity.this, CriarPartidaActivity.class);
-			startActivity(it3);
+		public void btnPartiparDeCampeonatos (View view){
+			Intent itent_participar_de_camp = new Intent(PrincipalActivity.this, ParticiparDeCampeonatos.class);
+			startActivity(itent_participar_de_camp);
 			
 			
 			

@@ -28,8 +28,12 @@
         </activity>
         <activity android:name=".CadastroActivity" >
         </activity>
-        <activity android:name=".CriarPartidaActivity" >
+        
+        
+        <activity android:name=".SelecionarTimeCriarPartidas" >
         </activity>
+        
+        
         <activity android:name=".PerfilActivity" >
         </activity>
         <activity android:name=".MeusCampeonatosActivity" >
@@ -78,6 +82,12 @@
          
           
           <activity android:name=".ResultadoOitavas" >
+        </activity>
+        
+           <activity android:name=".RecuperarSenha" >
+        </activity>
+          
+            <activity android:name=".ParticiparDeCampeonatos" >
         </activity>
           
         <activity

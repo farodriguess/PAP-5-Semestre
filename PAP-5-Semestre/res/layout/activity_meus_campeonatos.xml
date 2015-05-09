@@ -69,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="botaoNovo"
+            android:background="@drawable/shap_button"
             android:text="NOVO" />
 
         <Button
@@ -76,12 +77,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="botaoEditar"
+            android:background="@drawable/shap_button"
             android:text="ALTERAR" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/shap_button"
             android:text="EXCLUIR" />
     </LinearLayout>
 

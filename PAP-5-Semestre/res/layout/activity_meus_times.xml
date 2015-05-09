@@ -72,6 +72,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="adicionarEquipe"
+                            android:background="@drawable/shap_button"
                             android:text="Cadastrar"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -109,6 +110,7 @@
                     android:id="@+id/botaoEditar"
                     android:layout_width="129dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/shap_button"
                     android:text="Editar"
                     android:textSize="20sp" />
 
@@ -116,6 +118,7 @@
                     android:id="@+id/botaoRemover"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/shap_button"
                     android:text="Remover"
                     android:textSize="20sp" />
             </LinearLayout>

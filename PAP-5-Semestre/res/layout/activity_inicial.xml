@@ -31,7 +31,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txtViewEmail"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="26dp"
@@ -62,7 +62,7 @@
                 android:gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:text="SENHA:"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+              	android:textAppearance="@style/AppTheme" />
 
             <EditText
                 android:id="@+id/senha"
@@ -82,6 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="btnEntrar"
+                android:background="@drawable/shap_button"
                 android:text="ENTRAR" />
 
             <Button
@@ -91,7 +92,7 @@
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
                 android:onClick="btnCadastro"
-                android:text="CADASTRAR-SE" />
+                android:text="@string/cadastra_se"/>
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -107,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:onClick="btnRecuperarSenha"
-                android:text="Recuperar senha" />
+                android:text="@string/rec_senha" />
 
         </LinearLayout>
 

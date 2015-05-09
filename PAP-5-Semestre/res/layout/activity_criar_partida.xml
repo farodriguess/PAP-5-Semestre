@@ -34,12 +34,14 @@
             android:id="@+id/button1"
             android:layout_width="140dp"
             android:layout_height="50dp"
+            android:background="@drawable/shap_button"
             android:text="ADICIONAR" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="140dp"
             android:layout_height="50dp"
+            android:background="@drawable/shap_button"
             android:text="AVANÇAR" />
     </LinearLayout>
 

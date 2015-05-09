@@ -133,6 +133,8 @@
         android:id="@+id/botaoAjustarRegras"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shap_button"
+        android:layout_marginTop="10dp"
         android:text="Ajustar Regras" 
         android:onClick="btnAjustarRegras"/>
      
@@ -141,6 +143,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:onClick="btnCriarPartida"
+         android:layout_marginTop="3dp"
+        android:background="@drawable/shap_button"
         android:text="Criar Partidas" />
 
 </LinearLayout>

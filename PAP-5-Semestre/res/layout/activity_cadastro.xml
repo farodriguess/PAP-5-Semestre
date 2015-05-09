@@ -85,6 +85,7 @@
         android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:background="@drawable/shap_button"
         android:text="CADASTRAR" />
 
     <TextView

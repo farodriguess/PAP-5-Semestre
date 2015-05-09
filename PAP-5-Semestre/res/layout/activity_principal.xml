@@ -65,6 +65,8 @@
                         android:layout_width="286dp"
                         android:layout_height="wrap_content"
                         android:onClick="btnMeusCampeonatos"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/shap_button"
                         android:text="MEUS CAMPEONATOS" />
 
                     <Button
@@ -72,6 +74,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="btnPartiparDeCampeonatos"
+                        android:background="@drawable/shap_button"
+                        android:layout_marginTop="3dp"
                         android:text="PARTICIPAR DE CAMPEONATOS"
                         android:textSize="11sp" />
 
@@ -84,6 +88,8 @@
                         android:id="@+id/button4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/shap_button"
+                        android:layout_marginTop="3dp"
                         android:onClick="botaoMeusTimes"
                         android:text="MEUS TIMES" />
 
@@ -91,6 +97,8 @@
                         android:id="@+id/button1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/shap_button"
+                        android:layout_marginTop="3dp"
                         android:onClick="btnPerfil"
                         android:text="ALTERAR PERFIL" />
 

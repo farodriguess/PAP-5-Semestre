@@ -21,36 +21,48 @@
         android:id="@+id/button1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shap_button"
+        android:layout_marginTop="3dp"
         android:text="Editar informações do Campeonato" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shap_button"
+        android:layout_marginTop="3dp"
         android:text="Editar Partidas" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shap_button"
+        android:layout_marginTop="3dp"
         android:text="Ver Participantes" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shap_button"
+        android:layout_marginTop="3dp"
         android:text="Ranking" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shap_button"
+        android:layout_marginTop="3dp"
         android:text="Resultado da Partida" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/shap_button"
+        android:layout_marginTop="3dp"
         android:text="Regras"
         android:onClick="botaoAjustarRegras" />
 

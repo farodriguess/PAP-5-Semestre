@@ -4,9 +4,11 @@ import com.bm.pap.R;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class InicialActivity extends Activity{
@@ -16,12 +18,16 @@ public class InicialActivity extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 	    setContentView(R.layout.activity_inicial);
+	  
 	
 	}
 	
 	
 	
 	public void btnEntrar(View view){
+		
+		
+
 		
 		EditText email = (EditText) findViewById(R.id.email);
 		 EditText senha = (EditText) findViewById(R.id.senha);

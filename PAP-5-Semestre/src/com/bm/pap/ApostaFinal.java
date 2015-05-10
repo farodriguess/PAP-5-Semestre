@@ -16,6 +16,7 @@ public class ApostaFinal extends PrincipalActivity {
 		setContentView(R.layout.activity_aposta_final);
 		
 		
+		
 		Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
 	    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
 	    this, R.array.Gols, android.R.layout.simple_spinner_item);

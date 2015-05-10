@@ -12,6 +12,8 @@
         android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
         android:text="Apostas Grupo C"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
@@ -587,6 +589,14 @@
                     android:text="CONCLUIR" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginTop="10dp">
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>

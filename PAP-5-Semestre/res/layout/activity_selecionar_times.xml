@@ -1,4 +1,4 @@
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#FFFFFF"
@@ -7,49 +7,41 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="Selecionar times"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#F00000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="Selecione o time para incluir no campeonato"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="wrap_content"
-        android:layout_height="467dp"
-        android:layout_x="-1dp"
-        android:layout_y="113dp" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Selecionar times"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Selecione o time para incluir no campeonato"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,49 +60,75 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:text="Incluir" />
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Times no campeonato:"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Times no campeonato:"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/list"
+            <ScrollView
+                android:id="@+id/scrollView1"
                 android:layout_width="wrap_content"
-                android:layout_height="156dp"
-                android:divider="#FFECECEC"
-                android:dividerHeight="2sp" >
-            </ListView>
+                android:layout_height="177dp"
+                android:layout_weight="0.01" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="174dp"
+                        android:divider="#FFECECEC"
+                        android:dividerHeight="2sp" >
+                    </ListView>
+                </LinearLayout>
+            </ScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal" >
+                android:orientation="vertical" >
 
                 <Button
                     android:id="@+id/button1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:text="Avançar" />
 
                 <Button
                     android:id="@+id/button3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="110dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
                     android:background="@drawable/shap_button"
                     android:text="Remover" />
             </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
 
-</AbsoluteLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

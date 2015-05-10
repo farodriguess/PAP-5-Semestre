@@ -10,7 +10,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="Resultado Quartas de Finais"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
+         android:typeface="serif"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView

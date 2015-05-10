@@ -10,7 +10,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
+         android:typeface="serif"
+        android:textStyle="bold"
         android:gravity="center_horizontal"
         android:text="Campeonatos que participo"
         android:textAppearance="?android:attr/textAppearanceLarge" />

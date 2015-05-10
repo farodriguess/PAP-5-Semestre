@@ -98,9 +98,8 @@
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:text="TELA DE CADASTRO"
+    	android:typeface="serif"
         android:textStyle="bold"
-        android:textSize="30sp" 
-         android:textColor="#FF0000"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView

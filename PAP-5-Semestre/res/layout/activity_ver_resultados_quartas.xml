@@ -9,7 +9,9 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
+         android:typeface="serif"
+        android:textStyle="bold"
         android:gravity="center_horizontal"
         android:text="Resultados quartas de finais"
         android:textAppearance="?android:attr/textAppearanceLarge" />

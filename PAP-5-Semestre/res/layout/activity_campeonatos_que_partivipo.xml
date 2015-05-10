@@ -30,9 +30,8 @@
                     android:padding="10sp"
                     android:text="Campeoatos que participo"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="#F00000"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+            		android:typeface="serif"
+        			android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -41,9 +40,8 @@
                     android:gravity="center_horizontal"
                     android:text="Lista de Times"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="#000000"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                	android:typeface="serif"
+       				android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

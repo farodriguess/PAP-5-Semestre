@@ -11,6 +11,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:text="CRIAR PARTIDAS GRUPO: D"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -486,7 +488,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button1"

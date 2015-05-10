@@ -11,9 +11,8 @@
         android:gravity="center_horizontal"
         android:text="CRIAR PARTIDA"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#FF0000"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:typeface="serif"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/imageView1"

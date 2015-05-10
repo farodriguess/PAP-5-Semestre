@@ -39,9 +39,8 @@
                         android:padding="10sp"
                         android:text="MEUS TIMES"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="#F00000"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:typeface="serif"
+       					android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -51,7 +50,7 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="#000000"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                         />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -103,12 +102,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               
-                android:gravity="center_horizontal" >
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
 
                 <Button
                     android:id="@+id/botaoEditar"
-                    android:layout_width="129dp"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:text="Editar"
@@ -120,6 +119,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:text="Remover"
+                    android:layout_marginTop="3dp"
                     android:textSize="20sp" />
             </LinearLayout>
 

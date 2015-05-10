@@ -9,6 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:text="Aposta Semifinal"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

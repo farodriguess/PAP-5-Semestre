@@ -21,7 +21,8 @@
             android:gravity="center_horizontal"
             android:text="MEUS CAMPEONATOS"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#F00000" />
+            android:textStyle="bold"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView8"
@@ -34,82 +35,90 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="       Nome:"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="191dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:text="Status"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:gravity="center_horizontal" >
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="botaoNovo"
-            android:background="@drawable/shap_button"
-            android:text="NOVO" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="botaoEditar"
-            android:background="@drawable/shap_button"
-            android:text="ALTERAR" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shap_button"
-            android:text="EXCLUIR" />
-    </LinearLayout>
-
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="match_parent"
-        android:layout_height="184dp"
-        android:layout_above="@+id/linearLayout2"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/linearLayout1" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="534dp"
+            android:gravity="center_horizontal"
             android:orientation="vertical" >
 
-            <ListView
-                android:id="@+id/list"
-                android:layout_width="260dp"
-                android:layout_height="392dp"
-                android:layout_gravity="center_horizontal"
-                android:divider="#FFECECEC"
-                android:dividerHeight="2sp" >
-            </ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="       Nome:"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="191dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Status"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_weight="1.48" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.77"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="281dp"
+                        android:layout_height="246dp"
+                        android:layout_gravity="center_horizontal"
+                        android:divider="#FFECECEC"
+                        android:dividerHeight="2sp" >
+                    </ListView>
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shap_button"
+                    android:onClick="botaoNovo"
+                    android:text="NOVO" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/shap_button"
+                    android:onClick="botaoEditar"
+                    android:text="ALTERAR" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/shap_button"
+                    android:text="EXCLUIR" />
+            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+
+    </LinearLayout>
 
 </RelativeLayout>

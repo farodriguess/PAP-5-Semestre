@@ -14,9 +14,11 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:text="Recuperar senha:"
+             android:typeface="serif"
+        android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <LinearLayout

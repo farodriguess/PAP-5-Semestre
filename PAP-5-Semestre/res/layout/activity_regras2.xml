@@ -300,6 +300,8 @@
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
                         android:text="Salvar" />
 
                 </LinearLayout>

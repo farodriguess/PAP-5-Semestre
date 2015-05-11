@@ -489,6 +489,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
                         android:text="GRUPO C" />
 
                 </LinearLayout>

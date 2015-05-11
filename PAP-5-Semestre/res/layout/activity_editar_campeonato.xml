@@ -29,6 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Editar informações do Campeonato" />
 
         <Button
@@ -37,6 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Editar Partidas" />
 
         <Button
@@ -45,6 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Ver Participantes" />
 
         <Button
@@ -53,6 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Ranking" />
 
         <Button
@@ -61,6 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Resultado da Partida" />
 
         <Button
@@ -69,6 +79,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:onClick="botaoAjustarRegras"
             android:text="Regras" />
 

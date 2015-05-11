@@ -587,6 +587,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:layout_marginTop="10dp"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="CONCLUIR" />
 
             </LinearLayout>

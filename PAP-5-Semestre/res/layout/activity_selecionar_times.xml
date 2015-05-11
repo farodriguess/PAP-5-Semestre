@@ -59,6 +59,8 @@
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="Incluir" />
 
                 <LinearLayout
@@ -109,6 +111,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="Avançar" />
 
                 <Button
@@ -117,6 +121,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="Remover" />
             </LinearLayout>
 

@@ -66,17 +66,21 @@
                         android:onClick="btnMeusCampeonatos"
                         android:layout_marginTop="3dp"
                         android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
                         android:text="MEUS CAMPEONATOS" />
 
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="btnPartiparDeCampeonatos"
-                        android:background="@drawable/shap_button"
                         android:layout_marginTop="3dp"
+                        android:background="@drawable/shap_button"
+                        android:onClick="btnPartiparDeCampeonatos"
                         android:text="PARTICIPAR DE CAMPEONATOS"
-                        android:textSize="11sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -88,6 +92,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
                         android:layout_marginTop="3dp"
                         android:onClick="botaoMeusTimes"
                         android:text="MEUS TIMES" />
@@ -97,6 +103,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
                         android:layout_marginTop="3dp"
                         android:onClick="btnPerfil"
                         android:text="ALTERAR PERFIL" />

@@ -72,6 +72,8 @@
                             android:layout_weight="1"
                             android:onClick="adicionarEquipe"
                             android:background="@drawable/shap_button"
+                            android:typeface="serif"
+                android:textStyle="bold"
                             android:text="Cadastrar"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -110,6 +112,8 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="Editar"
                     android:textSize="20sp" />
 
@@ -118,6 +122,8 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="Remover"
                     android:layout_marginTop="3dp"
                     android:textSize="20sp" />

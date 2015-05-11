@@ -95,15 +95,21 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Visualizar" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_marginTop="3dp"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
-            android:text="Campeonatos que participo" />
+            android:text="Campeonatos que participo"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
     </LinearLayout>
 
 </AbsoluteLayout>

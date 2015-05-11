@@ -34,6 +34,8 @@
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="ADICIONAR" />
 
         <Button
@@ -41,6 +43,8 @@
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="AVANÇAR" />
     </LinearLayout>
 

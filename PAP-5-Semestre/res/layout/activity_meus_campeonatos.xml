@@ -98,6 +98,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:onClick="botaoNovo"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="NOVO" />
 
                 <Button
@@ -107,6 +109,8 @@
                     android:layout_marginTop="3dp"
                     android:background="@drawable/shap_button"
                     android:onClick="botaoEditar"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="ALTERAR" />
 
                 <Button
@@ -115,6 +119,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="EXCLUIR" />
             </LinearLayout>
         </LinearLayout>

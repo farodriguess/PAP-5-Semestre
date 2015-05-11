@@ -152,6 +152,8 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/shap_button"
             android:onClick="btnAjustarRegras"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Ajustar Regras" />
 
         <Button
@@ -161,6 +163,8 @@
             android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
             android:onClick="btnCriarPartida"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Criar Partidas" />
 
     </LinearLayout>

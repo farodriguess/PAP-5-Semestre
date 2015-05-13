@@ -1,7 +1,8 @@
 package com.bm.pap;
 
-import com.bm.bolaoservice.entity.Usuario;
+
 import com.bm.pap.R;
+import com.bm.pap.entity.Usuario;
 
 import android.os.Bundle;
 

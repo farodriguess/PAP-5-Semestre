@@ -11,6 +11,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:text="Apostas Grupo A"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -584,9 +586,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="CONCLUIR" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginTop="10dp">
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>

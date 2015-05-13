@@ -8,6 +8,13 @@
     <string name="title_activity_activity_novo_campeonato">ActivityNovoCampeonato</string>
     <string name="title_activity_regras">RegrasActivity</string>
     <string name="title_activity_meus_times">MeusTimesActivity</string>
+     <string name="rec_senha"> <u>Recuperar senha</u></string>
+     <string name="cadastra_se"> <u>Cadastrar-se</u></string>
+     <string name="titulos"> <b>Titulos</b></string>
+     
+     
+    
+     
    
     <string-array name="Grupo_A">
         <item >Brasil</item>

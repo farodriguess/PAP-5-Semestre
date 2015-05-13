@@ -13,9 +13,9 @@
         android:padding="10sp"
         android:text="Participar de Campeonatos"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#F00000"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="serif" />
 
     <ScrollView
         android:id="@+id/scrollView2"

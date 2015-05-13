@@ -12,6 +12,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:text="CRIAR PARTIDAS GRUPO: A"
         android:layout_marginTop="5dp"        
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -503,13 +505,18 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal" >
+                    android:gravity="center_horizontal" 
+                    android:layout_marginTop="10dp">
 
                     <Button
                         android:id="@+id/button1"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        
+                        android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
                         android:text="GRUPO B" />
 
                 </LinearLayout>

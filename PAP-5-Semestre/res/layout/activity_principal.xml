@@ -22,9 +22,8 @@
             android:layout_marginTop="15dp"
             android:gravity="center_horizontal"
             android:text="BEM VINDO"
-            android:textColor="#FF0000"
-            android:textSize="30dp"
-            android:textStyle="bold"
+            android:typeface="serif"
+        android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <ScrollView
@@ -65,15 +64,23 @@
                         android:layout_width="286dp"
                         android:layout_height="wrap_content"
                         android:onClick="btnMeusCampeonatos"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
                         android:text="MEUS CAMPEONATOS" />
 
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/shap_button"
                         android:onClick="btnPartiparDeCampeonatos"
                         android:text="PARTICIPAR DE CAMPEONATOS"
-                        android:textSize="11sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -84,6 +91,10 @@
                         android:id="@+id/button4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
+                        android:layout_marginTop="3dp"
                         android:onClick="botaoMeusTimes"
                         android:text="MEUS TIMES" />
 
@@ -91,6 +102,10 @@
                         android:id="@+id/button1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/shap_button"
+                        android:typeface="serif"
+                android:textStyle="bold"
+                        android:layout_marginTop="3dp"
                         android:onClick="btnPerfil"
                         android:text="ALTERAR PERFIL" />
 

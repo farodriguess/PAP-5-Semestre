@@ -10,9 +10,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="Ver partidas"
+         android:typeface="serif"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
@@ -62,6 +64,9 @@
                 android:id="@+id/button1"
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
+                android:background="@drawable/shap_button"
+                android:typeface="serif"
+                android:textStyle="bold"
                 android:text="Ir para 1° fase" />
         </LinearLayout>
 
@@ -96,6 +101,9 @@
                 android:id="@+id/button2"
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
+                android:background="@drawable/shap_button"
+                android:typeface="serif"
+                android:textStyle="bold"
                 android:text="Ir para 2° fase" />
 
         </LinearLayout>

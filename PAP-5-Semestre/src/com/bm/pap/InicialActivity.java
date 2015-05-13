@@ -1,16 +1,14 @@
 package com.bm.pap;
 
 
-import com.bm.pap.R;
-import com.bm.pap.entity.Usuario;
-import com.bm.pap.service.UsuarioWS;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.bm.pap.entity.Usuario;
+import com.bm.pap.service.UsuarioWS;
 
 public class InicialActivity extends Activity {
 
@@ -18,9 +16,16 @@ public class InicialActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_inicial);
 
+	    setContentView(R.layout.activity_inicial);
+	    
+	    
+	  
+	
 	}
+	
+	
+	
 
 	public void btnEntrar(View view) {
 

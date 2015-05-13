@@ -10,8 +10,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
+        android:typeface="serif"
+       	android:textStyle="bold"
         android:text="Opções do campeonato"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -30,42 +32,72 @@
             android:id="@+id/button1"
             android:layout_width="235dp"
             android:layout_height="wrap_content"
-            android:text="Editar inf. do campeonato" />
+            android:background="@drawable/shap_button"
+            android:layout_marginTop="3dp"
+            android:text="Editar inf. do campeonato"
+            android:typeface="serif"
+                android:textStyle="bold"
+            
+            android:textSize="17sp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="235dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
+            android:layout_marginTop="3dp"
             android:text="Editar partidas" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="235dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
+            android:layout_marginTop="3dp"
             android:text="Ver partcipantes" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="235dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
+            android:layout_marginTop="3dp"
             android:text="Ranking" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="235dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
+            android:layout_marginTop="3dp"
             android:text="Resultados das partidas" />
 
         <Button
             android:id="@+id/button5"
            android:layout_width="235dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
+            android:layout_marginTop="3dp"
              android:text="Definir status" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="235dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
+            android:layout_marginTop="3dp"
             android:text="Regras" />
     </LinearLayout>
 

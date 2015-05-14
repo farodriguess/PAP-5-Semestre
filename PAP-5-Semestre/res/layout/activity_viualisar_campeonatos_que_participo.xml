@@ -10,7 +10,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
+         android:typeface="serif"
+        android:textStyle="bold"
         android:gravity="center_horizontal"
         android:text="Campeonatos que participo"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -151,33 +153,48 @@
 
             <Button
                 android:id="@+id/button1"
-           android:layout_width="195dp"
+           		android:layout_width="195dp"
                 android:layout_height="wrap_content"
+                android:typeface="serif"
+               	android:textStyle="bold"
+                android:background="@drawable/shap_button"
                
                 android:text="Regras" />
 
             <Button
                 android:id="@+id/button2"
-               android:layout_width="195dp"
+                android:layout_width="195dp"
                 android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:background="@drawable/shap_button"
                 android:text="Partidas" />
 
             <Button
                 android:id="@+id/button3"
-               android:layout_width="195dp"
+                android:layout_width="195dp"
                 android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:background="@drawable/shap_button"
                 android:text="Ranking" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="195dp"
                 android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:background="@drawable/shap_button"
                 android:text="Apostar" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="195dp"
                 android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:background="@drawable/shap_button"
                 android:text="Deixar de participar" />
 
         </LinearLayout>

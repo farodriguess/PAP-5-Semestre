@@ -1,4 +1,7 @@
+
 package com.bm.pap;
+
+import com.bm.pap.entity.Usuario;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.bm.bolaoservice.entity.Usuario;
 
 public class CadastroActivity  extends InicialActivity{
 	
@@ -54,5 +56,5 @@ public class CadastroActivity  extends InicialActivity{
 			.show();
 }
 	}
-	
 }
+	

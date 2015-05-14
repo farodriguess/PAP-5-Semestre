@@ -9,6 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:text="Aposta Oitavas de Finais"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -1146,6 +1148,8 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center_horizontal"
                     android:background="@drawable/shap_button"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="CONCLUIR" />
 
             </LinearLayout>

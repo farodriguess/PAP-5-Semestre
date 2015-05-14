@@ -10,7 +10,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="Resultado 3° Lugar"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
+         android:typeface="serif"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
@@ -169,6 +171,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:layout_marginTop="10dp"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="CONCLUIR" />
                 </LinearLayout>
 

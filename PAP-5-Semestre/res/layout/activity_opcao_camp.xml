@@ -10,8 +10,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
+        android:typeface="serif"
+       	android:textStyle="bold"
         android:text="Opções do campeonato"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -33,6 +35,8 @@
             android:background="@drawable/shap_button"
             android:layout_marginTop="3dp"
             android:text="Editar inf. do campeonato"
+            android:typeface="serif"
+                android:textStyle="bold"
             
             android:textSize="17sp" />
 
@@ -41,6 +45,8 @@
             android:layout_width="235dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:layout_marginTop="3dp"
             android:text="Editar partidas" />
 
@@ -49,6 +55,8 @@
             android:layout_width="235dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:layout_marginTop="3dp"
             android:text="Ver partcipantes" />
 
@@ -57,6 +65,8 @@
             android:layout_width="235dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:layout_marginTop="3dp"
             android:text="Ranking" />
 
@@ -65,6 +75,8 @@
             android:layout_width="235dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:layout_marginTop="3dp"
             android:text="Resultados das partidas" />
 
@@ -73,6 +85,8 @@
            android:layout_width="235dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:layout_marginTop="3dp"
              android:text="Definir status" />
 
@@ -81,6 +95,8 @@
             android:layout_width="235dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:layout_marginTop="3dp"
             android:text="Regras" />
     </LinearLayout>

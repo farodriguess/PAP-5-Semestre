@@ -3,6 +3,8 @@ package com.bm.pap;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bm.pap.entity.Equipe;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +13,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.bm.bolaoservice.entity.Equipe;
+
 
 public class MeusTimesActivity extends Activity {
 

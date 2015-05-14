@@ -9,8 +9,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
+        android:typeface="serif"
+        android:textStyle="bold"
         android:text="Resultado Grupo A"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -585,6 +587,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:layout_marginTop="10dp"
+                    android:typeface="serif"
+                android:textStyle="bold"
                     android:text="CONCLUIR" />
 
             </LinearLayout>

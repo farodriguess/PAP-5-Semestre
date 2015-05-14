@@ -30,9 +30,10 @@
                     android:padding="10sp"
                     android:text="Participar de Campeonatos"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="#F00000"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:layout_marginTop="10dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -54,7 +55,6 @@
                         android:gravity="right"
                         android:text="Status     "
                         android:textAppearance="?android:attr/textAppearanceLarge" />
-
                 </LinearLayout>
 
                 <ScrollView
@@ -74,11 +74,9 @@
                             android:layout_gravity="center_horizontal"
                             android:divider="#FFECECEC"
                             android:dividerHeight="2sp" >
-
                         </ListView>
                     </LinearLayout>
                 </ScrollView>
-
             </LinearLayout>
 
         </LinearLayout>
@@ -97,15 +95,21 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:background="@drawable/shap_button"
+            android:typeface="serif"
+                android:textStyle="bold"
             android:text="Visualizar" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_marginTop="3dp"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
             android:background="@drawable/shap_button"
-            android:text="Campeonatos que participo" />
+            android:text="Campeonatos que participo"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
     </LinearLayout>
 
 </AbsoluteLayout>

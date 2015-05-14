@@ -24,7 +24,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/cadastroNome"
             android:layout_width="310dp"
             android:layout_height="wrap_content"
             android:background="#DCDCDC"
@@ -39,7 +39,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/cadastroEmail"
             android:layout_width="307dp"
             android:layout_height="wrap_content"
             android:background="#DCDCDC"
@@ -54,7 +54,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/cadastroSenha"
             android:layout_width="178dp"
             android:layout_height="wrap_content"
             android:background="#DCDCDC"
@@ -69,7 +69,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/cadastroConfirmaSenha"
             android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:background="#DCDCDC"
@@ -86,6 +86,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:background="@drawable/shap_button"
+        android:onClick="btnCadastrar"
         android:text="CADASTRAR" />
 
     <TextView

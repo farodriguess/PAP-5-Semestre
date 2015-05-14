@@ -298,6 +298,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"
+                        android:onClick="btnSalvar"
                         android:text="Salvar" />
 
                 </LinearLayout>

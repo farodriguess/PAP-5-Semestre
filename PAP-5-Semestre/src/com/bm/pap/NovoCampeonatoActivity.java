@@ -37,6 +37,8 @@ public class NovoCampeonatoActivity extends Activity {
 		setContentView(R.layout.activity_novo_campeonato);
 		
 		
+		
+		
 	Intent intencao = getIntent();
 	
 		Bundle info = intencao.getExtras();
@@ -101,6 +103,16 @@ public class NovoCampeonatoActivity extends Activity {
 		startActivity(intent_ajustar_regras);
 
 	}
+	
+	// testar data allan 14-05
+	
+			public void btnData (View view){
+				Intent itent_data = new Intent(NovoCampeonatoActivity.this, Calendario.class);
+				startActivity(itent_data);
+				
+				
+				
+			}
 
 	public void btnCriarPartidas(View view) {
 

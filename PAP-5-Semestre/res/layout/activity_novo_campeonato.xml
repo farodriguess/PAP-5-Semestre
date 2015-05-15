@@ -79,12 +79,14 @@
             android:layout_marginTop="20dp"
             android:layout_weight="1.83" >
 
-            <TextView
-                android:id="@+id/textView4"
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                                android:text="Data início:"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:background="@drawable/shap_button"
+                android:onClick="btnData"
+                android:text="Data inicio:" />
 
             <EditText
                 android:id="@+id/campoDataInicio"
@@ -99,12 +101,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-            <TextView
-                android:id="@+id/textView5"
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Data fim:   "
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:layout_weight="1.47"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shap_button"
+                android:onClick="btnData"
+                android:text="Data fim:" />
 
             <EditText
                 android:id="@+id/campoDataFim"

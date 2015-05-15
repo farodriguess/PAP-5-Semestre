@@ -9,12 +9,12 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="TELA DE ACESSO"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:typeface="serif"
         android:textStyle="bold"
-        android:layout_marginTop="10dp" />
+        android:typeface="serif" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,24 +36,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="26dp"
                 android:gravity="center_horizontal"
-                android:typeface="serif"
-        android:textStyle="bold"
                 android:text="E-MAIL:"
-                
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
             <EditText
                 android:id="@+id/email"
                 android:layout_width="307dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="#DCDCDC"
                 android:ems="10"
                 android:gravity="center_horizontal"
-                android:textSize="25sp"
-                android:layout_marginTop="10dp"
                 android:hint="Digite seu e-mail"
-                android:inputType="textEmailAddress" >
-               
+                android:inputType="textEmailAddress"
+                android:textSize="25sp" >
 
                 <requestFocus />
             </EditText>
@@ -62,12 +60,12 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
                 android:text="SENHA:"
-                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textStyle="bold"
-              	 android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:typeface="serif" />
 
             <EditText
                 android:id="@+id/senha"
@@ -78,7 +76,6 @@
                 android:ems="10"
                 android:gravity="center_horizontal"
                 android:hint="Senha"
-                
                 android:inputType="textPassword"
                 android:textSize="25sp" />
 
@@ -87,12 +84,11 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/shap_button"
                 android:onClick="btnEntrar"
-                android:typeface="serif"
-                		android:textStyle="bold"
-                		android:background="@drawable/shap_button"
-             
-                android:text="ENTRAR" />
+                android:text="ENTRAR"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
             <Button
                 android:id="@+id/button2"
@@ -101,9 +97,9 @@
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
                 android:onClick="btnCadastro"
-                android:typeface="serif"
-        android:textStyle="bold"
-                android:text="@string/cadastra_se"/>
+                android:text="@string/cadastra_se"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -112,19 +108,17 @@
                 android:layout_marginBottom="52dp"
                 android:src="@drawable/futebol" />
 
-           <Button
+            <Button
                 android:id="@+id/button3"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:typeface="serif"
-        android:textStyle="bold"
                 android:onClick="btnRecuperarSenha"
-                android:text="@string/rec_senha" />
-
+                android:text="@string/rec_senha"
+                android:textStyle="bold"
+                android:typeface="serif" />
         </LinearLayout>
-
     </RelativeLayout>
 
 </LinearLayout>

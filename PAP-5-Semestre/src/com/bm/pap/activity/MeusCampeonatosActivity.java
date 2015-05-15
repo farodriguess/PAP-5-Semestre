@@ -1,7 +1,9 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.bm.pap.R;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +17,10 @@ public class MeusCampeonatosActivity extends PrincipalActivity{
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-					
+		
+		setContentView(R.layout.activity_meus_campeonatos);
+
+		
 		setContentView(R.layout.activity_meus_campeonatos);
 		//fazer lógica para carregar lista de campeonato e colocar na list
 				//List<Campeonato>e= new ArrayList<Equipe>();

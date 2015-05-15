@@ -1,15 +1,20 @@
-package com.bm.pap;
+package com.bm.pap.activity;
+
+import com.bm.pap.R;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class ApostaGrupo_D extends PrincipalActivity {
+public class ApostaGrupo_B extends PrincipalActivity{
+	
+	
+	
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.activity_aposta_grupo_d);
+		setContentView(R.layout.activity_aposta_grupo_b);
 		
 		
 		
@@ -37,8 +42,8 @@ public class ApostaGrupo_D extends PrincipalActivity {
 	    this, R.array.Gols, android.R.layout.simple_spinner_item);
 	    adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 	    spinner4.setAdapter(adapter4);
-	
+
 
 }
-	
+
 }

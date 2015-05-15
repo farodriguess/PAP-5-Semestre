@@ -13,7 +13,7 @@ import android.util.Log;
 
 public class ClientGetWSTask extends AsyncTask<Object, Object, String> {
 
-	private static final String URI = "http://localhost:8080/BolaoWebService/webresources";
+	private static final String URI = "http://192.168.43.166:8080/BolaoWebService/webresources";
 
 	private static final String TAG = "ClientGetWSTask.java";
 

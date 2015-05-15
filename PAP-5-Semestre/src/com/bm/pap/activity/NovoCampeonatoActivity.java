@@ -1,9 +1,12 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.bm.pap.R;
+import com.bm.pap.activity.Calendario;
+import com.bm.pap.activity.NovoCampeonatoActivity;
 import com.bm.pap.entity.Campeonato;
 
 import android.app.Activity;
@@ -15,7 +18,6 @@ import android.widget.Toast;
 
 public class NovoCampeonatoActivity extends Activity {
 	private Campeonato campeonato;
-
 	private Integer regra1;
 	private Integer regra2;
 	private Integer regra3;
@@ -56,6 +58,13 @@ public class NovoCampeonatoActivity extends Activity {
 			regra8 = 2;
 		}
 		;
+	}
+
+	public void btnData(View view) {
+		Intent itent_data = new Intent(NovoCampeonatoActivity.this,
+				Calendario.class);
+		startActivity(itent_data);
+
 	}
 
 	public void btnAjustarRegras(View view) {
@@ -124,7 +133,7 @@ public class NovoCampeonatoActivity extends Activity {
 
 	public void btnOitoEquipes(View view) {
 		qtdEquipe = 8;
-		}
+	}
 
 	public void btnDezesseisEquipes(View view) {
 		qtdEquipe = 16;

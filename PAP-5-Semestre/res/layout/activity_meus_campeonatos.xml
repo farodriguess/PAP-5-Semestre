@@ -72,7 +72,7 @@
                     android:orientation="vertical" >
 
                     <ListView
-                        android:id="@+id/list"
+                        android:id="@+id/listaMeusCampeonatos"
                         android:layout_width="281dp"
                         android:layout_height="246dp"
                         android:layout_gravity="center_horizontal"

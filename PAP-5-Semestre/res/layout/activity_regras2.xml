@@ -10,14 +10,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-         android:typeface="serif"
-        android:textStyle="bold"
         android:text="Regras:"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:typeface="serif" />
 
     <ScrollView
         android:id="@+id/scrollView1"
-       android:layout_width="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true" >
@@ -28,39 +28,34 @@
             android:gravity="center_horizontal"
             android:orientation="vertical" >
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                
                 android:orientation="vertical" >
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" Acertar o placar do jogo:"
                     android:layout_marginTop="10dp"
+                    android:text=" Acertar o placar do jogo:"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                     >
+                    android:layout_height="50dp" >
 
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                      
                         android:text="Pontos: "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <Spinner
                         android:id="@+id/spinner1"
-                       android:layout_width="wrap_content"
+                        android:layout_width="wrap_content"
                         android:layout_height="50dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -71,10 +66,9 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Acertar o vencedor ou empate diferente do resultado real:"
                         android:layout_marginTop="10dp"
+                        android:text="Acertar o vencedor ou empate diferente do resultado real:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -92,7 +86,6 @@
                         android:id="@+id/spinner2"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -107,7 +100,6 @@
                         android:text="Acertar o time classificado da próxima fase  (Por time classificado):"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textSize="17sp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -125,13 +117,12 @@
                         android:id="@+id/spinner3"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" 
-                    android:layout_marginTop="10dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
 
                     <TextView
                         android:id="@+id/textView8"
@@ -139,7 +130,6 @@
                         android:layout_height="wrap_content"
                         android:text="Acertar a combinação de jogo da próxima fase (cada jogo):"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -157,13 +147,12 @@
                         android:id="@+id/spinner4"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" 
-                    android:layout_marginTop="10dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
 
                     <TextView
                         android:id="@+id/textView10"
@@ -171,7 +160,6 @@
                         android:layout_height="wrap_content"
                         android:text="Acertar o campeão:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -190,13 +178,12 @@
                         android:id="@+id/spinner5"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" 
-                    android:layout_marginTop="10dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
 
                     <TextView
                         android:id="@+id/textView12"
@@ -204,7 +191,6 @@
                         android:layout_height="wrap_content"
                         android:text="Acertar o vice-campeão:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -222,7 +208,6 @@
                         android:id="@+id/spinner6"
                         android:layout_width="wrap_content"
                         android:layout_height="49dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -236,7 +221,6 @@
                         android:layout_height="wrap_content"
                         android:text="Arcertar o 3° lugar:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -254,7 +238,6 @@
                         android:id="@+id/spinner7"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -268,7 +251,6 @@
                         android:layout_height="wrap_content"
                         android:text="Acertar o 4° lugar:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -286,7 +268,6 @@
                         android:id="@+id/spinner8"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -300,21 +281,19 @@
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"
-                        android:typeface="serif"
-                android:textStyle="bold"
-                        android:text="Salvar" />
-
+                        android:onClick="btnSalvar"
+                        android:text="Salvar"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" 
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 

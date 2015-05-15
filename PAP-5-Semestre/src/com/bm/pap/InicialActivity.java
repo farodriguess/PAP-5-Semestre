@@ -1,3 +1,4 @@
+
 package com.bm.pap;
 
 
@@ -54,3 +55,4 @@ public class InicialActivity extends Activity {
 		startActivity(itent_rec_Senha);
 	}
 }
+

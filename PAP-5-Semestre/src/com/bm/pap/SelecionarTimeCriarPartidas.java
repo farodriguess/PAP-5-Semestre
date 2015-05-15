@@ -1,17 +1,25 @@
 package com.bm.pap;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.bm.pap.entity.Campeonato;
 
 public class SelecionarTimeCriarPartidas extends Activity {
-	
+	private Campeonato campeonato;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.activity_selecionar_times);
+		Intent intencao = getIntent();
+
+		Bundle info = intencao.getExtras();
+		campeonato=(Campeonato) info.getSerializable("campeonato");
 		
 		
 		

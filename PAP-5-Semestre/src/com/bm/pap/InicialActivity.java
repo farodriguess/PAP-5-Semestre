@@ -30,7 +30,7 @@ public class InicialActivity extends Activity {
 
 	public void btnEntrar(View view) {
 
-		EditText email = (EditText) findViewById(R.id.email);
+	/*	EditText email = (EditText) findViewById(R.id.email);
 		EditText senha = (EditText) findViewById(R.id.senha);
 		
 		Usuario usuario = new Usuario();
@@ -38,7 +38,10 @@ public class InicialActivity extends Activity {
 		usuario.setSenha(senha.getText().toString());
 		
 		UsuarioWS ws = new UsuarioWS(usuario, this);
-		ws.realizarLogin();
+		ws.realizarLogin();*/
+		
+		Intent it2 = new Intent(InicialActivity.this, PrincipalActivity.class);
+		startActivity(it2);
 	}
 
 	public void btnCadastro(View view) {

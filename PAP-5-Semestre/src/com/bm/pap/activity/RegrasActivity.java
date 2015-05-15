@@ -1,4 +1,6 @@
-package com.bm.pap;
+package com.bm.pap.activity;
+
+import com.bm.pap.R;
 
 import android.app.Activity;
 import android.content.Intent;

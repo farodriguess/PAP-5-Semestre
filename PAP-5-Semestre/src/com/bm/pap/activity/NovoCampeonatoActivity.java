@@ -1,9 +1,10 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.bm.pap.R;
 import com.bm.pap.entity.Campeonato;
 
 import android.app.Activity;

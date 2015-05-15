@@ -1,8 +1,9 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bm.pap.R;
 import com.bm.pap.entity.Equipe;
 
 import android.app.Activity;

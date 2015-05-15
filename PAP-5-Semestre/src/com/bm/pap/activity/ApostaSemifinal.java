@@ -1,19 +1,16 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
-import android.app.Fragment.SavedState;
+import com.bm.pap.R;
+
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
-import android.widget.NumberPicker;
 import android.widget.Spinner;
 
-public class ApostaFinal extends PrincipalActivity {
-	
-	
-	
+public class ApostaSemifinal extends PrincipalActivity{
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_aposta_final);
+		setContentView(R.layout.activity_aposta_semifinais);
 		
 		
 		
@@ -41,5 +38,11 @@ public class ApostaFinal extends PrincipalActivity {
 	    this, R.array.Gols, android.R.layout.simple_spinner_item);
 	    adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 	    spinner4.setAdapter(adapter4);
+	
+	
+	
+	
+
 }
+
 }

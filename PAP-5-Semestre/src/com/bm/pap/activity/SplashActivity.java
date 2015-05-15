@@ -1,4 +1,4 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
 import com.bm.pap.R;
 

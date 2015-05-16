@@ -34,7 +34,7 @@ public class PrincipalActivity extends InicialActivity implements View.OnClickLi
 			updatedate();
 		}
 		
-		public void updatedate()//<<
+		public void updatedate()//<<<<<
 		{
 			
 			

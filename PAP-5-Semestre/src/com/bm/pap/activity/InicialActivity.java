@@ -16,7 +16,7 @@ import com.google.gson.Gson;
 public class InicialActivity extends Activity implements ObjectLoadedListener {
 
 	private static final int LOGIN = 1;
-	private static final String CAMINHOLOGIN = "/usuario/login";
+	private static final String CAMINHOLOGIN = "usuario/login";
 	private Usuario usuario;
 
 	@Override
@@ -76,6 +76,7 @@ public class InicialActivity extends Activity implements ObjectLoadedListener {
 	private void realizarLongin() {
 		if (usuario != null) {
 			Intent i = new Intent(this, PrincipalActivity.class);
+			i.putExtra("usuario", usuario);
 			startActivity(i);
 		} else {
 			Toast.makeText(this, "Usuario ou senha Invalidos",

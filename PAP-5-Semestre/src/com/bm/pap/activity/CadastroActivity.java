@@ -15,7 +15,7 @@ import com.google.gson.Gson;
 public class CadastroActivity extends Activity implements ObjectLoadedListener{
 
 	private static final int NOVOUSUARIO = 1;
-	private static final String CAMINHONOVOUSUARIO = "/usuario/novoUsuario";
+	private static final String CAMINHONOVOUSUARIO = "usuario/novoUsuario";
 	private Usuario user;
 
 	protected void onCreate(Bundle savedInstanceState)  {

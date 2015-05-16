@@ -1,6 +1,7 @@
 package com.bm.pap.activity;
 
 import com.bm.pap.R;
+import com.bm.pap.entity.Usuario;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +9,15 @@ import android.view.View;
 
 public class PrincipalActivity extends InicialActivity{
 	
+	private Bundle info;
+	
 
 		protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_principal);
-
-			
+			Intent intencao = getIntent();
+			info = intencao.getExtras();
+				
 			
 		}
 		
@@ -21,6 +25,7 @@ public class PrincipalActivity extends InicialActivity{
 		
 		public void btnData (View view){
 			Intent itent_data = new Intent(PrincipalActivity.this, Calendario.class);
+			itent_data.putExtra("usuario", info);
 			startActivity(itent_data);
 			
 			
@@ -32,6 +37,7 @@ public class PrincipalActivity extends InicialActivity{
 		
 		public void btnPartiparDeCampeonatos (View view){
 			Intent itent_participar_de_camp = new Intent(PrincipalActivity.this, ParticiparDeCampeonatos.class);
+			itent_participar_de_camp.putExtra("usuario", info);
 			startActivity(itent_participar_de_camp);
 			
 			
@@ -40,6 +46,7 @@ public class PrincipalActivity extends InicialActivity{
 		
 		public void btnPerfil (View view){
 			Intent it4 = new Intent(PrincipalActivity.this, PerfilActivity.class);
+			it4.putExtra("usuario", info);
 			startActivity(it4);
 			
 			
@@ -48,6 +55,7 @@ public class PrincipalActivity extends InicialActivity{
 		
 		public void btnMeusCampeonatos (View view){
 			Intent it5 = new Intent(PrincipalActivity.this, MeusCampeonatosActivity.class);
+			it5.putExtra("bundle", info);
 			startActivity(it5);
 			
 			

@@ -15,7 +15,7 @@ import android.util.Log;
 
 public class ClientPostWSTask extends AsyncTask<Object, Object, String> {
 
-	private static final String URI = "http://192.168.43.166:8080/BolaoWebService/webresources";
+	private static final String URI = "http://franciscoanderson.com:8080/BolaoWebService/webresources/";
 	private static final String TAG = "ClientPosTWSTask.java";
 
 	private String obj;
@@ -61,6 +61,7 @@ public class ClientPostWSTask extends AsyncTask<Object, Object, String> {
 			HttpEntity resEntity = response.getEntity();
 
 			obj = EntityUtils.toString(resEntity);
+			Log.v("Conteudo String", obj);
 
 		} catch (Exception ex) {
 			Log.v(TAG, ex.toString());

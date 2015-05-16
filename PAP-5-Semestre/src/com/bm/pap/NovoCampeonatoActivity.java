@@ -1,21 +1,27 @@
 package com.bm.pap;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import com.bm.pap.entity.Campeonato;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 
-public class NovoCampeonatoActivity extends Activity {
+public class NovoCampeonatoActivity extends PrincipalActivity {
 	private Campeonato campeonato;
 
 	private Integer regra1;
@@ -27,18 +33,29 @@ public class NovoCampeonatoActivity extends Activity {
 	private Integer regra7;
 	private Integer regra8;
 	private String nome;
-	private Date datainicio;
-	private Date datafim;
-	private int qtdEquipe;
+	/// --- allan pacheco  alteracao para poupup
+	private Date datainicio;//<<
+	private Date datafim;//<<
 
-	@Override
+	private int qtdEquipe;
+	
+	DateFormat formete2 = DateFormat.getDateInstance();///<<
+	Calendar calendar2=Calendar.getInstance();//<<
+	TextView label2;//<<
+	Button btn2;//<<
+	
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_novo_campeonato);
 		
+		label2=(TextView)findViewById(R.id.datainicio);//<<
+		btn2=(Button)findViewById(R.id.btnInicio);//<<
 		
-		
-		
+		btn2.setOnClickListener(this);//<<
+		//updatedate2();
+	
+			
 	Intent intencao = getIntent();
 	
 		Bundle info = intencao.getExtras();
@@ -86,7 +103,41 @@ public class NovoCampeonatoActivity extends Activity {
 			regra8 = 2;
 		}
 		;
+	}/////
+	
+	public void updatedate2()//<<
+	{
+
+		label2.setText(formete2.format(calendar2.getTime()));//<<
 	}
+	
+	public void setDate2(){//<<
+		new DatePickerDialog(NovoCampeonatoActivity.this, d2,calendar.get(Calendar.YEAR),calendar2.get(Calendar.MONTH),calendar2.get(Calendar.DAY_OF_MONTH)).show();//<<
+	}
+	DatePickerDialog.OnDateSetListener d2=new DatePickerDialog.OnDateSetListener() {//<<
+		
+		@Override
+		public void onDateSet(DatePicker view, int year, int monthOfYear,//<<
+				int dayOfMonth) {//<<
+			// TODO Auto-generated method stub
+			
+		calendar2.set(Calendar.YEAR,year);//<<
+		calendar2.set(Calendar.MONTH,monthOfYear);//<<
+		calendar2.set(Calendar.DAY_OF_MONTH,dayOfMonth);//<<
+		updatedate2();//<<
+		//<<
+		}//<<
+	};//<<
+
+	
+	
+	
+
+	
+	
+			
+		
+	
 
 	public void btnAjustarRegras(View view) {
 		Intent intent_ajustar_regras = new Intent(this, RegrasActivity.class);
@@ -106,19 +157,12 @@ public class NovoCampeonatoActivity extends Activity {
 	
 	// testar data allan 14-05
 	
-			public void btnData (View view){
-				Intent itent_data = new Intent(NovoCampeonatoActivity.this, Calendario.class);
-				startActivity(itent_data);
-				
-				
-				
-			}
-
+			
 	public void btnCriarPartidas(View view) {
 
 		EditText nome = (EditText) findViewById(R.id.campoNomeCampeonato);
-		EditText dataInicio = (EditText) findViewById(R.id.campoDataInicio);
-		EditText dataFinal = (EditText) findViewById(R.id.campoDataFim);
+		EditText dataInicio = (EditText) findViewById(R.id.datainicio);
+		EditText dataFinal = (EditText) findViewById(R.id.datafim);
 
 		if (nome.getText().toString().trim().length() > 0) {
 			if (nome.getText().toString().length() <= 30) {
@@ -175,5 +219,12 @@ public class NovoCampeonatoActivity extends Activity {
 	public void btnDezesseisEquipes(View view) {
 		qtdEquipe = 16;
 
+	}
+	
+	@Override
+	public void onClick(View v2) {//<<
+		// TODO Auto-generated method stub
+		setDate2();//<<
+		
 	}
 }

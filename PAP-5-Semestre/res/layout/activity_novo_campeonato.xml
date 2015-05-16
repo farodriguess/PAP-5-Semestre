@@ -77,48 +77,55 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_weight="1.83" >
+            android:layout_weight="1.83"
+            android:gravity="left" >
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/btnInicio"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/shap_button"
-                android:onClick="btnData"
-                android:text="Data inicio:" />
+                android:text="Data início"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
-            <EditText
-                android:id="@+id/campoDataInicio"
+            <TextView
+                android:id="@+id/datainicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-               
-                android:inputType="date" />
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.69"
+                android:text=" DATA DE INICIO"
+                android:textSize="25sp" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:gravity="left" >
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnFim"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.47"
-                android:layout_marginTop="3dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.54"
                 android:background="@drawable/shap_button"
-                android:onClick="btnData"
-                android:text="Data fim:" />
+                android:text="Data fim"
+           
+                android:textStyle="bold"
+                android:typeface="serif" />
 
-            <EditText
-                android:id="@+id/campoDataFim"
+            <TextView
+                android:id="@+id/datafim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="date" />
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.43"
+                android:text=" DATA DE FIM"
+                android:textSize="25sp" />
 
         </LinearLayout>
 

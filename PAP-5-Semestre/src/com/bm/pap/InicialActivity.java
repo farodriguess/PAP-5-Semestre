@@ -32,13 +32,16 @@ public class InicialActivity extends Activity {
 
 		EditText email = (EditText) findViewById(R.id.email);
 		EditText senha = (EditText) findViewById(R.id.senha);
+	
+			Intent it2 = new Intent(InicialActivity.this, PrincipalActivity.class);
+			startActivity(it2);
 		
-		Usuario usuario = new Usuario();
-		usuario.setEmail(email.getText().toString());
-		usuario.setSenha(senha.getText().toString());
+		//Usuario usuario = new Usuario();
+	   //usuario.setEmail(email.getText().toString());
+	//	usuario.setSenha(senha.getText().toString());
 		
-		UsuarioWS ws = new UsuarioWS(usuario, this);
-		ws.realizarLogin();
+	//	UsuarioWS ws = new UsuarioWS(usuario, this);
+		//ws.realizarLogin();
 	}
 
 	public void btnCadastro(View view) {

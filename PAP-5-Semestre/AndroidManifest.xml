@@ -104,9 +104,7 @@
             android:label="@string/title_activity_tela_editar_campeonato" >
         </activity>
         <activity
-            android:name=".NovoCampeonatoActivity"
-            android:label="@string/title_activity_activity_novo_campeonato" >
-        </activity>
+            android:name=".NovoCampeonatoActivity"> </activity>
         <activity
             android:name=".RegrasActivity"
             android:label="@string/title_activity_regras" >

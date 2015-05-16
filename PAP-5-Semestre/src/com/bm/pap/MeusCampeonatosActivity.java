@@ -19,7 +19,7 @@ public class MeusCampeonatosActivity extends PrincipalActivity{
 		setContentView(R.layout.activity_meus_campeonatos);
 
 		
-		setContentView(R.layout.activity_meus_campeonatos);
+	
 		//fazer lógica para carregar lista de campeonato e colocar na list
 				//List<Campeonato>e= new ArrayList<Equipe>();
 				
@@ -36,15 +36,17 @@ public class MeusCampeonatosActivity extends PrincipalActivity{
 						android.R.layout.simple_list_item_1, campeonatos);
 				lista.setAdapter(adapter);
 }
-	public void botaoNovo(View view){
-		Intent intent = new Intent(this, NovoCampeonatoActivity.class);
-		startActivity(intent);
-		
-	}
+	
 	
 	public void botaoEditar(View view){
 		Intent intent = new Intent(this, EditarCampeonatoActivity.class);
 		startActivity(intent);
 	}
 
+	public void btnNovoCamp(View view){
+		Intent intentnovo = new Intent(MeusCampeonatosActivity.this,NovoCampeonatoActivity.class);
+		startActivity(intentnovo);
+		
+	}
+	
 }

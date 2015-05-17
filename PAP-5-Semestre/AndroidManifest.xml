@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="13"
         android:targetSdkVersion="21" />
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -16,101 +16,74 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                
-                
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InicialActivity" >
+        <activity android:name=".activity.InicialActivity" >
         </activity>
-        
-       
-            
-        <activity android:name=".PrincipalActivity" >
+        <activity android:name=".activity.PrincipalActivity" >
         </activity>
-        <activity android:name=".CadastroActivity" >
+        <activity android:name=".activity.CadastroActivity" >
         </activity>
-        
-      <activity android:name=".Calendario"></activity>
-        
-        
-        <activity android:name=".SelecionarTimeCriarPartidas" >
+        <activity android:name="com.bm.pap.activity.Calendario" >
         </activity>
-        
-        
-        <activity android:name=".PerfilActivity" >
+        <activity android:name=".activity.SelecionarTimeCriarPartidas" >
         </activity>
-        <activity android:name=".MeusCampeonatosActivity" >
+        <activity android:name=".activity.PerfilActivity" >
         </activity>
-        
-         <activity android:name=".ApostaGrupo_A" >
+        <activity android:name=".activity.MeusCampeonatosActivity" >
         </activity>
-        
-             <activity android:name=".ApostaGrupo_B" >
+        <activity android:name=".activity.ApostaGrupo_A" >
         </activity>
-        
-             <activity android:name=".ApostaGrupo_C" >
+        <activity android:name=".activity.ApostaGrupo_B" >
         </activity>
-        
-             <activity android:name=".ApostaGrupo_D" >
+        <activity android:name=".activity.ApostaGrupo_C" >
         </activity>
-        
-              <activity android:name=".ApostaFinal" >
+        <activity android:name=".activity.ApostaGrupo_D" >
         </activity>
-        
-               <activity android:name=".ApostaTerceiroLugar" >
+        <activity android:name=".activity.ApostaFinal" >
         </activity>
-        
-                <activity android:name=".ApostaSemifinal" >
-                    
+        <activity android:name=".activity.ApostaTerceiroLugar" >
         </activity>
-        
-        
-        <activity android:name=".ApostaQuartasDeFinais" >
+        <activity android:name=".activity.ApostaSemifinal" >
         </activity>
-                <activity android:name=".ApostaOitavaDeFinais" >
+        <activity android:name=".activity.ApostaQuartasDeFinais" >
         </activity>
-         
-          <activity android:name=".CriarPartidaGrupoA" >
+        <activity android:name=".activity.ApostaOitavaDeFinais" >
         </activity>
-       
-          <activity android:name=".CriarPartidaGrupoB" >
+        <activity android:name=".activity.CriarPartidaGrupoA" >
         </activity>
-         
-          <activity android:name=".CriarPartidaGrupoC" >
+        <activity android:name=".activity.CriarPartidaGrupoB" >
         </activity>
-        
-          <activity android:name=".CriarPartidaGrupoD" >
+        <activity android:name=".activity.CriarPartidaGrupoC" >
         </activity>
-          
-         
-          
-          <activity android:name=".ResultadoOitavas" >
+        <activity android:name=".activity.CriarPartidaGrupoD" >
         </activity>
-        
-           <activity android:name=".RecuperarSenha" >
+        <activity android:name=".activity.ResultadoOitavas" >
         </activity>
-          
-            <activity android:name=".ParticiparDeCampeonatos" >
+        <activity android:name=".activity.RecuperarSenha" >
         </activity>
-          
+        <activity android:name=".activity.ParticiparDeCampeonatos" >
+        </activity>
         <activity
-            android:name=".EditarCampeonatoActivity"
+            android:name=".activity.EditarCampeonatoActivity"
             android:label="@string/title_activity_tela_editar_campeonato" >
         </activity>
         <activity
-            android:name=".NovoCampeonatoActivity"> </activity>
+            android:name=".activity.NovoCampeonatoActivity"
+            android:label="@string/title_activity_activity_novo_campeonato" >
+        </activity>
         <activity
-            android:name=".RegrasActivity"
+            android:name=".activity.RegrasActivity"
             android:label="@string/title_activity_regras" >
         </activity>
         <activity
-            android:name=".MeusTimesActivity"
+            android:name=".activity.MeusTimesActivity"
             android:label="@string/title_activity_meus_times" >
         </activity>
     </application>

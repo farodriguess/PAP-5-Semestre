@@ -1,6 +1,11 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
 import java.util.Calendar;
+
+import com.bm.pap.R;
+import com.bm.pap.R.id;
+import com.bm.pap.R.layout;
+
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -104,5 +109,4 @@ public class Calendario extends Activity {
 		}
 	};
  
-	
 }

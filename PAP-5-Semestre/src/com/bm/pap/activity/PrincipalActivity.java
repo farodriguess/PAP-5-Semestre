@@ -1,75 +1,34 @@
-package com.bm.pap;
+package com.bm.pap.activity;
 
 import com.bm.pap.R;
+import com.bm.pap.entity.Usuario;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.TextView;
 
-import java.text.DateFormat;
-import java.text.Format;
-import java.util.Calendar;
-
-
-
-public class PrincipalActivity extends InicialActivity implements View.OnClickListener{//<<
-
-	DateFormat formete = DateFormat.getDateInstance();//<<
-	Calendar calendar=Calendar.getInstance();//<<
-	TextView label;//<<
-	Button btn;//<<
+public class PrincipalActivity extends InicialActivity{
+	
+	private Bundle info;
 	
 
 		protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_principal);
-
-			label=(TextView)findViewById(R.id.textView2);//<<
-			btn=(Button)findViewById(R.id.button19);
-			
-			btn.setOnClickListener(this);
-			
-			updatedate();
-		}
-		
-		public void updatedate()//<<<<<
-		{
-			
-			
-			label.setText(formete.format(calendar.getTime()));//<<
-		}
-		
-		public void setDate(){//<<
-			new DatePickerDialog(PrincipalActivity.this, d,calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH)).show();//<<
-		}
-		DatePickerDialog.OnDateSetListener d=new DatePickerDialog.OnDateSetListener() {//<<
-			
-			@Override
-			public void onDateSet(DatePicker view, int year, int monthOfYear,//<<
-					int dayOfMonth) {
-				// TODO Auto-generated method stub//<<
+			Intent intencao = getIntent();
+			info = intencao.getExtras();
 				
-			calendar.set(Calendar.YEAR,year);//<<
-			calendar.set(Calendar.MONTH,monthOfYear);//<<
-			calendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);//<<
-			updatedate();//<<
-			//<<//<<
-			}//<<
-		};//<<
 			
-			
+		}
 		
-		// testar data allan 14-05 acho q nao estou usando esse onclick
+		// testar data allan 14-05
 		
 		public void btnData (View view){
 			Intent itent_data = new Intent(PrincipalActivity.this, Calendario.class);
+			itent_data.putExtra("usuario", info);
 			startActivity(itent_data);
 			
-			//<<
+			
 			
 		}
 		
@@ -78,6 +37,7 @@ public class PrincipalActivity extends InicialActivity implements View.OnClickLi
 		
 		public void btnPartiparDeCampeonatos (View view){
 			Intent itent_participar_de_camp = new Intent(PrincipalActivity.this, ParticiparDeCampeonatos.class);
+			itent_participar_de_camp.putExtra("usuario", info);
 			startActivity(itent_participar_de_camp);
 			
 			
@@ -86,6 +46,7 @@ public class PrincipalActivity extends InicialActivity implements View.OnClickLi
 		
 		public void btnPerfil (View view){
 			Intent it4 = new Intent(PrincipalActivity.this, PerfilActivity.class);
+			it4.putExtra("usuario", info);
 			startActivity(it4);
 			
 			
@@ -94,6 +55,7 @@ public class PrincipalActivity extends InicialActivity implements View.OnClickLi
 		
 		public void btnMeusCampeonatos (View view){
 			Intent it5 = new Intent(PrincipalActivity.this, MeusCampeonatosActivity.class);
+			it5.putExtra("bundle", info);
 			startActivity(it5);
 			
 			
@@ -201,11 +163,4 @@ public class PrincipalActivity extends InicialActivity implements View.OnClickLi
 			Intent intent = new Intent(this,MeusTimesActivity.class);
 			startActivity(intent);
 		}
-
-				@Override  //<<
-				public void onClick(View v) {//<<
-					// TODO Auto-generated method stub//<<
-					setDate();//<<//<<
-					
-				}
 }

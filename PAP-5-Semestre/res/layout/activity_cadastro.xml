@@ -75,7 +75,6 @@
             android:background="#DCDCDC"
             android:inputType="textPassword"
             android:textSize="25sp" />
-
     </LinearLayout>
 
     <Button
@@ -86,9 +85,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:background="@drawable/shap_button"
-        android:typeface="serif"
-                android:textStyle="bold"
-        android:text="CADASTRAR" />
+        android:onClick="btnCadastrar"
+        android:text="CADASTRAR"
+        android:textStyle="bold"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView5"
@@ -100,9 +100,9 @@
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:text="TELA DE CADASTRO"
-    	android:typeface="serif"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:typeface="serif" />
 
     <ImageView
         android:id="@+id/imageView1"
@@ -112,6 +112,5 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/button1"
         android:src="@drawable/iniciopartida" />
-
 
 </RelativeLayout>

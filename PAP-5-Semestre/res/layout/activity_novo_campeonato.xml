@@ -24,7 +24,6 @@
         android:layout_below="@+id/textView1"
         android:layout_marginLeft="131dp"
         android:orientation="vertical" >
-
     </LinearLayout>
 
     <LinearLayout
@@ -86,10 +85,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:background="@drawable/shap_button"
+                android:onClick="setDataInicio"
                 android:text="Data início"
                 android:textStyle="bold"
-                android:typeface="serif"
-                android:onClick="setDataInicio" />
+                android:typeface="serif" />
 
             <TextView
                 android:id="@+id/datainicio"
@@ -99,7 +98,6 @@
                 android:layout_weight="1.69"
                 android:text=" DATA DE INICIO"
                 android:textSize="25sp" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -112,13 +110,13 @@
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_marginTop="3dp"
                 android:layout_weight="0.54"
                 android:background="@drawable/shap_button"
+                android:onClick="setDataFim"
                 android:text="Data fim"
-           android:layout_marginTop="3dp"
                 android:textStyle="bold"
-                android:typeface="serif" 
-                android:onClick="setDataFim"/>
+                android:typeface="serif" />
 
             <TextView
                 android:id="@+id/datafim"
@@ -128,7 +126,6 @@
                 android:layout_weight="1.43"
                 android:text=" DATA DE FIM"
                 android:textSize="25sp" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -141,8 +138,8 @@
                 android:id="@+id/button3"
                 android:layout_width="195dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.86"
                 android:layout_marginTop="10dp"
+                android:layout_weight="0.86"
                 android:background="@drawable/shap_button"
                 android:text="Ajustar regras"
                 android:textStyle="bold"
@@ -158,7 +155,6 @@
                 android:textStyle="bold"
                 android:typeface="serif" />
         </LinearLayout>
-
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,18 +1,17 @@
-package com.bm.pap;
+package com.bm.pap.activity;
+
+import com.bm.pap.R;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class ApostaGrupo_C  extends PrincipalActivity{
-	
-	
-	
+public class ApostaGrupo_A extends PrincipalActivity {
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.activity_aposta_grupo_c);
+		setContentView(R.layout.activity_aposta_grupo_a);
 		
 		
 		
@@ -43,6 +42,4 @@ public class ApostaGrupo_C  extends PrincipalActivity{
 
 
 }
-
 }
-

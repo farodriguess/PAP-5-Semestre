@@ -1,275 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:layout_gravity="center_horizontal"
+    
+    android:gravity="center_horizontal" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/textView1"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:gravity="center_horizontal"
-            android:text="BEM VINDO"
-            android:typeface="serif"
-        android:textStyle="bold"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-        
-          <TextView
-              android:id="@+id/textView2"
-              android:layout_width="144dp"
-              android:layout_height="wrap_content"
-              android:layout_alignParentLeft="true"
-              android:layout_alignParentRight="true"
-              android:gravity="center_horizontal"
-              android:text="Date" />
-
-        <ScrollView
-            android:id="@+id/scrollView1"
-              android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true">
-
-            <LinearLayout
-               android:layout_width="288dp"
-            android:layout_height="534dp"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Date" />
 
-                                      <ImageView
-                        android:id="@+id/imageView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/football" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearLayout1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical" >
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="286dp"
-                        android:layout_height="wrap_content"
-                        android:onClick="btnMeusCampeonatos"
-                        android:layout_marginTop="3dp"
-                        android:background="@drawable/shap_button"
-                        android:typeface="serif"
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="BEM VINDO"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textStyle="bold"
-                        android:text="MEUS CAMPEONATOS" />
+                android:typeface="serif" />
+        </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:background="@drawable/shap_button"
-                        android:onClick="btnPartiparDeCampeonatos"
-                        android:text="PARTICIPAR DE CAMPEONATOS"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:typeface="serif" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.69"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="294dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="141.15"
+                android:src="@drawable/soccer_ball" />
+        </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shap_button"
-                        android:typeface="serif"
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shap_button"
+                android:onClick="btnMeusCampeonatos"
+                android:text="MEUS CAMPEONATOS"
                 android:textStyle="bold"
-                        android:layout_marginTop="3dp"
-                        android:onClick="botaoMeusTimes"
-                        android:text="MEUS TIMES" />
+                android:typeface="serif" />
 
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shap_button"
-                        android:typeface="serif"
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shap_button"
+                android:onClick="btnPartiparDeCampeonatos"
+                android:text="PARTICIPAR DE CAMPEONATOS"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                        android:layout_marginTop="3dp"
-                        android:onClick="btnPerfil"
-                        android:text="ALTERAR PERFIL" />
+                android:typeface="serif" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shap_button"
+                android:onClick="botaoMeusTimes"
+                android:text="MEUS TIMES"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
-                        <Button
-                            android:id="@+id/button5"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="btnApostaFinal"
-                            android:text="Final" />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shap_button"
+                android:onClick="btnPerfil"
+                android:text="ALTERAR PERFIL"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
-                        <Button
-                            android:id="@+id/button14"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="btnApostaTerceiroLugar"
-                            android:text="3°" />
+            <Button
+                android:id="@+id/button19"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:text="Set Date"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
 
-                        <Button
-                            android:id="@+id/button15"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="btnApostaSemifinal"
-                            android:text="Semi" />
-
-                        <Button
-                            android:id="@+id/button17"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="btnApostaQuartas"
-                            android:text="Quartas" />
-
-                        <Button
-                            android:id="@+id/button16"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="btnApostaOitavas"
-                            android:text="Oita" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-
-                        <Button
-                            android:id="@+id/button13"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnTelaAposta_G_A"
-                            android:text="Aposta G A" />
-
-                        <Button
-                            android:id="@+id/button10"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnTelaAposta_G_B"
-                            android:text="Aposta G B" />
-
-                        <Button
-                            android:id="@+id/button11"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnTelaAposta_G_C"
-                            android:text="Aposta G C" />
-
-                        <Button
-                            android:id="@+id/button12"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnTelaAposta_G_D"
-                            android:text="Aposta G D" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="281dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal" >
-
-                        <Button
-                            android:id="@+id/button6"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnCriarPartidaGrupoA"
-                            android:text="Criar G_A" />
-
-                        <Button
-                            android:id="@+id/button7"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnCriarPartidaGrupoB"
-                            android:text="Criar G_B" />
-
-                        <Button
-                            android:id="@+id/button8"
-                           style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnCriarPartidaGrupoC"
-                            android:text="Criar G_C" />
-
-                        <Button
-                            android:id="@+id/button9"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="btnCriarPartidaGrupoD"
-                            android:text="Criar G_D" />
-                    </LinearLayout>
-
-                    <Button
-                        android:id="@+id/button19"
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                       
-                        android:text="Set Date" />
-
-                    <Button
-                        android:id="@+id/button18"
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Teste result 8°"
-                        android:onClick="btnResult8" />
-
-                </LinearLayout>
-                
-                   
-            </LinearLayout>
-
-        </ScrollView>
-
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>

@@ -19,8 +19,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
 public class NovoCampeonatoActivity extends PrincipalActivity {
 	private Campeonato campeonato;
 
@@ -33,48 +31,51 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 	private Integer regra7;
 	private Integer regra8;
 	private String nome;
-	/// --- allan pacheco  alteracao para poupup
-	private Date datainicio;//<<
-	private Date datafim;//<<
+	// / --- allan pacheco alteracao para poupup
+	private Date datainicio;// <<
+	private Date datafim;// <<
 
 	private int qtdEquipe;
-	
-	DateFormat formete2 = DateFormat.getDateInstance();///<<
-	Calendar calendar2=Calendar.getInstance();//<<
-	TextView label2;//<<
-	Button btn2;//<<
-	
-	
+
+	DateFormat formete2;
+	Calendar calendarDataInicio;
+	Calendar calendarDatafim;
+	TextView campoDataInicio;// <<
+	TextView campoDataFim;
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_novo_campeonato);
-		
-		label2=(TextView)findViewById(R.id.datainicio);//<<
-		btn2=(Button)findViewById(R.id.btnInicio);//<<
-		
-		btn2.setOnClickListener(this);//<<
-		//updatedate2();
-	
-			
-	Intent intencao = getIntent();
-	
+
+		campoDataInicio = (TextView) findViewById(R.id.datainicio);// <<
+		campoDataFim = (TextView) findViewById(R.id.datafim);
+
+		formete2 = DateFormat.getDateInstance();// /<<
+		calendarDataInicio = Calendar.getInstance();// <<
+		calendarDatafim = Calendar.getInstance();
+		// botaoDataInicio.setOnClickListener(this);//<<
+		// updatedate2();
+
+		Intent intencao = getIntent();
+
 		Bundle info = intencao.getExtras();
-		
-	if(info!=null){
-		regra1 = info.getInt("regra1");
-		regra2 = info.getInt("regra2");
-		regra3 = info.getInt("regra3");
-		regra4 = info.getInt("regra4");
-		regra5 = info.getInt("regra5");
-		regra6 = info.getInt("regra6");
-		regra7 = info.getInt("regra7");
-		regra8 = info.getInt("regra8");	
-	};
-		
-		
+
+		if (info != null) {
+			regra1 = info.getInt("regra1");
+			regra2 = info.getInt("regra2");
+			regra3 = info.getInt("regra3");
+			regra4 = info.getInt("regra4");
+			regra5 = info.getInt("regra5");
+			regra6 = info.getInt("regra6");
+			regra7 = info.getInt("regra7");
+			regra8 = info.getInt("regra8");
+		}
+		;
+
 		if (regra1 == null) {
 			regra1 = 10;
-		}		;
+		}
+		;
 		if (regra2 == null) {
 			regra2 = 5;
 		}
@@ -103,41 +104,53 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 			regra8 = 2;
 		}
 		;
-	}/////
-	
-	public void updatedate2()//<<
-	{
+	}// ///
 
-		label2.setText(formete2.format(calendar2.getTime()));//<<
+	public void setDataInicio(View view) {// <<
+		new DatePickerDialog(NovoCampeonatoActivity.this, dataInicioListener,
+				calendarDataInicio.get(Calendar.YEAR),
+				calendarDataInicio.get(Calendar.MONTH),
+				calendarDataInicio.get(Calendar.DAY_OF_MONTH)).show();// <<
 	}
-	
-	public void setDate2(){//<<
-		new DatePickerDialog(NovoCampeonatoActivity.this, d2,calendar.get(Calendar.YEAR),calendar2.get(Calendar.MONTH),calendar2.get(Calendar.DAY_OF_MONTH)).show();//<<
-	}
-	DatePickerDialog.OnDateSetListener d2=new DatePickerDialog.OnDateSetListener() {//<<
-		
+
+	private DatePickerDialog.OnDateSetListener dataInicioListener = new DatePickerDialog.OnDateSetListener() {// <<
+
 		@Override
-		public void onDateSet(DatePicker view, int year, int monthOfYear,//<<
-				int dayOfMonth) {//<<
+		public void onDateSet(DatePicker view, int year, int monthOfYear,// <<
+				int dayOfMonth) {// <<
 			// TODO Auto-generated method stub
-			
-		calendar2.set(Calendar.YEAR,year);//<<
-		calendar2.set(Calendar.MONTH,monthOfYear);//<<
-		calendar2.set(Calendar.DAY_OF_MONTH,dayOfMonth);//<<
-		updatedate2();//<<
-		//<<
-		}//<<
-	};//<<
 
-	
-	
-	
+			calendarDataInicio.set(Calendar.YEAR, year);// <<
+			calendarDataInicio.set(Calendar.MONTH, monthOfYear);// <<
+			calendarDataInicio.set(Calendar.DAY_OF_MONTH, dayOfMonth);// <<
+			campoDataInicio.setText(formete2.format(calendarDataInicio
+					.getTime()));
 
-	
-	
-			
-		
-	
+			// <<
+		}// <<
+	};// <<
+
+	public void setDataFim(View view) {
+		new DatePickerDialog(NovoCampeonatoActivity.this, dataFimListener,
+				calendarDatafim.get(Calendar.YEAR),
+				calendarDataInicio.get(Calendar.MONTH),
+				calendarDatafim.get(Calendar.DAY_OF_MONTH)).show();// <<
+	}
+
+	private DatePickerDialog.OnDateSetListener dataFimListener = new DatePickerDialog.OnDateSetListener() {// <<
+
+		@Override
+		public void onDateSet(DatePicker view, int year, int monthOfYear,// <<
+				int dayOfMonth) {// <<
+			// TODO Auto-generated method stub
+
+			calendarDatafim.set(Calendar.YEAR, year);// <<
+			calendarDatafim.set(Calendar.MONTH, monthOfYear);// <<
+			calendarDatafim.set(Calendar.DAY_OF_MONTH, dayOfMonth);// <<
+			campoDataFim.setText(formete2.format(calendarDatafim.getTime()));
+			// <<
+		}// <<
+	};// <<
 
 	public void btnAjustarRegras(View view) {
 		Intent intent_ajustar_regras = new Intent(this, RegrasActivity.class);
@@ -154,10 +167,9 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 		startActivity(intent_ajustar_regras);
 
 	}
-	
+
 	// testar data allan 14-05
-	
-			
+
 	public void btnCriarPartidas(View view) {
 
 		EditText nome = (EditText) findViewById(R.id.campoNomeCampeonato);
@@ -220,11 +232,5 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 		qtdEquipe = 16;
 
 	}
-	
-	@Override
-	public void onClick(View v2) {//<<
-		// TODO Auto-generated method stub
-		setDate2();//<<
-		
-	}
+
 }

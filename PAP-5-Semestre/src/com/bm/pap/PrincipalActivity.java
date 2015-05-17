@@ -29,8 +29,10 @@ public class PrincipalActivity extends InicialActivity implements View.OnClickLi
 			setContentView(R.layout.activity_principal);
 
 			label=(TextView)findViewById(R.id.textView2);//<<
-			btn=(Button)findViewById(R.id.button19);//<<
-			btn.setOnClickListener(this);//<<
+			btn=(Button)findViewById(R.id.button19);
+			
+			btn.setOnClickListener(this);
+			
 			updatedate();
 		}
 		

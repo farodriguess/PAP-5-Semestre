@@ -88,7 +88,8 @@
                 android:background="@drawable/shap_button"
                 android:text="Data início"
                 android:textStyle="bold"
-                android:typeface="serif" />
+                android:typeface="serif"
+                android:onClick="setDataInicio" />
 
             <TextView
                 android:id="@+id/datainicio"
@@ -114,9 +115,10 @@
                 android:layout_weight="0.54"
                 android:background="@drawable/shap_button"
                 android:text="Data fim"
-           
+           android:layout_marginTop="3dp"
                 android:textStyle="bold"
-                android:typeface="serif" />
+                android:typeface="serif" 
+                android:onClick="setDataFim"/>
 
             <TextView
                 android:id="@+id/datafim"

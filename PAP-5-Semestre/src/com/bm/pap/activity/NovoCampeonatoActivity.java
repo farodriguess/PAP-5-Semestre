@@ -55,7 +55,7 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 		calendarDatafim = Calendar.getInstance();
 		// botaoDataInicio.setOnClickListener(this);//<<
 		// updatedate2();
-
+/*
 		Intent intencao = getIntent();
 
 		Bundle info = intencao.getExtras();
@@ -102,8 +102,8 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 		;
 		if (regra8 == null) {
 			regra8 = 2;
-		}
-		;
+		}*/
+		
 	}// ///
 
 	public void setDataInicio(View view) {// <<

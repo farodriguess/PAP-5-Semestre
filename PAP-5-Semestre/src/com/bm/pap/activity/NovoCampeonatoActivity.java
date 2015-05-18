@@ -10,6 +10,8 @@ import com.bm.pap.R;
 import com.bm.pap.entity.Campeonato;
 
 
+
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +21,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NovoCampeonatoActivity extends PrincipalActivity {
+public class NovoCampeonatoActivity extends Activity {
 	private Campeonato campeonato;
 
 	private Integer regra1;

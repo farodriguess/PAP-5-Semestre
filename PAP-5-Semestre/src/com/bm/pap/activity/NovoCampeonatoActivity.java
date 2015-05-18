@@ -1,12 +1,8 @@
 package com.bm.pap.activity;
 
 import java.text.DateFormat;
-import java.text.ParseException;
-
 import java.util.Calendar;
-
-
-import android.app.AlertDialog;
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,11 +13,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bm.pap.R;
 import com.bm.pap.entity.Campeonato;
 
-public class NovoCampeonatoActivity extends PrincipalActivity {
+
+public class NovoCampeonatoActivity extends Activity {
+
 	private Campeonato campeonato;
 	private EditText nome;
 	private RadioGroup rg;
@@ -93,12 +90,6 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 		}
 		;
 
-		AlertDialog.Builder mensagem = new AlertDialog.Builder(
-				NovoCampeonatoActivity.this);
-		mensagem.setTitle("Info");
-		mensagem.setMessage(campoDataFim.getText());
-		mensagem.setNeutralButton("OK", null);
-		mensagem.show();
 	}
 
 	public void setDataInicio(View view) {// <<

@@ -93,13 +93,13 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/btnNovoCamp"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:onClick="botaoNovo"
                     android:typeface="serif"
-                android:textStyle="bold"
+                    android:textStyle="bold"
                     android:text="NOVO" />
 
                 <Button

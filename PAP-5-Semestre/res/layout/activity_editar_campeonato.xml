@@ -24,7 +24,7 @@
             android:typeface="serif" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/avancar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -34,7 +34,7 @@
             android:text="Editar informações do Campeonato" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/incluirTime"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
@@ -44,7 +44,7 @@
             android:text="Editar Partidas" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/removerTime"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"

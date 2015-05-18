@@ -143,7 +143,7 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/removerTime"
                 android:layout_width="195dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

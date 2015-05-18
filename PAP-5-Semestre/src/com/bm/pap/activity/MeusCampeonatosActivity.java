@@ -50,6 +50,9 @@ public class MeusCampeonatosActivity extends Activity implements
 
 	public void botaoNovo(View view) {
 		Intent intent = new Intent(this, NovoCampeonatoActivity.class);
+	
+		intent.putExtra("usuario", usuario);
+	
 		startActivity(intent);
 
 	}

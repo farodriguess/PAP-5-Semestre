@@ -2,6 +2,7 @@ package com.bm.pap.activity;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -13,8 +14,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.bm.pap.R;
 import com.bm.pap.entity.Campeonato;
+import com.bm.pap.entity.Usuario;
 
 
 public class NovoCampeonatoActivity extends Activity {
@@ -39,6 +42,8 @@ public class NovoCampeonatoActivity extends Activity {
 
 		campoDataInicio = (TextView) findViewById(R.id.datainicio);// <<
 		campoDataFim = (TextView) findViewById(R.id.datafim);
+		calendarDataInicio = Calendar.getInstance();// <<
+		calendarDatafim = Calendar.getInstance();
 
 		formete2 = DateFormat.getDateInstance();// /<<
 
@@ -51,7 +56,9 @@ public class NovoCampeonatoActivity extends Activity {
 
 		Intent intencao = getIntent();
 		Bundle info = intencao.getExtras();
-		if (info != null) {
+		
+		
+		if ( info.getSerializable("campeonato") != null) {
 			campeonato = (Campeonato) info.getSerializable("campeonato");
 			nome.setText(campeonato.getNome());
 			RadioButton radioOito = (RadioButton) findViewById(R.id.radioButton1);
@@ -72,9 +79,8 @@ public class NovoCampeonatoActivity extends Activity {
 				;
 			}
 		} else {
-			calendarDataInicio = Calendar.getInstance();// <<
-			calendarDatafim = Calendar.getInstance();
 			campeonato = new Campeonato();
+			campeonato.setUsuario((Usuario) info.getSerializable("usuario"));
 			campeonato.setRegra1(10);
 			campeonato.setRegra2(5);
 			campeonato.setRegra3(10);
@@ -82,7 +88,7 @@ public class NovoCampeonatoActivity extends Activity {
 			campeonato.setRegra5(20);
 			campeonato.setRegra6(10);
 			campeonato.setRegra7(5);
-			campeonato.setRegra8(10);
+			campeonato.setRegra8(2);
 			campeonato.setStatus("Aguardando Iniciar");
 			campoDataInicio.setText(formete2.format(calendarDataInicio
 					.getTime()));

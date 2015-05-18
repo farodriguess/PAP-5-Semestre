@@ -98,7 +98,7 @@
                 android:textStyle="bold" />
 
             <ListView
-                android:id="@+id/list"
+                android:id="@+id/listEquipe"
                 android:layout_width="240dp"
                 android:layout_height="326dp"
                 android:divider="#FFECECEC"

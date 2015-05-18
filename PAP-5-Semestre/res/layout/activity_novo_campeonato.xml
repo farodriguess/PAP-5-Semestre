@@ -61,20 +61,28 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="Selecione a quantidade de times:"
+            android:text="Selecione a quantidade de equipes:"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8 Times" />
+        <!-- Adicionado RadioGroup (Jeferson) -->
+        <RadioGroup
+            android:id="@+id/qtdEquipes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="16 Times" />
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="8 Equipes" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16 Equipes" />
+        </RadioGroup>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,12 +147,13 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/removerTime"
                 android:layout_width="195dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="0.86"
                 android:background="@drawable/shap_button"
+                android:onClick="btnAjustarRegras"
                 android:text="Ajustar regras"
                 android:textStyle="bold"
                 android:typeface="serif" />
@@ -155,6 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:background="@drawable/shap_button"
+                android:onClick="btnCriarPartidas"
                 android:text="Criar partida"
                 android:textStyle="bold"
                 android:typeface="serif" />

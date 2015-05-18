@@ -34,9 +34,8 @@ public class MeusCampeonatosActivity extends Activity implements
 		setContentView(R.layout.activity_meus_campeonatos);
 
 		Intent intencao = getIntent();
-		Bundle bundle = intencao.getExtras();
-		Bundle b = bundle.getBundle("bundle");
-		usuario = (Usuario) b.getSerializable("usuario");
+		Bundle bundle = intencao.getExtras();		
+		usuario = (Usuario) bundle.getSerializable("usuario");
 		
 		if(usuario!=null){
 
@@ -51,6 +50,9 @@ public class MeusCampeonatosActivity extends Activity implements
 
 	public void botaoNovo(View view) {
 		Intent intent = new Intent(this, NovoCampeonatoActivity.class);
+	
+		intent.putExtra("usuario", usuario);
+	
 		startActivity(intent);
 
 	}

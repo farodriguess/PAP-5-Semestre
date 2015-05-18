@@ -39,7 +39,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/campoEmail"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_button"
@@ -60,7 +60,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/campoNome"
             android:layout_width="314dp"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_button"
@@ -78,7 +78,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/campoSenha"
             android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_button"
@@ -96,7 +96,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/campoSenha2"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:background="@drawable/selector_button"
@@ -113,16 +113,17 @@
             android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/avancar"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"
                 android:typeface="serif"
                 android:textStyle="bold"
-                android:text="EDITAR" />
+                android:text="EDITAR"
+                android:onClick="salvar" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/incluirTime"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"

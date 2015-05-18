@@ -142,7 +142,7 @@
                     android:orientation="vertical" >
 
                     <Button
-                        android:id="@+id/button1"
+                        android:id="@+id/avancar"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
@@ -293,7 +293,7 @@
                     android:orientation="vertical" >
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/incluirTime"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
@@ -448,7 +448,7 @@
                     android:orientation="vertical" >
 
                     <Button
-                        android:id="@+id/button3"
+                        android:id="@+id/removerTime"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"

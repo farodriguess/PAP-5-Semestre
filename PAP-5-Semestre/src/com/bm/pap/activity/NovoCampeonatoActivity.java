@@ -2,46 +2,39 @@ package com.bm.pap.activity;
 
 import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+
 import java.util.Calendar;
-import java.util.Date;
-
-import com.bm.pap.R;
-import com.bm.pap.entity.Campeonato;
 
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bm.pap.R;
+import com.bm.pap.entity.Campeonato;
+
 public class NovoCampeonatoActivity extends PrincipalActivity {
 	private Campeonato campeonato;
+	private EditText nome;
+	private RadioGroup rg;
 
-	private Integer regra1;
-	private Integer regra2;
-	private Integer regra3;
-	private Integer regra4;
-	private Integer regra5;
-	private Integer regra6;
-	private Integer regra7;
-	private Integer regra8;
-	private String nome;
 	// / --- allan pacheco alteracao para poupup
-	private Date datainicio;// <<
-	private Date datafim;// <<
+	// private Date datainicio;// <<
+	// private Date datafim;// <<
 
-	private int qtdEquipe;
-
-	DateFormat formete2;
-	Calendar calendarDataInicio;
-	Calendar calendarDatafim;
-	TextView campoDataInicio;// <<
-	TextView campoDataFim;
+	private DateFormat formete2;
+	private Calendar calendarDataInicio;
+	private Calendar calendarDatafim;
+	private TextView campoDataInicio;// <<
+	private TextView campoDataFim;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -51,60 +44,62 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 		campoDataFim = (TextView) findViewById(R.id.datafim);
 
 		formete2 = DateFormat.getDateInstance();// /<<
-		calendarDataInicio = Calendar.getInstance();// <<
-		calendarDatafim = Calendar.getInstance();
+
 		// botaoDataInicio.setOnClickListener(this);//<<
 		// updatedate2();
-/*
+
+		nome = (EditText) findViewById(R.id.campoNomeCampeonato);
+
+		// iniciar campeonato e setar regras
+
 		Intent intencao = getIntent();
-
 		Bundle info = intencao.getExtras();
-
 		if (info != null) {
-			regra1 = info.getInt("regra1");
-			regra2 = info.getInt("regra2");
-			regra3 = info.getInt("regra3");
-			regra4 = info.getInt("regra4");
-			regra5 = info.getInt("regra5");
-			regra6 = info.getInt("regra6");
-			regra7 = info.getInt("regra7");
-			regra8 = info.getInt("regra8");
+			campeonato = (Campeonato) info.getSerializable("campeonato");
+			nome.setText(campeonato.getNome());
+			RadioButton radioOito = (RadioButton) findViewById(R.id.radioButton1);
+			RadioButton radioDezesseis = (RadioButton) findViewById(R.id.radioButton2);
+			calendarDataInicio.setTime(campeonato.getDataInicio());
+			calendarDatafim.setTime(campeonato.getDataFinal());
+			campoDataInicio.setText(formete2.format(calendarDataInicio
+					.getTime()));
+			campoDataFim.setText(formete2.format(calendarDatafim.getTime()));
+			if (campeonato.getQtdEquipe() == 8) {
+				radioOito.setChecked(true);
+				radioDezesseis.setChecked(false);
+			} else {
+				if (campeonato.getQtdEquipe() == 16) {
+					radioDezesseis.setChecked(true);
+					radioOito.setChecked(false);
+				}
+				;
+			}
+		} else {
+			calendarDataInicio = Calendar.getInstance();// <<
+			calendarDatafim = Calendar.getInstance();
+			campeonato = new Campeonato();
+			campeonato.setRegra1(10);
+			campeonato.setRegra2(5);
+			campeonato.setRegra3(10);
+			campeonato.setRegra4(5);
+			campeonato.setRegra5(20);
+			campeonato.setRegra6(10);
+			campeonato.setRegra7(5);
+			campeonato.setRegra8(10);
+			campeonato.setStatus("Aguardando Iniciar");
+			campoDataInicio.setText(formete2.format(calendarDataInicio
+					.getTime()));
+			campoDataFim.setText(formete2.format(calendarDatafim.getTime()));
 		}
 		;
 
-		if (regra1 == null) {
-			regra1 = 10;
-		}
-		;
-		if (regra2 == null) {
-			regra2 = 5;
-		}
-		;
-		if (regra3 == null) {
-			regra3 = 10;
-		}
-		;
-		if (regra4 == null) {
-			regra4 = 5;
-		}
-		;
-		if (regra5 == null) {
-			regra5 = 20;
-		}
-		;
-		if (regra6 == null) {
-			regra6 = 10;
-		}
-		;
-		if (regra7 == null) {
-			regra7 = 5;
-		}
-		;
-		if (regra8 == null) {
-			regra8 = 2;
-		}*/
-		
-	}// ///
+		AlertDialog.Builder mensagem = new AlertDialog.Builder(
+				NovoCampeonatoActivity.this);
+		mensagem.setTitle("Info");
+		mensagem.setMessage(campoDataFim.getText());
+		mensagem.setNeutralButton("OK", null);
+		mensagem.show();
+	}
 
 	public void setDataInicio(View view) {// <<
 		new DatePickerDialog(NovoCampeonatoActivity.this, dataInicioListener,
@@ -125,7 +120,6 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 			calendarDataInicio.set(Calendar.DAY_OF_MONTH, dayOfMonth);// <<
 			campoDataInicio.setText(formete2.format(calendarDataInicio
 					.getTime()));
-
 			// <<
 		}// <<
 	};// <<
@@ -143,7 +137,6 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 		public void onDateSet(DatePicker view, int year, int monthOfYear,// <<
 				int dayOfMonth) {// <<
 			// TODO Auto-generated method stub
-
 			calendarDatafim.set(Calendar.YEAR, year);// <<
 			calendarDatafim.set(Calendar.MONTH, monthOfYear);// <<
 			calendarDatafim.set(Calendar.DAY_OF_MONTH, dayOfMonth);// <<
@@ -153,64 +146,68 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 	};// <<
 
 	public void btnAjustarRegras(View view) {
+		rg = (RadioGroup) findViewById(R.id.qtdEquipes);
+		int op = rg.getCheckedRadioButtonId();
+		if (op == R.id.radioButton1) {
+			campeonato.setQtdEquipe(8);
+		} else {
+			if (op == R.id.radioButton2) {
+				campeonato.setQtdEquipe(16);
+			}
+		}
+		;
+		campeonato.setDataInicio(calendarDataInicio.getTime());
+		campeonato.setDataFinal(calendarDatafim.getTime());
+		campeonato.setNome(nome.getText().toString());
 		Intent intent_ajustar_regras = new Intent(this, RegrasActivity.class);
-		Bundle info = new Bundle();
-		info.putInt("regra1", regra1);
-		info.putInt("regra2", regra2);
-		info.putInt("regra3", regra3);
-		info.putInt("regra4", regra4);
-		info.putInt("regra5", regra5);
-		info.putInt("regra6", regra6);
-		info.putInt("regra7", regra7);
-		info.putInt("regra8", regra8);
-		intent_ajustar_regras.putExtras(info);
+		intent_ajustar_regras.putExtra("campeonato", campeonato);
 		startActivity(intent_ajustar_regras);
-
 	}
 
 	// testar data allan 14-05
 
+	// Alterado as lógicas do botão Criar Partidas (Jeferson)
 	public void btnCriarPartidas(View view) {
-
-		EditText nome = (EditText) findViewById(R.id.campoNomeCampeonato);
-		EditText dataInicio = (EditText) findViewById(R.id.datainicio);
-		EditText dataFinal = (EditText) findViewById(R.id.datafim);
 
 		if (nome.getText().toString().trim().length() > 0) {
 			if (nome.getText().toString().length() <= 30) {
-				if (qtdEquipe == 8 || qtdEquipe == 16) {
-					campeonato.setNome(nome.getText().toString());
-					try {
-						campeonato.setDataInicio(new SimpleDateFormat(
-								"dd/MM/yyyy").parse(dataInicio.getText()
-								.toString()));
+				campeonato.setNome(nome.getText().toString());
+				campeonato.setDataInicio(calendarDataInicio.getTime());
+				campeonato.setDataFinal(calendarDatafim.getTime());
+				rg = (RadioGroup) findViewById(R.id.qtdEquipes);
+				int op = rg.getCheckedRadioButtonId();
 
-						campeonato.setDataFinal(new SimpleDateFormat(
-								"dd/MM/yyyy").parse(dataFinal.getText()
-								.toString()));
-					} catch (ParseException e) {
-						e.printStackTrace();
-					}
-
-					campeonato.setQtdEquipe(qtdEquipe);
-					campeonato.setStatus("Aguardando Iniciar");
-
-					campeonato.setRegra1(regra1);
-					campeonato.setRegra2(regra2);
-					campeonato.setRegra3(regra3);
-					campeonato.setRegra4(regra4);
-					campeonato.setRegra5(regra5);
-					campeonato.setRegra6(regra6);
-					campeonato.setRegra7(regra7);
-					campeonato.setRegra8(regra8);
-
-					Intent intent = new Intent(this, RegrasActivity.class);
-					startActivity(intent);
-
+				if (op == R.id.radioButton1) {
+					campeonato.setQtdEquipe(8);
 				} else {
-					Toast.makeText(this, "Escolha quantidade de equipes!",
-							Toast.LENGTH_SHORT).show();
-				}
+					if (op == R.id.radioButton2) {
+						campeonato.setQtdEquipe(16);
+					}
+				};
+				
+				
+					if(calendarDataInicio.equals(Calendar.getInstance()) || calendarDataInicio.after(Calendar.getInstance())){
+						if(calendarDatafim.equals(calendarDataInicio) || calendarDatafim.after(calendarDataInicio)){
+							Intent intent = new Intent(this,
+									SelecionarTimeCriarPartidas.class);
+							intent.putExtra("campeonato", campeonato);
+							startActivity(intent);
+						}else{
+							Toast.makeText(this, "Data final inferior a data inicial!", Toast.LENGTH_LONG).show();
+							calendarDatafim=calendarDataInicio;
+							campoDataFim.setText(formete2.format(calendarDatafim.getTime()));
+							}
+						
+					}else{
+					Toast.makeText(this, "Data inicial inferior a data atual!", Toast.LENGTH_LONG).show();
+					calendarDataInicio=Calendar.getInstance();
+					campoDataInicio.setText(formete2.format(calendarDataInicio.getTime()));
+					}
+					
+				
+
+			
+
 			} else {
 				Toast.makeText(this,
 						"A equipe deve ter no máximo 30 caracteres!",
@@ -221,16 +218,6 @@ public class NovoCampeonatoActivity extends PrincipalActivity {
 			Toast.makeText(this, "Campo nome em branco!", Toast.LENGTH_SHORT)
 					.show();
 		}
-	}
-
-	public void btnOitoEquipes(View view) {
-		qtdEquipe = 8;
-
-	}
-
-	public void btnDezesseisEquipes(View view) {
-		qtdEquipe = 16;
-
 	}
 
 }

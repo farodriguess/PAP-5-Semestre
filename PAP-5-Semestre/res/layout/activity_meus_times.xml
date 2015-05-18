@@ -26,7 +26,7 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:layout_width="254dp"
+                    android:layout_width="274dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" >
 
@@ -62,8 +62,12 @@
                             android:layout_width="130dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:background="@drawable/selector_button"
                             android:ems="10"
-                            android:inputType="textPersonName" />
+                            android:gravity="center_horizontal"
+                            android:hint="Nome"
+                            android:inputType="textPersonName"
+                            android:textSize="25sp" />
 
                         <Button
                             android:id="@+id/botaoCadastrarTime"
@@ -74,6 +78,7 @@
                             android:background="@drawable/shap_button"
                             android:typeface="serif"
                 android:textStyle="bold"
+                android:layout_marginLeft="10dp"
                             android:text="Cadastrar"
                             android:textSize="20sp" />
                     </LinearLayout>

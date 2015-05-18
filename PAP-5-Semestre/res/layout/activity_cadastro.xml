@@ -17,21 +17,6 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DIGITE SEU NOME:"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <EditText
-            android:id="@+id/cadastroNome"
-            android:layout_width="310dp"
-            android:layout_height="wrap_content"
-            android:background="#DCDCDC"
-            android:inputType="textPersonName"
-            android:textSize="25sp" />
-
-        <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,8 +27,31 @@
             android:id="@+id/cadastroEmail"
             android:layout_width="307dp"
             android:layout_height="wrap_content"
-            android:background="#DCDCDC"
+            android:background="@drawable/selector_button"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Digite seu e-mail"
             android:inputType="textEmailAddress"
+            android:textSize="25sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIGITE SEU NOME:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/cadastroNome"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button"
+            android:gravity="center_horizontal"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName"
             android:textSize="25sp" />
 
         <TextView
@@ -57,7 +65,9 @@
             android:id="@+id/cadastroSenha"
             android:layout_width="178dp"
             android:layout_height="wrap_content"
-            android:background="#DCDCDC"
+            android:background="@drawable/selector_button"
+            android:gravity="center_horizontal"
+            android:hint="Senha"
             android:inputType="textPassword"
             android:textSize="25sp" />
 
@@ -72,9 +82,12 @@
             android:id="@+id/cadastroConfirmaSenha"
             android:layout_width="174dp"
             android:layout_height="wrap_content"
-            android:background="#DCDCDC"
+            android:background="@drawable/selector_button"
+            android:gravity="center_horizontal"
+            android:hint="Senha"
             android:inputType="textPassword"
             android:textSize="25sp" />
+
     </LinearLayout>
 
     <Button

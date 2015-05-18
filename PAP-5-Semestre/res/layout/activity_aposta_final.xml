@@ -129,13 +129,11 @@
                         android:text="DATA:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
-                        android:id="@+id/editText2"
+                    <TextView
+                        android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="date" />
+                        android:text="TextView" />
 
                 </LinearLayout>
 
@@ -150,16 +148,11 @@
                         android:text="LOCAL:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
-                        android:id="@+id/editText1"
+                    <TextView
+                        android:id="@+id/textView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName" >
-
-                        <requestFocus />
-                    </EditText>
+                        android:text="TextView" />
 
                 </LinearLayout>
 
@@ -167,16 +160,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal" >
-                    
+
                     <Button
-                    android:id="@+id/button1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/shap_button"
-                    android:typeface="serif"
-                android:textStyle="bold"
-                    android:text="CONCLUIR" />
+                        android:id="@+id/button1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                       
+                        android:background="@drawable/selector_button"
+                        android:text="CONCLUIR"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
                 </LinearLayout>
 
             </LinearLayout>

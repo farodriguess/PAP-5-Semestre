@@ -38,7 +38,11 @@
                 android:id="@+id/editText1"
                 android:layout_width="288dp"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" >
+                android:background="@drawable/selector_button"
+                android:gravity="center_horizontal"
+                android:hint="Digite seu e-mail"
+                android:inputType="textEmailAddress"
+                android:textSize="25sp" >
 
                 <requestFocus />
             </EditText>
@@ -48,12 +52,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:shadowColor="#87CEFA"
-                android:typeface="serif"
-                android:textStyle="bold"
                 android:background="@drawable/shap_button"
-                
-                android:text="Enviar senha" />
+                android:shadowColor="#87CEFA"
+                android:text="Enviar senha"
+                android:textStyle="bold"
+                android:typeface="serif" />
         </LinearLayout>
 
     </LinearLayout>

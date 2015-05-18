@@ -45,8 +45,12 @@
             android:id="@+id/campoNomeCampeonato"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/selector_button"
             android:ems="10"
-            android:inputType="textPersonName" >
+            android:gravity="center_horizontal"
+            android:hint="Nome do campeonato"
+            android:inputType="textPersonName"
+            android:textSize="25sp" >
 
             <requestFocus />
         </EditText>
@@ -83,7 +87,7 @@
                 android:id="@+id/btnInicio"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"
                 android:onClick="setDataInicio"
                 android:text="Data início"
@@ -109,7 +113,7 @@
                 android:id="@+id/btnFim"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:layout_weight="0.54"
                 android:background="@drawable/shap_button"

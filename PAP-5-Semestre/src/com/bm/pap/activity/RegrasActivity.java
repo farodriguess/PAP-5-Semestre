@@ -31,18 +31,7 @@ public class RegrasActivity extends Activity {
 		Intent intencao =getIntent();
 		Bundle info = intencao.getExtras();
 		campeonato=(Campeonato) info.getSerializable("campeonato");
-		
-		
-		AlertDialog.Builder mensagem = new
-				AlertDialog.Builder(RegrasActivity.this);
-				mensagem.setTitle("Info");
-				mensagem.setMessage("Nome campeonato: "+ campeonato.getNome() + "\n Quantidade Equipes: "+ campeonato.getQtdEquipe()+ "\n Data inicio: " + DateFormat.getDateInstance().format(campeonato.getDataInicio()));
-				mensagem.setNeutralButton("OK", null);
-				mensagem.show();
-		
-		
-		
-		
+				
 		spinner1 = (Spinner) findViewById(R.id.spinner1);
 	    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
 	    this, R.array.Pontos, android.R.layout.simple_spinner_item);

@@ -1,6 +1,9 @@
 package com.bm.pap.activity;
 
+import java.text.DateFormat;
+
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -17,6 +20,13 @@ public class SelecionarTimeCriarPartidas extends Activity {
 		
 		setContentView(R.layout.activity_selecionar_times);
 	
+		AlertDialog.Builder mensagem = new
+				AlertDialog.Builder(SelecionarTimeCriarPartidas.this);
+				mensagem.setTitle("Info");
+				mensagem.setMessage("Nome campeonato: "+ campeonato.getNome() + "\n Quantidade Equipes: "+ campeonato.getQtdEquipe()+ "\n Data inicio: " + DateFormat.getDateInstance().format(campeonato.getDataInicio()));
+				mensagem.setNeutralButton("OK", null);
+				mensagem.show();
+		
 		Intent intencao = getIntent();
 
 		Bundle info = intencao.getExtras();

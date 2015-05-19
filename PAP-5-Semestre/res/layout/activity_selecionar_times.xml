@@ -105,6 +105,7 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
+                    android:onClick="btnAvancar"
                     android:text="Avançar"
                     android:textStyle="bold"
                     android:typeface="serif" />

@@ -23,12 +23,7 @@ public class PrincipalActivity extends InicialActivity {
 
 	// testar data allan 14-05
 
-	public void btnData(View view) {
-		Intent itent_data = new Intent(PrincipalActivity.this, Calendario.class);
-		itent_data.putExtra("usuario", usuario);
-		startActivity(itent_data);
-
-	}
+	
 
 	public void btnPartiparDeCampeonatos(View view) {
 		Intent itent_participar_de_camp = new Intent(PrincipalActivity.this,

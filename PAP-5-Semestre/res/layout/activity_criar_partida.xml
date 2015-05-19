@@ -44,6 +44,7 @@
             android:layout_height="50dp"
             android:background="@drawable/shap_button"
             android:typeface="serif"
+            android:layout_marginLeft="3dp"
                 android:textStyle="bold"
             android:text="AVANÇAR" />
     </LinearLayout>

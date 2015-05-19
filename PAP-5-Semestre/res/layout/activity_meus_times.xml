@@ -5,136 +5,119 @@
     android:gravity="center_vertical|center_horizontal|center"
     android:orientation="vertical" >
 
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="MEUS TIMES"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Novo Time:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <EditText
+                    android:id="@+id/nomeTime"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Nome"
+                    android:inputType="textPersonName"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/botaoCadastrarTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shap_button"
+                    android:onClick="adicionarEquipe"
+                    android:text="Cadastrar"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Lista de Times"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listEquipe"
+            android:layout_width="280dp"
+            android:layout_height="230dp"
+            android:layout_weight="0.96"
+            android:divider="#FFECECEC"
+            android:dividerHeight="2sp" >
+        </ListView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/botaoEditar"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
-
-                <LinearLayout
-                    android:layout_width="274dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical" >
-
-                    <TextView
-                        android:id="@+id/textView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:gravity="center_horizontal"
-                        android:padding="10sp"
-                        android:text="MEUS TIMES"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:typeface="serif"
-       					android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="10sp"
-                        android:text="Novo Time:"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                         />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal" >
-
-                        <EditText
-                            android:id="@+id/nomeTime"
-                            android:layout_width="130dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/selector_button"
-                            android:ems="10"
-                            android:gravity="center_horizontal"
-                            android:hint="Nome"
-                            android:inputType="textPersonName"
-                            android:textSize="25sp" />
-
-                        <Button
-                            android:id="@+id/botaoCadastrarTime"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="adicionarEquipe"
-                            android:background="@drawable/shap_button"
-                            android:typeface="serif"
+                android:background="@drawable/shap_button"
+                android:text="Editar"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="10dp"
-                            android:text="Cadastrar"
-                            android:textSize="20sp" />
-                    </LinearLayout>
+                android:typeface="serif" />
+        </LinearLayout>
 
-                </LinearLayout>
-
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="Lista de Times"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#000000"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-            <ListView
-                android:id="@+id/listEquipe"
-                android:layout_width="240dp"
-                android:layout_height="326dp"
-                android:divider="#FFECECEC"
-                android:dividerHeight="2sp" >
-
-            </ListView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical" >
-
-                <Button
-                    android:id="@+id/botaoEditar"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shap_button"
-                    android:typeface="serif"
-                android:textStyle="bold"
-                    android:text="Editar"
-                    android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/botaoRemover"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shap_button"
-                    android:typeface="serif"
-                android:textStyle="bold"
-                    android:text="Remover"
-                    android:layout_marginTop="3dp"
-                    android:textSize="20sp" />
-            </LinearLayout>
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
 
         </LinearLayout>
-    </ScrollView>
+
+    </LinearLayout>
 
 </RelativeLayout>

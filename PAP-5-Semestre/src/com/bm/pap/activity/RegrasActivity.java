@@ -22,6 +22,7 @@ public class RegrasActivity extends Activity {
 	private Spinner spinner6;
 	private Spinner spinner7;
 	private Spinner spinner8;
+	 private ArrayAdapter<CharSequence> adapter;
 	
 	
 	@Override
@@ -45,86 +46,65 @@ public class RegrasActivity extends Activity {
 	    };
 	    
 	    spinner2 = (Spinner) findViewById(R.id.spinner2);
-	    ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(
-	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
-	    adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner2.setAdapter(adapter2);
+	  spinner2.setAdapter(adapter);
 	    //setar spinner com valor pré determinado
 	    if (!Integer.toString(campeonato.getRegra2()).equals(null)) {
-	        int spinnerPostion = adapter2.getPosition(Integer.toString(campeonato.getRegra2()));
+	        int spinnerPostion = adapter.getPosition(Integer.toString(campeonato.getRegra2()));
 	        spinner2.setSelection(spinnerPostion);
 	        spinnerPostion = 0;
 	    };
 	    spinner3 = (Spinner) findViewById(R.id.spinner3);
-	    ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(
-	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
-	    adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner3.setAdapter(adapter3);
+	    spinner3.setAdapter(adapter);
 	    //setar spinner com valor pré determinado
 	    if (!Integer.toString(campeonato.getRegra3()).equals(null)) {
-	        int spinnerPostion = adapter3.getPosition(Integer.toString(campeonato.getRegra3()));
+	        int spinnerPostion = adapter.getPosition(Integer.toString(campeonato.getRegra3()));
 	        spinner3.setSelection(spinnerPostion);
 	        spinnerPostion = 0;
 	    };
 	    
 	  
 		spinner4 = (Spinner) findViewById(R.id.spinner4);
-	    ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(
-	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
-	    adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner4.setAdapter(adapter4);
+	    spinner4.setAdapter(adapter);
 	    //setar spinner com valor pré determinado
 	    if (!Integer.toString(campeonato.getRegra4()).equals(null)) {
-	        int spinnerPostion = adapter4.getPosition(Integer.toString(campeonato.getRegra4()));
+	        int spinnerPostion = adapter.getPosition(Integer.toString(campeonato.getRegra4()));
 	        spinner4.setSelection(spinnerPostion);
 	        spinnerPostion = 0;
 	    };
 	    
 	    spinner5 = (Spinner) findViewById(R.id.spinner5);
-	    ArrayAdapter<CharSequence> adapter5 = ArrayAdapter.createFromResource(
-	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
-	    adapter5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner5.setAdapter(adapter5);
+	    spinner5.setAdapter(adapter);
 	    //setar spinner com valor pré determinado
 	    if (!Integer.toString(campeonato.getRegra5()).equals(null)) {
-	        int spinnerPostion = adapter5.getPosition(Integer.toString(campeonato.getRegra5()));
+	        int spinnerPostion = adapter.getPosition(Integer.toString(campeonato.getRegra5()));
 	        spinner5.setSelection(spinnerPostion);
 	        spinnerPostion = 0;
 	    };
 	    
 	    spinner6 = (Spinner) findViewById(R.id.spinner6);
-	    ArrayAdapter<CharSequence> adapter6 = ArrayAdapter.createFromResource(
-	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
-	    adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner6.setAdapter(adapter6);
+	    spinner6.setAdapter(adapter);
 	    //setar spinner com valor pré determinado
 	    if (!Integer.toString(campeonato.getRegra6()).equals(null)) {
-	        int spinnerPostion = adapter6.getPosition(Integer.toString(campeonato.getRegra6()));
+	        int spinnerPostion = adapter.getPosition(Integer.toString(campeonato.getRegra6()));
 	        spinner6.setSelection(spinnerPostion);
 	        spinnerPostion = 0;
 	    };
 	    
 	    
 	    spinner7 = (Spinner) findViewById(R.id.spinner7);
-	    ArrayAdapter<CharSequence> adapter7 = ArrayAdapter.createFromResource(
-	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
-	    adapter7.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner7.setAdapter(adapter7);
+	    spinner7.setAdapter(adapter);
 	    //setar spinner com valor pré determinado
 	    if (!Integer.toString(campeonato.getRegra7()).equals(null)) {
-	        int spinnerPostion = adapter7.getPosition(Integer.toString(campeonato.getRegra7()));
+	        int spinnerPostion = adapter.getPosition(Integer.toString(campeonato.getRegra7()));
 	        spinner7.setSelection(spinnerPostion);
 	        spinnerPostion = 0;
 	    };
 	    
 	    spinner8 = (Spinner) findViewById(R.id.spinner8);
-	    ArrayAdapter<CharSequence> adapter8 = ArrayAdapter.createFromResource(
-	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
-	    adapter8.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner8.setAdapter(adapter8);
+	    spinner8.setAdapter(adapter);
 	    //setar spinner com valor pré determinado
 	    if (!Integer.toString(campeonato.getRegra8()).equals(null)) {
-	        int spinnerPostion = adapter8.getPosition(Integer.toString(campeonato.getRegra8()));
+	        int spinnerPostion = adapter.getPosition(Integer.toString(campeonato.getRegra8()));
 	        spinner8.setSelection(spinnerPostion);
 	        spinnerPostion = 0;
 	    };    	    

@@ -34,7 +34,7 @@ public class RegrasActivity extends Activity {
 		campeonato=(Campeonato) info.getSerializable("campeonato");
 						
 		spinner1 = (Spinner) findViewById(R.id.spinner1);
-	    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	    adapter = ArrayAdapter.createFromResource(
 	    this, R.array.Pontos, android.R.layout.simple_spinner_item);
 	    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 	    spinner1.setAdapter(adapter);

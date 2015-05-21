@@ -569,4 +569,108 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 					.getTime()));			
 		}
 	};
+	
+	//botão da data2
+	public void setData2(View view) {
+		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener2,
+				data2.get(Calendar.YEAR),
+				data2.get(Calendar.MONTH),
+				data2.get(Calendar.DAY_OF_MONTH)).show();
+	}
+	private DatePickerDialog.OnDateSetListener dataListener2 = new DatePickerDialog.OnDateSetListener() {
+		@Override
+		public void onDateSet(DatePicker view, int year, int monthOfYear,
+				int dayOfMonth) {
+			// TODO Auto-generated method stub
+
+			data2.set(Calendar.YEAR, year);
+			data2.set(Calendar.MONTH, monthOfYear);
+			data2.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+			labelData2.setText(formatData.format(data2
+					.getTime()));			
+		}
+	};
+	
+	//botão da data3
+	public void setData3(View view) {
+		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener3,
+				data3.get(Calendar.YEAR),
+				data3.get(Calendar.MONTH),
+				data3.get(Calendar.DAY_OF_MONTH)).show();
+	}
+	private DatePickerDialog.OnDateSetListener dataListener3 = new DatePickerDialog.OnDateSetListener() {
+		@Override
+		public void onDateSet(DatePicker view, int year, int monthOfYear,
+				int dayOfMonth) {
+			// TODO Auto-generated method stub
+
+			data3.set(Calendar.YEAR, year);
+			data3.set(Calendar.MONTH, monthOfYear);
+			data3.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+			labelData3.setText(formatData.format(data3
+					.getTime()));			
+		}
+	};
+	
+	//botão da data4
+	public void setData4(View view) {
+		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener4,
+				data4.get(Calendar.YEAR),
+				data4.get(Calendar.MONTH),
+				data4.get(Calendar.DAY_OF_MONTH)).show();
+	}
+	private DatePickerDialog.OnDateSetListener dataListener4 = new DatePickerDialog.OnDateSetListener() {
+		@Override
+		public void onDateSet(DatePicker view, int year, int monthOfYear,
+				int dayOfMonth) {
+			// TODO Auto-generated method stub
+
+			data4.set(Calendar.YEAR, year);
+			data4.set(Calendar.MONTH, monthOfYear);
+			data4.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+			labelData4.setText(formatData.format(data4
+					.getTime()));			
+		}
+	};
+	
+	//botão da data5
+		public void setData5(View view) {
+			new DatePickerDialog(CriarPartidaGrupoA.this, dataListener5,
+					data5.get(Calendar.YEAR),
+					data5.get(Calendar.MONTH),
+					data5.get(Calendar.DAY_OF_MONTH)).show();
+		}
+		private DatePickerDialog.OnDateSetListener dataListener5 = new DatePickerDialog.OnDateSetListener() {
+			@Override
+			public void onDateSet(DatePicker view, int year, int monthOfYear,
+					int dayOfMonth) {
+				// TODO Auto-generated method stub
+
+				data5.set(Calendar.YEAR, year);
+				data5.set(Calendar.MONTH, monthOfYear);
+				data5.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+				labelData5.setText(formatData.format(data5
+						.getTime()));			
+			}
+		};
+		//botão da data6
+		public void setData6(View view) {
+			new DatePickerDialog(CriarPartidaGrupoA.this, dataListener6,
+					data6.get(Calendar.YEAR),
+					data6.get(Calendar.MONTH),
+					data6.get(Calendar.DAY_OF_MONTH)).show();
+		}
+		private DatePickerDialog.OnDateSetListener dataListener6 = new DatePickerDialog.OnDateSetListener() {
+			@Override
+			public void onDateSet(DatePicker view, int year, int monthOfYear,
+					int dayOfMonth) {
+				// TODO Auto-generated method stub
+
+				data6.set(Calendar.YEAR, year);
+				data6.set(Calendar.MONTH, monthOfYear);
+				data6.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+				labelData6.setText(formatData.format(data6
+						.getTime()));			
+			}
+		};
 }

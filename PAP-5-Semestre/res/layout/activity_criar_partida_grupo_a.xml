@@ -90,14 +90,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setData1"
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView20d"
+                        android:id="@+id/dataPartida1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:layout_marginLeft="10dp" />
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView" />
 
                 </LinearLayout>
 
@@ -114,14 +115,15 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText2"
+                        android:id="@+id/localPartida1"
                         android:layout_width="198dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:ems="10"
                         android:background="@drawable/selector_button"
-                        android:textSize="25sp"
-                        android:inputType="textPersonName" />
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="25sp" />
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -184,11 +186,11 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        
+                         android:onClick="setData2"
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/dataPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -207,15 +209,14 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText3"
+                        android:id="@+id/localPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName" 
                         android:background="@drawable/selector_button"
-                        android:textSize="25sp"
-                        >
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="25sp" >
 
                         <requestFocus />
                     </EditText>
@@ -284,14 +285,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:background="@drawable/shap_button"
+                         android:onClick="setData3"
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView22d"
+                        android:id="@+id/dataPartida3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:layout_marginLeft="10dp" />
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView" />
 
                 </LinearLayout>
 
@@ -307,14 +309,14 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText5"
+                        android:id="@+id/localPartida3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:ems="10"
                         android:background="@drawable/selector_button"
-                        android:textSize="25sp"
-                        android:inputType="textPersonName" />
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="25sp" />
 
                 </LinearLayout>
 
@@ -355,8 +357,8 @@
                         android:gravity="center_horizontal" />
 
                     <TextView
-                        android:id="@+id/textView5"
-                      android:layout_width="30dp"
+                        android:id="@+id/txt4"
+                       android:layout_width="30dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:text="VS"
@@ -379,16 +381,17 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
+                         android:onClick="setData4"
                         android:background="@drawable/shap_button"
                        
                         />
 
                     <TextView
-                        android:id="@+id/textView24"
+                        android:id="@+id/dataPartida4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:layout_marginLeft="10dp" />
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView" />
 
                 </LinearLayout>
 
@@ -404,7 +407,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText8"
+                        android:id="@+id/localPartida4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -452,7 +455,7 @@
                         android:gravity="center_horizontal" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/txt5"
                         android:layout_width="30dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -475,17 +478,17 @@
                         android:id="@+id/button5"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                       
+                        android:onClick="setData5"
                         android:text="Data" 
                         android:layout_height="35dp"
                         android:background="@drawable/shap_button"/>
 
                     <TextView
-                        android:id="@+id/textView25"
+                        android:id="@+id/dataPartida5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:layout_marginLeft="10dp" />
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView" />
 
                 </LinearLayout>
 
@@ -501,7 +504,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText9"
+                        android:id="@+id/localPartida5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -549,7 +552,7 @@
                         android:gravity="center_horizontal" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/txt6"
                         android:layout_width="30dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -572,17 +575,17 @@
                         android:id="@+id/button6"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        
+                         android:onClick="setData6"
                         android:text="Data"
                         android:layout_height="35dp"
                         android:background="@drawable/shap_button" />
 
                     <TextView
-                        android:id="@+id/textView26"
+                        android:id="@+id/dataPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:layout_marginLeft="10dp" />
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView" />
 
                 </LinearLayout>
 
@@ -598,7 +601,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText12"
+                        android:id="@+id/localPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -626,7 +629,7 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        
+                        android:onClick="btnAvancar"
                         android:background="@drawable/shap_button"
                         android:typeface="serif"
                 android:textStyle="bold"

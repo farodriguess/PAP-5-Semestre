@@ -44,7 +44,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/localPartida4"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:gravity="right"
@@ -75,7 +75,7 @@
                     android:gravity="center_horizontal" >
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/localPartida5"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="   Time" />
@@ -95,7 +95,7 @@
                         android:text="gol" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/localPartida6"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:gravity="right"
@@ -230,21 +230,21 @@
                         android:text="   Time" />
 
                     <TextView
-                        android:id="@+id/textView20d"
+                        android:id="@+id/dataPartida1"
                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:text="gol" />
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/dataPartida2"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:text="gol" />
 
                     <TextView
-                        android:id="@+id/textView22d"
+                        android:id="@+id/dataPartida3"
                          android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="   Time" />
@@ -256,20 +256,20 @@
                     android:layout_height="wrap_content" >
 
                     <TextView
-                        android:id="@+id/textView24"
+                        android:id="@+id/dataPartida4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Penaltis"
                         android:textAppearance="?android:attr/textAppearanceLarge" />
 
                     <TextView
-                        android:id="@+id/textView25"
+                        android:id="@+id/dataPartida5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
 
                     <TextView
-                        android:id="@+id/textView26"
+                        android:id="@+id/dataPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="X"

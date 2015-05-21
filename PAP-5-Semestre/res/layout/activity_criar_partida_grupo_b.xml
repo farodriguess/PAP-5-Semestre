@@ -91,7 +91,7 @@
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView20d"
+                        android:id="@+id/dataPartida1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView"
@@ -111,7 +111,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText2"
+                        android:id="@+id/localPartida1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -157,7 +157,7 @@
                         android:gravity="center_horizontal" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/localPartida4"
                        android:layout_width="30dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -184,7 +184,7 @@
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/dataPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView"
@@ -204,7 +204,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText3"
+                        android:id="@+id/localPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -276,7 +276,7 @@
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView22d"
+                        android:id="@+id/dataPartida3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView"
@@ -296,7 +296,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText5"
+                        android:id="@+id/localPartida3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -369,7 +369,7 @@
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView24"
+                        android:id="@+id/dataPartida4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView"
@@ -462,7 +462,7 @@
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView25"
+                        android:id="@+id/dataPartida5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView"
@@ -555,7 +555,7 @@
                         android:text="Data" />
 
                     <TextView
-                        android:id="@+id/textView26"
+                        android:id="@+id/dataPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView"

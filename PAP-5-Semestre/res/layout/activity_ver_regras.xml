@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content" >
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/localPartida4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pontos: "
@@ -104,7 +104,7 @@
                     android:layout_marginTop="10dp" >
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/localPartida5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Acertar o time classificado da próxima fase  (Por time classificado):"
@@ -151,14 +151,14 @@
                     android:layout_height="wrap_content" >
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/localPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pontos: "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <TextView
-                        android:id="@+id/textView20d"
+                        android:id="@+id/dataPartida1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -192,7 +192,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <TextView
-                        android:id="@+id/textView22"
+                        android:id="@+id/dataPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -225,7 +225,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <TextView
-                        android:id="@+id/textView22d"
+                        android:id="@+id/dataPartida3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -258,7 +258,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <TextView
-                        android:id="@+id/textView24"
+                        android:id="@+id/dataPartida4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -291,7 +291,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <TextView
-                        android:id="@+id/textView25"
+                        android:id="@+id/dataPartida5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TextView" />

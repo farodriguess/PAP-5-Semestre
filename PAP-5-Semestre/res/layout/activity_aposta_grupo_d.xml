@@ -323,13 +323,13 @@
                     android:gravity="center_horizontal" >
 
                     <TextView
-                        android:id="@+id/textView20"
+                        android:id="@+id/textView20rsr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TIME 1" />
 
                     <TextView
-                        android:id="@+id/textView21"
+                        android:id="@+id/textView20d"
                      android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -354,7 +354,7 @@
                          android:layout_width="60dp"
                         android:layout_height="40dp" />
                     <TextView
-                        android:id="@+id/textView23"
+                        android:id="@+id/textView22d"
                       android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="GOLS:"

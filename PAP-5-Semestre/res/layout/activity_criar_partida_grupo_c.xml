@@ -33,7 +33,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:layout_marginTop="10dp" >
+                
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#DCDCDC" >
+
+                    <TextView
+                        android:id="@+id/textView13c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13° Partida"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -61,23 +78,24 @@
                 </LinearLayout>
 
                 <LinearLayout
-                     android:layout_width="match_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal" >
+                    android:gravity="left" >
+
+                    <Button
+                        android:id="@+id/button6"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/textView20d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DATA:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:text="TextView"
+                        android:layout_marginLeft="10dp" />
 
-                    <EditText
-                        android:id="@+id/editText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="date" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -89,7 +107,7 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LOCAL:"
+                        android:text="LOCAL "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
@@ -97,6 +115,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
+                        android:background="@drawable/selector_button"
+                        android:textSize="25sp"
                         android:inputType="textPersonName" />
                 </LinearLayout>
             </LinearLayout>
@@ -104,7 +124,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical" 
+                android:layout_marginTop="10dp">
+                
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#DCDCDC" >
+
+                    <TextView
+                        android:id="@+id/textView14c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14° Partida"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -135,22 +172,21 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal" >
+                    android:gravity="left" >
+
+                    <Button
+                        android:id="@+id/button5"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/textView22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DATA:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <EditText
-                        android:id="@+id/editText4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.62"
-                        android:ems="10"
-                        android:inputType="date" />
+                        android:text="TextView" 
+                        android:layout_marginLeft="10dp"/>
 
                 </LinearLayout>
 
@@ -162,7 +198,7 @@
                         android:id="@+id/textView7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LOCAL:"
+                        android:text="LOCAL "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
@@ -171,6 +207,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
+                        android:background="@drawable/selector_button"
+                        android:textSize="25sp"
                         android:inputType="textPersonName" >
 
                         <requestFocus />
@@ -183,7 +221,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:layout_marginTop="10dp" >
+                
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#DCDCDC" >
+
+                    <TextView
+                        android:id="@+id/textView15c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15° Partida"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -214,20 +269,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/textView9"
+                    <Button
+                        android:id="@+id/button4"
+                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DATA:xt"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:text="Button" />
 
-                    <EditText
-                        android:id="@+id/editText6"
+                    <TextView
+                        android:id="@+id/textView22d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="date" />
+                        android:text="TextView" 
+                        android:layout_marginLeft="10dp"/>
 
                 </LinearLayout>
 
@@ -239,7 +293,7 @@
                         android:id="@+id/textView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LOCAL:"
+                        android:text="LOCAL "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
@@ -248,6 +302,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
+                        android:background="@drawable/selector_button"
+                        android:textSize="25sp"
                         android:inputType="textPersonName" />
 
                 </LinearLayout>
@@ -257,7 +313,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical" 
+                android:layout_marginTop="10dp">
+                
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#DCDCDC" >
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16° Partida"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -288,20 +361,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/textView12"
+                    <Button
+                        android:id="@+id/button3"
+                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DATA:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:text="Button" />
 
-                    <EditText
-                        android:id="@+id/editText7"
+                    <TextView
+                        android:id="@+id/textView24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="date" />
+                        android:text="TextView"
+                        android:layout_marginLeft="10dp" />
 
                 </LinearLayout>
 
@@ -313,7 +385,7 @@
                         android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LOCAL:"
+                        android:text="LOCAL "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
@@ -322,6 +394,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
+                        android:background="@drawable/selector_button"
+                        android:textSize="25sp"
                         android:inputType="textPersonName" />
 
                 </LinearLayout>
@@ -331,7 +405,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical" 
+                android:layout_marginTop="10dp">
+                
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#DCDCDC" >
+
+                    <TextView
+                        android:id="@+id/textView17c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17° Partida"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -361,20 +452,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/textView15"
+                    <Button
+                        android:id="@+id/button2"
+                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DATA:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:text="Button" />
 
-                    <EditText
-                        android:id="@+id/editText10"
+                    <TextView
+                        android:id="@+id/textView25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="date" />
+                        android:text="TextView" 
+                        android:layout_marginLeft="10dp"/>
 
                 </LinearLayout>
 
@@ -383,10 +473,10 @@
                     android:layout_height="wrap_content" >
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/textView16c"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LOCAL:"
+                        android:text="LOCAL "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
@@ -395,6 +485,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
+                        android:background="@drawable/selector_button"
+                        android:textSize="25sp"
                         android:inputType="textPersonName" />
 
                 </LinearLayout>
@@ -404,7 +496,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:layout_marginTop="10dp" >
+                
+                  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="#DCDCDC" >
+
+                    <TextView
+                        android:id="@+id/textView18c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18° Partida"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -436,20 +545,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
-                    <TextView
-                        android:id="@+id/textView18"
+                    <Button
+                        android:id="@+id/button1"
+                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DATA:"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                        android:text="Button" />
 
-                    <EditText
-                        android:id="@+id/editText11"
+                    <TextView
+                        android:id="@+id/textView26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="date" />
+                        android:text="TextView"
+                        android:layout_marginLeft="10dp" />
 
                 </LinearLayout>
 
@@ -461,7 +569,7 @@
                         android:id="@+id/textView19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LOCAL:"
+                        android:text="LOCAL "
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
@@ -470,6 +578,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
+                        android:background="@drawable/selector_button"
+                        android:textSize="25sp"
                         android:inputType="textPersonName" />
 
                 </LinearLayout>
@@ -508,7 +618,7 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/textView20rsr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall" />

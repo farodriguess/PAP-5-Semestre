@@ -3,11 +3,12 @@ package com.bm.pap.activity;
 import com.bm.pap.R;
 import com.bm.pap.entity.Usuario;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class PrincipalActivity extends InicialActivity {
+public class PrincipalActivity extends Activity {
 
 	private Bundle info;
 	private Usuario usuario;

@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -18,7 +19,6 @@ import android.widget.Toast;
 import com.bm.pap.R;
 import com.bm.pap.entity.Campeonato;
 import com.bm.pap.entity.Usuario;
-
 
 public class NovoCampeonatoActivity extends Activity {
 
@@ -56,9 +56,8 @@ public class NovoCampeonatoActivity extends Activity {
 
 		Intent intencao = getIntent();
 		Bundle info = intencao.getExtras();
-		
-		
-		if ( info.getSerializable("campeonato") != null) {
+
+		if (info.getSerializable("campeonato") != null) {
 			campeonato = (Campeonato) info.getSerializable("campeonato");
 			nome.setText(campeonato.getNome());
 			RadioButton radioOito = (RadioButton) findViewById(R.id.radioButton1);
@@ -79,6 +78,7 @@ public class NovoCampeonatoActivity extends Activity {
 				;
 			}
 		} else {
+
 			campeonato = new Campeonato();
 			campeonato.setUsuario((Usuario) info.getSerializable("usuario"));
 			campeonato.setRegra1(10);
@@ -158,7 +158,7 @@ public class NovoCampeonatoActivity extends Activity {
 		campeonato.setNome(nome.getText().toString());
 		Intent intent_ajustar_regras = new Intent(this, RegrasActivity.class);
 		intent_ajustar_regras.putExtra("campeonato", campeonato);
-		startActivity(intent_ajustar_regras);
+		startActivityForResult(intent_ajustar_regras, 1);
 	}
 
 	// testar data allan 14-05
@@ -180,30 +180,33 @@ public class NovoCampeonatoActivity extends Activity {
 					if (op == R.id.radioButton2) {
 						campeonato.setQtdEquipe(16);
 					}
-				};
-				
-				
-					if(calendarDataInicio.equals(Calendar.getInstance()) || calendarDataInicio.after(Calendar.getInstance())){
-						if(calendarDatafim.equals(calendarDataInicio) || calendarDatafim.after(calendarDataInicio)){
-							Intent intent = new Intent(this,
-									SelecionarTimeCriarPartidas.class);
-							intent.putExtra("campeonato", campeonato);
-							startActivity(intent);
-						}else{
-							Toast.makeText(this, "Data final inferior a data inicial!", Toast.LENGTH_LONG).show();
-							calendarDatafim=calendarDataInicio;
-							campoDataFim.setText(formete2.format(calendarDatafim.getTime()));
-							}
-						
-					}else{
-					Toast.makeText(this, "Data inicial inferior a data atual!", Toast.LENGTH_LONG).show();
-					calendarDataInicio=Calendar.getInstance();
-					campoDataInicio.setText(formete2.format(calendarDataInicio.getTime()));
-					}
-					
-				
+				}
+				;
 
-			
+				if (calendarDataInicio.equals(Calendar.getInstance())
+						|| calendarDataInicio.after(Calendar.getInstance())) {
+					if (calendarDatafim.equals(calendarDataInicio)
+							|| calendarDatafim.after(calendarDataInicio)) {
+						Intent intent = new Intent(this,
+								SelecionarTimeCriarPartidas.class);
+						intent.putExtra("campeonato", campeonato);
+						startActivity(intent);
+					} else {
+						Toast.makeText(this,
+								"Data final inferior a data inicial!",
+								Toast.LENGTH_LONG).show();
+						calendarDatafim = calendarDataInicio;
+						campoDataFim.setText(formete2.format(calendarDatafim
+								.getTime()));
+					}
+
+				} else {
+					Toast.makeText(this, "Data inicial inferior a data atual!",
+							Toast.LENGTH_LONG).show();
+					calendarDataInicio = Calendar.getInstance();
+					campoDataInicio.setText(formete2.format(calendarDataInicio
+							.getTime()));
+				}
 
 			} else {
 				Toast.makeText(this,
@@ -215,6 +218,13 @@ public class NovoCampeonatoActivity extends Activity {
 			Toast.makeText(this, "Campo nome em branco!", Toast.LENGTH_SHORT)
 					.show();
 		}
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		this.campeonato = (Campeonato) data.getSerializableExtra("campeonato");
+
 	}
 
 }

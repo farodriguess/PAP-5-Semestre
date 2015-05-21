@@ -70,6 +70,14 @@
                 android:typeface="serif" />
 
             <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnCriarPartidaGrupoA"
+                android:text="criar partisfa test G_A" />
+
+            <Button
                 android:id="@+id/incluirTime"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"

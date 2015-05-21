@@ -59,7 +59,7 @@
                     android:gravity="center_horizontal" >
 
                     <Spinner
-                        android:id="@+id/spinner1CGrupoA"
+                        android:id="@+id/spinner1"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -73,7 +73,7 @@
                         android:textAppearance="?android:attr/textAppearanceLarge" />
 
                     <Spinner
-                        android:id="@+id/spinner2CGrupoA"
+                        android:id="@+id/spinner2"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -154,7 +154,7 @@
                     android:orientation="horizontal" >
 
                     <Spinner
-                        android:id="@+id/spinner3CGrupoA"
+                        android:id="@+id/spinner3"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -168,7 +168,7 @@
                         android:textAppearance="?android:attr/textAppearanceLarge" />
 
                     <Spinner
-                        android:id="@+id/spinner4CGrupoA"
+                        android:id="@+id/spinner4"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -251,7 +251,7 @@
                     android:gravity="center_horizontal" >
 
                     <Spinner
-                        android:id="@+id/spinner5CGrupoA"
+                        android:id="@+id/spinner5"
                          android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -265,7 +265,7 @@
                         android:textAppearance="?android:attr/textAppearanceLarge" />
 
                     <Spinner
-                        android:id="@+id/spinner6CGrupoA"
+                        android:id="@+id/spinner6"
                          android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -346,7 +346,7 @@
                     android:gravity="center_horizontal" >
 
                     <Spinner
-                        android:id="@+id/spinner7CGrupoA"
+                        android:id="@+id/spinner7"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -360,7 +360,7 @@
                         android:textAppearance="?android:attr/textAppearanceLarge" />
 
                     <Spinner
-                        android:id="@+id/spinner8CGrupoA"
+                        android:id="@+id/spinner8"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -441,7 +441,7 @@
                     android:gravity="center_horizontal" >
 
                     <Spinner
-                        android:id="@+id/spinner9CGrupoA"
+                        android:id="@+id/spinner9"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -455,7 +455,7 @@
                         android:textAppearance="?android:attr/textAppearanceLarge" />
 
                     <Spinner
-                        android:id="@+id/spinner10CGrupoA"
+                        android:id="@+id/spinner10"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -536,7 +536,7 @@
                     android:gravity="center_horizontal" >
 
                     <Spinner
-                        android:id="@+id/spinner11CGrupoA"
+                        android:id="@+id/spinner11"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />
@@ -550,7 +550,7 @@
                         android:textAppearance="?android:attr/textAppearanceLarge" />
 
                     <Spinner
-                        android:id="@+id/spinner12CGrupoA"
+                        android:id="@+id/spinner12"
                          android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:gravity="center_horizontal" />

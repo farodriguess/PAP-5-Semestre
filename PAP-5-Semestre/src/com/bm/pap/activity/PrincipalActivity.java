@@ -3,11 +3,12 @@ package com.bm.pap.activity;
 import com.bm.pap.R;
 import com.bm.pap.entity.Usuario;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class PrincipalActivity extends InicialActivity {
+public class PrincipalActivity extends Activity {
 
 	private Bundle info;
 	private Usuario usuario;
@@ -23,12 +24,7 @@ public class PrincipalActivity extends InicialActivity {
 
 	// testar data allan 14-05
 
-	public void btnData(View view) {
-		Intent itent_data = new Intent(PrincipalActivity.this, Calendario.class);
-		itent_data.putExtra("usuario", usuario);
-		startActivity(itent_data);
-
-	}
+	
 
 	public void btnPartiparDeCampeonatos(View view) {
 		Intent itent_participar_de_camp = new Intent(PrincipalActivity.this,

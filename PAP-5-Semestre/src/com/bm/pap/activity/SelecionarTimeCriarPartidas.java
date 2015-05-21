@@ -1,7 +1,6 @@
 package com.bm.pap.activity;
 
 import java.lang.reflect.Type;
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,8 +48,6 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 
 		setContentView(R.layout.activity_selecionar_times);
 
-		
-
 		Intent intencao = getIntent();
 		Bundle info = intencao.getExtras();
 		campeonato = (Campeonato) info.getSerializable("campeonato");
@@ -72,39 +69,38 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 				android.R.layout.simple_list_item_1, nomeEquipeSelecionada);
 		lista.setAdapter(adapter);
 
-		
-		
-		
-		
-		/* AlertDialog.Builder mensagem = new AlertDialog.Builder(
-		  SelecionarTimeCriarPartidas.this); mensagem.setTitle("Info");
-		  mensagem.setMessage("Nome campeonato: " + campeonato.getNome() +
-		  "\n Quantidade Equipes: " + campeonato.getQtdEquipe() +
-		  "\n Data inicio: " + DateFormat.getDateInstance().format(
-		  campeonato.getDataInicio()) + "Nome Usuario: " + campeonato.getUsuario().getNome()); mensagem.setNeutralButton("OK", null);
-		  mensagem.show();*/
-		 	
-		
-	/*teste carregar spinner e list
-		nomeEquipeSelecionada.add("BRASIL");
-		nomeEquipeSelecionada.add("Argentina");
-		spinner1 = (Spinner) findViewById(R.id.spinner1);
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, nomeEquipeSelecionada);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spinner1.setAdapter(adapter);*/
+		/*
+		 * AlertDialog.Builder mensagem = new AlertDialog.Builder(
+		 * SelecionarTimeCriarPartidas.this); mensagem.setTitle("Info");
+		 * mensagem.setMessage("Nome campeonato: " + campeonato.getNome() +
+		 * "\n Quantidade Equipes: " + campeonato.getQtdEquipe() +
+		 * "\n Data inicio: " + DateFormat.getDateInstance().format(
+		 * campeonato.getDataInicio()) + "Nome Usuario: " +
+		 * campeonato.getUsuario().getNome()); mensagem.setNeutralButton("OK",
+		 * null); mensagem.show();
+		 */
 
-	 if (usuario != null) {
-		 carregarEquipes();
-		 }
+		/*
+		 * teste carregar spinner e list nomeEquipeSelecionada.add("BRASIL");
+		 * nomeEquipeSelecionada.add("Argentina"); spinner1 = (Spinner)
+		 * findViewById(R.id.spinner1); ArrayAdapter<String> adapter = new
+		 * ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,
+		 * nomeEquipeSelecionada);
+		 * adapter.setDropDownViewResource(android.R.layout
+		 * .simple_spinner_dropdown_item); spinner1.setAdapter(adapter);
+		 */
+
+		if (usuario != null) {
+			carregarEquipes();
+		}
 	}
 
 	public void btnAdicionarTime(View v) {
-		//teste spinner e listview
-		//nomeEquipeSelecionada.add(spinner1.getSelectedItem().toString());
-		//adapter.notifyDataSetChanged();
-				
-			if (equipes!=null) {
+		// teste spinner e listview
+		// nomeEquipeSelecionada.add(spinner1.getSelectedItem().toString());
+		// adapter.notifyDataSetChanged();
+
+		if (equipes != null) {
 			if (equipesSelecionadas.size() < campeonato.getQtdEquipe()) {
 				for (Equipe c : equipes) {
 					if (c.getNome().equals(
@@ -135,7 +131,6 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 
 	}
 
-	
 	public AlertDialog confirmarExclusao() {
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("REMOVER EQUIPE");
@@ -146,12 +141,12 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 
 				for (Equipe e : equipesSelecionadas) {
 					if (e.getNome().equals(equipe)) {
-						equipesSelecionadas.remove(e);		
+						equipesSelecionadas.remove(e);
 						nomeEquipeSelecionada.remove(equipe);
 						adapter.notifyDataSetChanged();
 					}
-				}				
-				
+				}
+
 			}
 		});
 
@@ -160,19 +155,24 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 	}
 
 	public void btnAvancar(View v) {
-		if (equipesSelecionadas.size() == campeonato.getQtdEquipe() - 1) {
-			Intent intent = new Intent(this, CriarPartidaGrupoA.class);
+		if (equipesSelecionadas.size() == campeonato.getQtdEquipe()) {
+			Bundle extra = new Bundle();
+			extra.putSerializable("equipesSelecionadas", equipesSelecionadas);
+			Intent intent = new Intent(getBaseContext(),
+					CriarPartidaGrupoA.class);
+			intent.putExtra("bundleEquipesSelecionadas", extra);
 			intent.putExtra("campeonato", campeonato);
-			intent.putExtra("equipesSelecionadas", equipesSelecionadas);
 			startActivity(intent);
 		} else {
 			Toast.makeText(
 					this,
-					"Você precisa selecionar "
-							+ campeonato.getQtdEquipe().toString()
-							+ " equipes!", Toast.LENGTH_LONG).show();
+					"Você selecionou "
+							+ Integer.toString(equipesSelecionadas.size())
+							+ " equipes, restam "
+							+ Integer.toString(campeonato.getQtdEquipe()
+									- equipesSelecionadas.size()),
+					Toast.LENGTH_LONG).show();
 		}
-
 	}
 
 	@Override

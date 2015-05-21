@@ -81,13 +81,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left" >
+                    android:gravity="left"
+                    android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button1"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
                         android:text="Data" />
 
                     <TextView
@@ -171,13 +173,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content" 
+                      android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button2"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                       android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
                         android:text="Data" />
 
                     <TextView
@@ -216,7 +220,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="126dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
                 android:layout_weight="0.02"
                 android:gravity="center_horizontal"
@@ -265,13 +269,14 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
+                    android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp" >
                     <Button
                         android:id="@+id/button3"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
                         android:text="Data" />
 
                     <TextView
@@ -284,7 +289,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="35dp" >
 
                     <TextView
                         android:id="@+id/textView9"
@@ -354,13 +359,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+					  android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button4"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
                         android:text="Data" />
 
                     <TextView
@@ -445,13 +452,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button5"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                       android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
                         android:text="Data" />
 
                     <TextView
@@ -535,13 +544,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button6"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                       android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
                         android:text="Data" />
 
                     <TextView

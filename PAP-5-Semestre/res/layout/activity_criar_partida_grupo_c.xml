@@ -86,8 +86,9 @@
                         android:id="@+id/button6"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Button" />
+                        android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
+                        android:text="Data" />
 
                     <TextView
                         android:id="@+id/textView20d"
@@ -178,8 +179,9 @@
                         android:id="@+id/button5"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Button" />
+                       android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
+                        android:text="Data" />
 
                     <TextView
                         android:id="@+id/textView22"
@@ -273,8 +275,9 @@
                         android:id="@+id/button4"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Button" />
+                       android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
+                        android:text="Data" />
 
                     <TextView
                         android:id="@+id/textView22d"
@@ -365,8 +368,9 @@
                         android:id="@+id/button3"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Button" />
+                        android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
+                        android:text="Data" />
 
                     <TextView
                         android:id="@+id/textView24"
@@ -456,8 +460,9 @@
                         android:id="@+id/button2"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Button" />
+                        android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
+                        android:text="Data" />
 
                     <TextView
                         android:id="@+id/textView25"
@@ -549,8 +554,9 @@
                         android:id="@+id/button1"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Button" />
+                       android:layout_height="35dp"
+                        android:background="@drawable/shap_button"
+                        android:text="Data" />
 
                     <TextView
                         android:id="@+id/textView26"

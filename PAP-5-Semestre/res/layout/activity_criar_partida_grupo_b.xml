@@ -86,7 +86,7 @@
                         android:id="@+id/button1"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="35dp"
+                         android:layout_height="40dp"
                         android:background="@drawable/shap_button"
                         android:text="Data" />
 
@@ -179,7 +179,7 @@
                         android:id="@+id/button2"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="35dp"
+                         android:layout_height="40dp"
                         android:background="@drawable/shap_button"
                         android:text="Data" />
 
@@ -271,7 +271,7 @@
                         android:id="@+id/button3"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                       android:layout_height="35dp"
+                        android:layout_height="40dp"
                         android:background="@drawable/shap_button"
                         android:text="Data" />
 
@@ -364,7 +364,7 @@
                         android:id="@+id/button4"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="35dp"
+                         android:layout_height="40dp"
                         android:background="@drawable/shap_button"
                         android:text="Data" />
 
@@ -457,7 +457,7 @@
                         android:id="@+id/button5"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="35dp"
+                        android:layout_height="40dp"
                         android:background="@drawable/shap_button"
                         android:text="Data" />
 
@@ -550,7 +550,7 @@
                         android:id="@+id/button6"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-                        android:layout_height="35dp"
+                         android:layout_height="40dp"
                         android:background="@drawable/shap_button"
                         android:text="Data" />
 

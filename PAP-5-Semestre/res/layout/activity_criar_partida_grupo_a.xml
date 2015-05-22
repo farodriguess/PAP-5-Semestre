@@ -198,6 +198,7 @@
                         android:id="@+id/dataPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp"
                         android:text="TextView" />
 
                 </LinearLayout>
@@ -329,7 +330,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="128dp"
+                android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:orientation="vertical" 
                 android:layout_marginTop="10dp">
@@ -385,13 +386,10 @@
                         android:id="@+id/button4"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
-
-                         android:layout_height="40dp"                      
-                         android:onClick="setData4"
-
+                        android:layout_height="40dp"
                         android:background="@drawable/shap_button"
-                       
-                        />
+                        android:onClick="setData4"
+                        android:text="Data" />
 
                     <TextView
                         android:id="@+id/dataPartida4"
@@ -612,6 +610,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/selector_button"
+                        
                         android:ems="10"
                         android:inputType="textPersonName" />
 

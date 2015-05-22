@@ -88,6 +88,7 @@
                         android:layout_width="wrap_content"
                          android:layout_height="40dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setData1"
                         android:text="Data" />
 
                     <TextView
@@ -157,7 +158,7 @@
                         android:gravity="center_horizontal" />
 
                     <TextView
-                        android:id="@+id/localPartida4"
+                        android:id="@+id/txt4"
                        android:layout_width="30dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -181,6 +182,7 @@
                         android:layout_width="wrap_content"
                          android:layout_height="40dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setData2"
                         android:text="Data" />
 
                     <TextView
@@ -273,6 +275,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setData3"
                         android:text="Data" />
 
                     <TextView
@@ -366,6 +369,7 @@
                         android:layout_width="wrap_content"
                          android:layout_height="40dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setData4"
                         android:text="Data" />
 
                     <TextView
@@ -389,7 +393,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText8"
+                        android:id="@+id/localPartida4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -459,6 +463,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setData5"
                         android:text="Data" />
 
                     <TextView
@@ -482,7 +487,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText10"
+                        android:id="@+id/localPartida5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -552,6 +557,7 @@
                         android:layout_width="wrap_content"
                          android:layout_height="40dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setData6"
                         android:text="Data" />
 
                     <TextView
@@ -576,7 +582,7 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <EditText
-                        android:id="@+id/editText11"
+                        android:id="@+id/localPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -606,6 +612,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"
                         android:typeface="serif"
+                            android:onClick="btnAvancar"
                 android:textStyle="bold"
                         android:text="GRUPO C" />
 

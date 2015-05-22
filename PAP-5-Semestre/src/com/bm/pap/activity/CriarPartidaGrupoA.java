@@ -80,7 +80,9 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 		Bundle extra = getIntent().getBundleExtra("bundleEquipesSelecionadas");
 		equipesSelecionadas = (ArrayList<Equipe>) extra
 				.getSerializable("equipesSelecionadas");
+		extra = getIntent().getExtras();
 		campeonato = (Campeonato) extra.getSerializable("campeonato");
+
 		formatData = DateFormat.getDateInstance();
 		// iniciar info partida 1
 		data1 = Calendar.getInstance();
@@ -139,8 +141,7 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner1.setAdapter(adapter);
 		// criar uma listener ao selecionar um item no spinner
-		spinner1.setOnItemSelectedListener(
-				new OnItemSelectedListener() {
+		spinner1.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
@@ -434,55 +435,76 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 	}
 
 	public void btnAvancar(View v) {
-		//Criando lista de partidas
+		// Criando lista de partidas
 		List<Partida> partidas = new ArrayList<Partida>();
-		//adicionando partida1
-		 partidas.add(criarPartida(1, data1.getTime(), local1.getText().toString(),
-		 spinner1.getSelectedItem().toString(),
-		 spinner2.getSelectedItem().toString()));
-		//adicionando partida2
-		 partidas.add(criarPartida(2, data2.getTime(), local2.getText().toString(),
-		 spinner3.getSelectedItem().toString(),
-		 spinner4.getSelectedItem().toString()));
-		//adicionando partida3
-		 partidas.add(criarPartida(3, data3.getTime(), local3.getText().toString(),
-		 spinner5.getSelectedItem().toString(),
-		 spinner6.getSelectedItem().toString()));
-		//adicionando partida4
-		 partidas.add(criarPartida(4, data4.getTime(), local4.getText().toString(),
-		 spinner7.getSelectedItem().toString(),
-		 spinner8.getSelectedItem().toString()));
-		//adicionando partida5
-		 partidas.add(criarPartida(5, data5.getTime(), local5.getText().toString(),
-		 spinner9.getSelectedItem().toString(),
-		 spinner10.getSelectedItem().toString()));
-		//adicionando partida6
-		 partidas.add(criarPartida(6, data6.getTime(), local6.getText().toString(),
-		 spinner11.getSelectedItem().toString(),
-		 spinner12.getSelectedItem().toString()));
-		 campeonato.setPartidaList(partidas);
-		 for(Equipe e:equipesSelecionadas){
-			 if(e.getNome().equals(spinner1.getSelectedItem().toString())){
-				 equipesSelecionadas.remove(e);
-			 }
-			 if(e.getNome().equals(spinner2.getSelectedItem().toString())){
-				 equipesSelecionadas.remove(e);
-			 }
-			 if(e.getNome().equals(spinner3.getSelectedItem().toString())){
-				 equipesSelecionadas.remove(e);
-			 }
-			 if(e.getNome().equals(spinner4.getSelectedItem().toString())){
-				 equipesSelecionadas.remove(e);
-			 }
-		 }
-		 
-			Bundle extra = new Bundle();
-			extra.putSerializable("equipesSelecionadas", equipesSelecionadas);
-			Intent intent = new Intent(getBaseContext(),
-					CriarPartidaGrupoB.class);
-			intent.putExtra("bundleEquipesSelecionadas", extra);
-			intent.putExtra("campeonato", campeonato);
-			startActivity(intent);		 		 
+		// adicionando partida1
+		partidas.add(criarPartida(1, data1.getTime(), local1.getText()
+				.toString(), spinner1.getSelectedItem().toString(), spinner2
+				.getSelectedItem().toString()));
+		// adicionando partida2
+		partidas.add(criarPartida(2, data2.getTime(), local2.getText()
+				.toString(), spinner3.getSelectedItem().toString(), spinner4
+				.getSelectedItem().toString()));
+		// adicionando partida3
+		partidas.add(criarPartida(3, data3.getTime(), local3.getText()
+				.toString(), spinner5.getSelectedItem().toString(), spinner6
+				.getSelectedItem().toString()));
+		// adicionando partida4
+		partidas.add(criarPartida(4, data4.getTime(), local4.getText()
+				.toString(), spinner7.getSelectedItem().toString(), spinner8
+				.getSelectedItem().toString()));
+		// adicionando partida5
+		partidas.add(criarPartida(5, data5.getTime(), local5.getText()
+				.toString(), spinner9.getSelectedItem().toString(), spinner10
+				.getSelectedItem().toString()));
+		// adicionando partida6
+		partidas.add(criarPartida(6, data6.getTime(), local6.getText()
+				.toString(), spinner11.getSelectedItem().toString(), spinner12
+				.getSelectedItem().toString()));
+		campeonato.setPartidaList(partidas);
+
+		// testar se as partidas foram criadas
+		// String times = "";
+		// for(int i=0;i<partidas.size();i++){
+		// times+=
+		// "Partida: "+Integer.toString(campeonato.getPartidaList().get(i).getNumeroPartida())+" Equipes: "+campeonato.getPartidaList().get(i).getResultadoList().get(0).getEquipe().getNome().toString()+" vs "+campeonato.getPartidaList().get(i).getResultadoList().get(1).getEquipe().getNome()
+		// +"\n";
+		// }
+		//
+		// Toast.makeText(this, times +
+		// Integer.toString(equipesSelecionadas.size()),
+		// Toast.LENGTH_SHORT).show();
+
+		// removendo equipes desnecessarias para próximo grupo
+		for (int i = 0; i < equipesSelecionadas.size(); i++) {
+			if (equipesSelecionadas.get(i).getNome()
+					.equals(spinner1.getSelectedItem().toString())) {
+				Equipe e = equipesSelecionadas.get(i);
+				equipesSelecionadas.remove(e);
+			}
+			if (equipesSelecionadas.get(i).getNome()
+					.equals(spinner2.getSelectedItem().toString())) {
+				Equipe e = equipesSelecionadas.get(i);
+				equipesSelecionadas.remove(e);
+			}			
+			if (equipesSelecionadas.get(i).getNome()
+					.equals(spinner3.getSelectedItem().toString())) {
+				Equipe e = equipesSelecionadas.get(i);
+				equipesSelecionadas.remove(e);
+			}
+			if (equipesSelecionadas.get(i).getNome()
+					.equals(spinner4.getSelectedItem().toString())) {
+				Equipe e = equipesSelecionadas.get(i);
+				equipesSelecionadas.remove(e);
+			}
+		}
+
+		Bundle extra = new Bundle();
+		extra.putSerializable("equipesSelecionadas", equipesSelecionadas);
+		Intent intent = new Intent(getBaseContext(), CriarPartidaGrupoB.class);
+		intent.putExtra("bundleEquipesSelecionadas", extra);
+		intent.putExtra("campeonato", campeonato);
+		startActivity(intent);
 	}
 
 	public void compararSpinners(Spinner s1, Spinner s2) {
@@ -547,15 +569,14 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 		s2.setSelection(adapter.getPosition(sp.getSelectedItem().toString()));
 	}
 
-	
-	//botões da data
-	//botão da data1
+	// botões da data
+	// botão da data1
 	public void setData1(View view) {
 		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener1,
-				data1.get(Calendar.YEAR),
-				data1.get(Calendar.MONTH),
+				data1.get(Calendar.YEAR), data1.get(Calendar.MONTH),
 				data1.get(Calendar.DAY_OF_MONTH)).show();
 	}
+
 	private DatePickerDialog.OnDateSetListener dataListener1 = new DatePickerDialog.OnDateSetListener() {
 		@Override
 		public void onDateSet(DatePicker view, int year, int monthOfYear,
@@ -565,18 +586,17 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 			data1.set(Calendar.YEAR, year);
 			data1.set(Calendar.MONTH, monthOfYear);
 			data1.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-			labelData1.setText(formatData.format(data1
-					.getTime()));			
+			labelData1.setText(formatData.format(data1.getTime()));
 		}
 	};
-	
-	//botão da data2
+
+	// botão da data2
 	public void setData2(View view) {
 		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener2,
-				data2.get(Calendar.YEAR),
-				data2.get(Calendar.MONTH),
+				data2.get(Calendar.YEAR), data2.get(Calendar.MONTH),
 				data2.get(Calendar.DAY_OF_MONTH)).show();
 	}
+
 	private DatePickerDialog.OnDateSetListener dataListener2 = new DatePickerDialog.OnDateSetListener() {
 		@Override
 		public void onDateSet(DatePicker view, int year, int monthOfYear,
@@ -586,18 +606,17 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 			data2.set(Calendar.YEAR, year);
 			data2.set(Calendar.MONTH, monthOfYear);
 			data2.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-			labelData2.setText(formatData.format(data2
-					.getTime()));			
+			labelData2.setText(formatData.format(data2.getTime()));
 		}
 	};
-	
-	//botão da data3
+
+	// botão da data3
 	public void setData3(View view) {
 		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener3,
-				data3.get(Calendar.YEAR),
-				data3.get(Calendar.MONTH),
+				data3.get(Calendar.YEAR), data3.get(Calendar.MONTH),
 				data3.get(Calendar.DAY_OF_MONTH)).show();
 	}
+
 	private DatePickerDialog.OnDateSetListener dataListener3 = new DatePickerDialog.OnDateSetListener() {
 		@Override
 		public void onDateSet(DatePicker view, int year, int monthOfYear,
@@ -607,18 +626,17 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 			data3.set(Calendar.YEAR, year);
 			data3.set(Calendar.MONTH, monthOfYear);
 			data3.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-			labelData3.setText(formatData.format(data3
-					.getTime()));			
+			labelData3.setText(formatData.format(data3.getTime()));
 		}
 	};
-	
-	//botão da data4
+
+	// botão da data4
 	public void setData4(View view) {
 		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener4,
-				data4.get(Calendar.YEAR),
-				data4.get(Calendar.MONTH),
+				data4.get(Calendar.YEAR), data4.get(Calendar.MONTH),
 				data4.get(Calendar.DAY_OF_MONTH)).show();
 	}
+
 	private DatePickerDialog.OnDateSetListener dataListener4 = new DatePickerDialog.OnDateSetListener() {
 		@Override
 		public void onDateSet(DatePicker view, int year, int monthOfYear,
@@ -628,49 +646,47 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 			data4.set(Calendar.YEAR, year);
 			data4.set(Calendar.MONTH, monthOfYear);
 			data4.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-			labelData4.setText(formatData.format(data4
-					.getTime()));			
+			labelData4.setText(formatData.format(data4.getTime()));
 		}
 	};
-	
-	//botão da data5
-		public void setData5(View view) {
-			new DatePickerDialog(CriarPartidaGrupoA.this, dataListener5,
-					data5.get(Calendar.YEAR),
-					data5.get(Calendar.MONTH),
-					data5.get(Calendar.DAY_OF_MONTH)).show();
-		}
-		private DatePickerDialog.OnDateSetListener dataListener5 = new DatePickerDialog.OnDateSetListener() {
-			@Override
-			public void onDateSet(DatePicker view, int year, int monthOfYear,
-					int dayOfMonth) {
-				// TODO Auto-generated method stub
 
-				data5.set(Calendar.YEAR, year);
-				data5.set(Calendar.MONTH, monthOfYear);
-				data5.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-				labelData5.setText(formatData.format(data5
-						.getTime()));			
-			}
-		};
-		//botão da data6
-		public void setData6(View view) {
-			new DatePickerDialog(CriarPartidaGrupoA.this, dataListener6,
-					data6.get(Calendar.YEAR),
-					data6.get(Calendar.MONTH),
-					data6.get(Calendar.DAY_OF_MONTH)).show();
-		}
-		private DatePickerDialog.OnDateSetListener dataListener6 = new DatePickerDialog.OnDateSetListener() {
-			@Override
-			public void onDateSet(DatePicker view, int year, int monthOfYear,
-					int dayOfMonth) {
-				// TODO Auto-generated method stub
+	// botão da data5
+	public void setData5(View view) {
+		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener5,
+				data5.get(Calendar.YEAR), data5.get(Calendar.MONTH),
+				data5.get(Calendar.DAY_OF_MONTH)).show();
+	}
 
-				data6.set(Calendar.YEAR, year);
-				data6.set(Calendar.MONTH, monthOfYear);
-				data6.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-				labelData6.setText(formatData.format(data6
-						.getTime()));			
-			}
-		};
+	private DatePickerDialog.OnDateSetListener dataListener5 = new DatePickerDialog.OnDateSetListener() {
+		@Override
+		public void onDateSet(DatePicker view, int year, int monthOfYear,
+				int dayOfMonth) {
+			// TODO Auto-generated method stub
+
+			data5.set(Calendar.YEAR, year);
+			data5.set(Calendar.MONTH, monthOfYear);
+			data5.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+			labelData5.setText(formatData.format(data5.getTime()));
+		}
+	};
+
+	// botão da data6
+	public void setData6(View view) {
+		new DatePickerDialog(CriarPartidaGrupoA.this, dataListener6,
+				data6.get(Calendar.YEAR), data6.get(Calendar.MONTH),
+				data6.get(Calendar.DAY_OF_MONTH)).show();
+	}
+
+	private DatePickerDialog.OnDateSetListener dataListener6 = new DatePickerDialog.OnDateSetListener() {
+		@Override
+		public void onDateSet(DatePicker view, int year, int monthOfYear,
+				int dayOfMonth) {
+			// TODO Auto-generated method stub
+
+			data6.set(Calendar.YEAR, year);
+			data6.set(Calendar.MONTH, monthOfYear);
+			data6.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+			labelData6.setText(formatData.format(data6.getTime()));
+		}
+	};
 }

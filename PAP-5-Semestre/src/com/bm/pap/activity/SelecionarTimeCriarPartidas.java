@@ -69,37 +69,12 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 				android.R.layout.simple_list_item_1, nomeEquipeSelecionada);
 		lista.setAdapter(adapter);
 
-		/*
-		 * AlertDialog.Builder mensagem = new AlertDialog.Builder(
-		 * SelecionarTimeCriarPartidas.this); mensagem.setTitle("Info");
-		 * mensagem.setMessage("Nome campeonato: " + campeonato.getNome() +
-		 * "\n Quantidade Equipes: " + campeonato.getQtdEquipe() +
-		 * "\n Data inicio: " + DateFormat.getDateInstance().format(
-		 * campeonato.getDataInicio()) + "Nome Usuario: " +
-		 * campeonato.getUsuario().getNome()); mensagem.setNeutralButton("OK",
-		 * null); mensagem.show();
-		 */
-
-		/*
-		 * teste carregar spinner e list nomeEquipeSelecionada.add("BRASIL");
-		 * nomeEquipeSelecionada.add("Argentina"); spinner1 = (Spinner)
-		 * findViewById(R.id.spinner1); ArrayAdapter<String> adapter = new
-		 * ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,
-		 * nomeEquipeSelecionada);
-		 * adapter.setDropDownViewResource(android.R.layout
-		 * .simple_spinner_dropdown_item); spinner1.setAdapter(adapter);
-		 */
-
 		if (usuario != null) {
 			carregarEquipes();
 		}
 	}
 
 	public void btnAdicionarTime(View v) {
-		// teste spinner e listview
-		// nomeEquipeSelecionada.add(spinner1.getSelectedItem().toString());
-		// adapter.notifyDataSetChanged();
-
 		if (equipes != null) {
 			if (equipesSelecionadas.size() < campeonato.getQtdEquipe()) {
 				for (Equipe c : equipes) {
@@ -139,14 +114,15 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 
-				for (Equipe e : equipesSelecionadas) {
-					if (e.getNome().equals(equipe)) {
+				for (int i = 0; i < equipesSelecionadas.size(); i++) {
+					if (equipesSelecionadas.get(i).getNome().equals(equipe)) {
+						Equipe e = equipesSelecionadas.get(i);
 						equipesSelecionadas.remove(e);
 						nomeEquipeSelecionada.remove(equipe);
 						adapter.notifyDataSetChanged();
+
 					}
 				}
-
 			}
 		});
 

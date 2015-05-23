@@ -35,7 +35,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
-                android:id="@+id/nomeCampeonato"
+                android:id="@+id/editText1"
                 android:layout_width="288dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector_button"

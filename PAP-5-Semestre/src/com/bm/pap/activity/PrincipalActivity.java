@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 public class PrincipalActivity extends Activity {
 
@@ -20,12 +19,12 @@ public class PrincipalActivity extends Activity {
 		Intent intencao = getIntent();
 		info = intencao.getExtras();
 		usuario = (Usuario) info.getSerializable("usuario");
-		TextView nome = (TextView) findViewById(R.id.nomeUsuario);
-		nome.setText(usuario.getNome());
 
 	}
 
 	// testar data allan 14-05
+
+	
 
 	public void btnPartiparDeCampeonatos(View view) {
 		Intent itent_participar_de_camp = new Intent(PrincipalActivity.this,
@@ -174,8 +173,9 @@ public class PrincipalActivity extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
-
-		usuario = (Usuario) data.getSerializableExtra("usuario");
-
+		
+			
+			usuario = (Usuario) data.getSerializableExtra("usuario");
+	
 	}
 }

@@ -8,8 +8,10 @@
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
         android:orientation="vertical" >
 
@@ -35,7 +37,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="534dp"
+            android:layout_height="346dp"
+            android:layout_weight="2.29"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
 
@@ -62,8 +65,8 @@
             <ScrollView
                 android:id="@+id/scrollView1"
                 android:layout_width="match_parent"
-                android:layout_height="184dp"
-                android:layout_weight="1.48" >
+                android:layout_height="266dp"
+                android:layout_weight="0.26" >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -74,13 +77,12 @@
                     <ListView
                         android:id="@+id/listaMeusCampeonatos"
                         android:layout_width="281dp"
-                        android:layout_height="246dp"
+                        android:layout_height="410dp"
                         android:layout_gravity="center_horizontal"
                         android:divider="#FFECECEC"
                         android:dividerHeight="2sp" >
                     </ListView>
                 </LinearLayout>
-
             </ScrollView>
 
             <LinearLayout
@@ -98,33 +100,11 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/shap_button"
                     android:onClick="botaoNovo"
-                    android:typeface="serif"
+                    android:text="NOVO"
                     android:textStyle="bold"
-                    android:text="NOVO" />
-
-                <Button
-                    android:id="@+id/incluirTime"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:background="@drawable/shap_button"
-                    android:onClick="botaoEditar"
-                    android:typeface="serif"
-                android:textStyle="bold"
-                    android:text="ALTERAR" />
-
-                <Button
-                    android:id="@+id/removerTime"
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:background="@drawable/shap_button"
-                    android:typeface="serif"
-                android:textStyle="bold"
-                    android:text="EXCLUIR" />
+                    android:typeface="serif" />
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 
 </RelativeLayout>

@@ -49,14 +49,6 @@
                     android:layout_height="wrap_content"
                     android:text="       Nome:"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="191dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:text="Status"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
             </LinearLayout>
 
             <ScrollView

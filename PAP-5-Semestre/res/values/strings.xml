@@ -8,145 +8,121 @@
     <string name="title_activity_activity_novo_campeonato">ActivityNovoCampeonato</string>
     <string name="title_activity_regras">RegrasActivity</string>
     <string name="title_activity_meus_times">MeusTimesActivity</string>
-     <string name="rec_senha"> <u>Recuperar senha</u></string>
-     <string name="cadastra_se"> <u>Cadastrar-se</u></string>
-     <string name="titulos"> <b>Titulos</b></string>
-     
-     
-    
-     
-   
+    <string name="rec_senha"><u>Recuperar senha</u></string>
+    <string name="cadastra_se"><u>Cadastrar-se</u></string>
+    <string name="titulos"><b>Titulos</b></string>
+
     <string-array name="Grupo_A">
-        <item >Brasil</item>
-        <item >México</item>
-        <item >Cróacia</item>
-        <item >Camarões</item>
-        <item >Alemanha</item>
-        <item >Gana</item>
-        
-        
+        <item>Brasil</item>
+        <item>México</item>
+        <item>Cróacia</item>
+        <item>Camarões</item>
+        <item>Alemanha</item>
+        <item>Gana</item>
     </string-array>
-    
     <string-array name="Grupo_B">
-        <item >Holanda</item>
-        <item >Chile</item>
-        <item >Espanha</item>
-        <item >Austrália</item>
-        <item >Bósnia-Herzegovina</item>
-        <item >Irã</item>
-                
+        <item>Holanda</item>
+        <item>Chile</item>
+        <item>Espanha</item>
+        <item>Austrália</item>
+        <item>Bósnia-Herzegovina</item>
+        <item>Irã</item>
     </string-array>
-    
-      
-    
     <string-array name="Grupo_C">
-        <item >Colômbia</item>
-        <item >Grécia</item>
-        <item >Costa do Marfim</item>
-        <item >Japão</item>
-        <item >Argentina</item>
-        <item >Nigéria</item>
-       
-        
+        <item>Colômbia</item>
+        <item>Grécia</item>
+        <item>Costa do Marfim</item>
+        <item>Japão</item>
+        <item>Argentina</item>
+        <item>Nigéria</item>
     </string-array>
-    
-     
-    
-       <string-array name="Grupo_D">
-        <item >Costa Rica</item>
-        <item >Urugai</item>
-        <item >Itália</item>
-        <item >Inglaterra</item>
-        <item >França</item>
-        <item >Suíça</item>
-        
-        
+    <string-array name="Grupo_D">
+        <item>Costa Rica</item>
+        <item>Urugai</item>
+        <item>Itália</item>
+        <item>Inglaterra</item>
+        <item>França</item>
+        <item>Suíça</item>
     </string-array>
-    
-       <string-array name="TodosOsTimes">
-        <item >Brasil</item>
-        <item >Colômbia</item>
-        <item >Grécia</item>
-        <item >Costa do Marfim</item>
-        <item >Japão</item>
-        <item >Argentina</item>
-        <item >Nigéria</item>
-        <item >México</item>
-        <item >Cróacia</item>
-        <item >Camarões</item>
-        <item >Alemanha</item>
-        <item >Gana</item>
-        <item >Costa Rica</item>
-        <item >Urugai</item>
-        <item >Itália</item>
-        <item >Inglaterra</item>
-        <item >França</item>
-        <item >Suíça</item>
-         <item >Holanda</item>
-        <item >Chile</item>
-        <item >Espanha</item>
-        <item >Austrália</item>
-        <item >Bósnia-Herzegovina</item>
-        <item >Irã</item>
-     </string-array>
-    
-       
-   <string-array name="Gols">
-        <item >0</item>
-        <item >1</item>
-        <item >2</item>
-        <item >3</item>
-        <item >4</item>
-        <item >5</item>
-        <item >6</item>
-        <item >7</item>
-        <item >8</item>
-        <item >9</item>
-        <item >10</item>
-        <item >11</item>
-        <item >12</item>
-        <item >13</item>
-        <item >14</item>
-        <item >15</item>
-        <item >16</item>
-        <item >17</item>
-        <item >18</item>
-        <item >19</item>
-        <item >20</item>
-        
-        
+    <string-array name="TodosOsTimes">
+        <item>Brasil</item>
+        <item>Colômbia</item>
+        <item>Grécia</item>
+        <item>Costa do Marfim</item>
+        <item>Japão</item>
+        <item>Argentina</item>
+        <item>Nigéria</item>
+        <item>México</item>
+        <item>Cróacia</item>
+        <item>Camarões</item>
+        <item>Alemanha</item>
+        <item>Gana</item>
+        <item>Costa Rica</item>
+        <item>Urugai</item>
+        <item>Itália</item>
+        <item>Inglaterra</item>
+        <item>França</item>
+        <item>Suíça</item>
+        <item>Holanda</item>
+        <item>Chile</item>
+        <item>Espanha</item>
+        <item>Austrália</item>
+        <item>Bósnia-Herzegovina</item>
+        <item>Irã</item>
     </string-array>
-    
-   
+    <string-array name="Gols">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
     <string-array name="Pontos">
-        <item >0</item>
-        <item >1</item>
-        <item >2</item>
-        <item >3</item>
-        <item >4</item>
-        <item >5</item>
-        <item >6</item>
-        <item >7</item>
-        <item >8</item>
-        <item >9</item>
-        <item >10</item>
-        <item >11</item>
-        <item >12</item>
-        <item >13</item>
-        <item >14</item>
-        <item >15</item>
-        <item >16</item>
-        <item >17</item>
-        <item >18</item>
-        <item >19</item>
-        <item >20</item>
-        
-        
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
     </string-array>
-    
-    
-      
-    
-    
+
+    <string name="title_activity_pesquisa">PesquisaActivity</string>
+    <string name="title_activity_ver_participantes">VerParticipantesActivity</string>
+    <string name="title_activity_ranking">RankingActivity</string>
+    <string name="title_activity_selecionar_resultado">SelecionarResultadoActivity</string>
+    <string name="title_activity_status_campeonato">StatusCampeonatoActivity</string>
+    <string name="title_activity_ver_regras">VerRegrasActivity</string>
+    <string name="title_activity_editar_partida">EditarPartidaActivity</string>
 
 </resources>

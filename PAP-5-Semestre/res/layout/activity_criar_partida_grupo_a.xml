@@ -82,7 +82,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left" >
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"  >
 
                     <Button
                         android:id="@+id/button1"
@@ -179,7 +180,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"  >
 
                     <Button
                         android:id="@+id/button2"
@@ -283,7 +285,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button3"
@@ -380,7 +383,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"  >
 
                     <Button
                         android:id="@+id/button4"
@@ -477,7 +481,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"  >
 
                     <Button
                         android:id="@+id/button5"
@@ -574,7 +579,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="10dp" >
 
                     <Button
                         android:id="@+id/button6"
@@ -611,9 +617,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@drawable/selector_button"
-                        
                         android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textSize="25sp"/>
 
                 </LinearLayout>
 

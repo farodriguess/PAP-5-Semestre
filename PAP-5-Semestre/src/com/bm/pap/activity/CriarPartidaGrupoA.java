@@ -462,19 +462,7 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 				.toString(), spinner11.getSelectedItem().toString(), spinner12
 				.getSelectedItem().toString()));
 		campeonato.setPartidaList(partidas);
-
-		// testar se as partidas foram criadas
-		// String times = "";
-		// for(int i=0;i<partidas.size();i++){
-		// times+=
-		// "Partida: "+Integer.toString(campeonato.getPartidaList().get(i).getNumeroPartida())+" Equipes: "+campeonato.getPartidaList().get(i).getResultadoList().get(0).getEquipe().getNome().toString()+" vs "+campeonato.getPartidaList().get(i).getResultadoList().get(1).getEquipe().getNome()
-		// +"\n";
-		// }
-		//
-		// Toast.makeText(this, times +
-		// Integer.toString(equipesSelecionadas.size()),
-		// Toast.LENGTH_SHORT).show();
-
+	
 		// removendo equipes desnecessarias para próximo grupo
 		for (int i = 0; i < equipesSelecionadas.size(); i++) {
 			if (equipesSelecionadas.get(i).getNome()

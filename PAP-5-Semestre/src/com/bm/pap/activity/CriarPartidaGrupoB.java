@@ -423,7 +423,7 @@ public class CriarPartidaGrupoB extends PrincipalActivity {
 		p.setNumeroPartida(numeroPartida);
 		p.setFase("Fase 1");
 		p.setStatus("Aguardando Iniciar");
-		p.setTipo("Grupo A");
+		p.setTipo("Grupo B");
 		p.setDataPartida(dataPartida);
 		p.setLocalPartida(localPartida);
 		incluirEquipe1.setPartida(p);
@@ -438,28 +438,31 @@ public class CriarPartidaGrupoB extends PrincipalActivity {
 	public void btnAvancar(View v) {
 		// Criando lista de partidas
 		List<Partida> partidas = new ArrayList<Partida>();
-		// adicionando partida1
-		partidas.add(criarPartida(1, data1.getTime(), local1.getText()
+		for (int i = 0; i < campeonato.getPartidaList().size(); i++) {
+			partidas.add(campeonato.getPartidaList().get(i));
+		}
+		// adicionando partida7
+		partidas.add(criarPartida(7, data1.getTime(), local1.getText()
 				.toString(), spinner1.getSelectedItem().toString(), spinner2
 				.getSelectedItem().toString()));
-		// adicionando partida2
-		partidas.add(criarPartida(2, data2.getTime(), local2.getText()
+		// adicionando partida8
+		partidas.add(criarPartida(8, data2.getTime(), local2.getText()
 				.toString(), spinner3.getSelectedItem().toString(), spinner4
 				.getSelectedItem().toString()));
-		// adicionando partida3
-		partidas.add(criarPartida(3, data3.getTime(), local3.getText()
+		// adicionando partida9
+		partidas.add(criarPartida(9, data3.getTime(), local3.getText()
 				.toString(), spinner5.getSelectedItem().toString(), spinner6
 				.getSelectedItem().toString()));
-		// adicionando partida4
-		partidas.add(criarPartida(4, data4.getTime(), local4.getText()
+		// adicionando partida10
+		partidas.add(criarPartida(10, data4.getTime(), local4.getText()
 				.toString(), spinner7.getSelectedItem().toString(), spinner8
 				.getSelectedItem().toString()));
-		// adicionando partida5
-		partidas.add(criarPartida(5, data5.getTime(), local5.getText()
+		// adicionando partida11
+		partidas.add(criarPartida(11, data5.getTime(), local5.getText()
 				.toString(), spinner9.getSelectedItem().toString(), spinner10
 				.getSelectedItem().toString()));
-		// adicionando partida6
-		partidas.add(criarPartida(6, data6.getTime(), local6.getText()
+		// adicionando partida12
+		partidas.add(criarPartida(12, data6.getTime(), local6.getText()
 				.toString(), spinner11.getSelectedItem().toString(), spinner12
 				.getSelectedItem().toString()));
 		campeonato.setPartidaList(partidas);
@@ -498,33 +501,24 @@ public class CriarPartidaGrupoB extends PrincipalActivity {
 		}
 
 		if (campeonato.getQtdEquipe() == 8) {
-			List<Spinner> spinners = new ArrayList<Spinner>();
-			spinners.add(spinner1);
-			spinners.add(spinner2);
-			spinners.add(spinner3);
-			spinners.add(spinner4);
-			boolean finalizar = true;
-			for (int i = 1; i < spinners.size(); i++) {
-				if (spinners.get(0).getSelectedItem().toString()
-						.equals(spinners.get(i).getSelectedItem().toString())) {
-					carregarSpinners();
-					finalizar = false;
-				}
-			}
 
-			if (finalizar == false) {
+			int finalizar = verificarSpinner(spinner1)
+					+ verificarSpinner(spinner2) + verificarSpinner(spinner3)
+					+ verificarSpinner(spinner4);
+
+			if (finalizar > 4) {
 				Toast.makeText(
 						this,
 						"Observe a 1º e 2º partida, as equipes devem ser diferentes.\n"
 								+ "O sistema reorganizou as partidas com valores pré determinados!",
 						Toast.LENGTH_SHORT).show();
-			}
-
-			if (finalizar == true) {
+				carregarSpinners();
+			} else {
 				Intent intent = new Intent(getBaseContext(),
 						MeusCampeonatosActivity.class);
 				intent.putExtra("usuario", campeonato.getUsuario());
 				startActivity(intent);
+				
 				// fazer lógica para não voltar para essa tela
 				// fazer lógica de salvar no banco de dados
 			}

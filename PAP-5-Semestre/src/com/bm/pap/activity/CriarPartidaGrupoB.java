@@ -26,9 +26,11 @@ import com.bm.pap.entity.Campeonato;
 import com.bm.pap.entity.Equipe;
 import com.bm.pap.entity.Partida;
 import com.bm.pap.entity.Resultado;
+import com.bm.pap.entity.Usuario;
 
 public class CriarPartidaGrupoB extends PrincipalActivity {
 	private Campeonato campeonato;
+	private Usuario usuario;
 	private ArrayList<Equipe> equipesSelecionadas;
 	private Spinner spinner1;
 	private Spinner spinner2;
@@ -82,6 +84,7 @@ public class CriarPartidaGrupoB extends PrincipalActivity {
 		equipesSelecionadas = (ArrayList<Equipe>) extra
 				.getSerializable("equipesSelecionadas");
 		extra = getIntent().getExtras();
+		usuario = (Usuario) extra.getSerializable("usuario");
 		campeonato = (Campeonato) extra.getSerializable("campeonato");
 		formatData = DateFormat.getDateInstance();
 		// iniciar info partida 1
@@ -497,6 +500,7 @@ public class CriarPartidaGrupoB extends PrincipalActivity {
 					CriarPartidaGrupoC.class);
 			intent.putExtra("bundleEquipesSelecionadas", extra);
 			intent.putExtra("campeonato", campeonato);
+			intent.putExtra("usuario", usuario);
 			startActivity(intent);
 		}
 
@@ -516,7 +520,7 @@ public class CriarPartidaGrupoB extends PrincipalActivity {
 			} else {
 				Intent intent = new Intent(getBaseContext(),
 						MeusCampeonatosActivity.class);
-				intent.putExtra("usuario", campeonato.getUsuario());
+				intent.putExtra("usuario", usuario);
 				startActivity(intent);
 				
 				// fazer lógica para não voltar para essa tela

@@ -138,6 +138,7 @@ public class SelecionarTimeCriarPartidas extends Activity implements
 					CriarPartidaGrupoA.class);
 			intent.putExtra("bundleEquipesSelecionadas", extra);
 			intent.putExtra("campeonato", campeonato);
+			intent.putExtra("usuario", usuario);
 			startActivity(intent);
 		} else {
 			Toast.makeText(

@@ -25,9 +25,11 @@ import com.bm.pap.entity.Campeonato;
 import com.bm.pap.entity.Equipe;
 import com.bm.pap.entity.Partida;
 import com.bm.pap.entity.Resultado;
+import com.bm.pap.entity.Usuario;
 
 public class CriarPartidaGrupoA extends PrincipalActivity {
 	private Campeonato campeonato;
+	private Usuario usuario;
 	private ArrayList<Equipe> equipesSelecionadas;
 	private Spinner spinner1;
 	private Spinner spinner2;
@@ -81,6 +83,7 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 		equipesSelecionadas = (ArrayList<Equipe>) extra
 				.getSerializable("equipesSelecionadas");
 		extra = getIntent().getExtras();
+		usuario = (Usuario) extra.getSerializable("usuario");
 		campeonato = (Campeonato) extra.getSerializable("campeonato");
 
 		formatData = DateFormat.getDateInstance();
@@ -492,6 +495,7 @@ public class CriarPartidaGrupoA extends PrincipalActivity {
 		Intent intent = new Intent(getBaseContext(), CriarPartidaGrupoB.class);
 		intent.putExtra("bundleEquipesSelecionadas", extra);
 		intent.putExtra("campeonato", campeonato);
+		intent.putExtra("usuario", usuario);
 		startActivity(intent);
 	}
 

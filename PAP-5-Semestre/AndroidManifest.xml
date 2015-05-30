@@ -30,7 +30,7 @@
         </activity>
         <activity android:name=".activity.CadastroActivity" >
         </activity>
-        <activity android:name="com.bm.pap.activity.Calendario" >
+        <activity android:name=".activity.Calendario" >
         </activity>
         <activity android:name=".activity.SelecionarTimeCriarPartidas" >
         </activity>
@@ -86,6 +86,16 @@
             android:name=".activity.MeusTimesActivity"
             android:label="@string/title_activity_meus_times" >
         </activity>
+        <activity
+            android:name="com.bm.pap.activity.RankingActivity"
+            android:label="@string/title_activity_ranking" >
+        </activity>
+           <activity
+            android:name="com.bm.pap.activity.VerParticipantesActivity" >
+        </activity>
+          <activity
+            android:name="com.bm.pap.activity.SelecionarResultadoActivity" >
+        </activity>                
     </application>
 
 </manifest>

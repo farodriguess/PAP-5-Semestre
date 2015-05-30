@@ -46,7 +46,7 @@ public class RegrasActivity extends Activity {
 			spinner1.setSelection(spinnerPostion);
 			spinnerPostion = 0;
 		}
-		;
+		
 
 		spinner2 = (Spinner) findViewById(R.id.spinner2);
 		spinner2.setAdapter(adapter);
@@ -57,7 +57,7 @@ public class RegrasActivity extends Activity {
 			spinner2.setSelection(spinnerPostion);
 			spinnerPostion = 0;
 		}
-		;
+		
 		spinner3 = (Spinner) findViewById(R.id.spinner3);
 		spinner3.setAdapter(adapter);
 		// setar spinner com valor pré determinado

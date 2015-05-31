@@ -347,7 +347,7 @@ public class CriarPartidaGrupoB extends PrincipalActivity {
 		if (campeonato.getQtdEquipe() == 8) {
 			liberarCheck = false;
 			Button b = new Button(this);
-			b = (Button) findViewById(R.id.avancar);
+			b = (Button) findViewById(R.id.btnIrFase1);
 			b.setText("Finalizar");
 		} else {
 			liberarCheck = true;

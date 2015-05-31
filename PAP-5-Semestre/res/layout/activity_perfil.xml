@@ -113,7 +113,7 @@
             android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/avancar"
+                android:id="@+id/btnIrFase1"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"

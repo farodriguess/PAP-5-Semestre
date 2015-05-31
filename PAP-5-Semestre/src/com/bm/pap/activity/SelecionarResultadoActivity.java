@@ -8,7 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import com.bm.pap.R;
@@ -19,6 +21,7 @@ public class SelecionarResultadoActivity extends Activity {
 	private Usuario usuario;
 	private Campeonato campeonato;
 	private ArrayAdapter<CharSequence> adapter;
+	private Spinner spinner1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +41,7 @@ public class SelecionarResultadoActivity extends Activity {
 		fase2.add("Terceiro Lugar");
 		fase2.add("Final");
 
-		Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
+		spinner1 = (Spinner) findViewById(R.id.spinner1);
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, fase1);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -49,7 +52,17 @@ public class SelecionarResultadoActivity extends Activity {
 				android.R.layout.simple_spinner_item, fase2);
 		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner2.setAdapter(adapter2);
+		
+		Button b =(Button)findViewById(R.id.btnIrFase2);
+		b.setEnabled(false);
+		spinner2.setEnabled(false);
 
+	}
+	
+	public void irFase1(View v){
+		
+		Intent i = new Intent(this, ResultadoGrupoA.class);
+		startActivity(i);
 	}
 
 	@Override

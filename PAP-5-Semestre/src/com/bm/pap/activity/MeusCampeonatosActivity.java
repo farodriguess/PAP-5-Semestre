@@ -204,11 +204,11 @@ public class MeusCampeonatosActivity extends Activity implements
 					.getNome()
 					.equals(campeonato.substring(0,
 							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this,
-				// EditarCampeonatoActivity.class);
-				// campeonatos.get(i).setUsuario(usuario);
-				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
+				 Intent intent = new Intent(this,
+				 EditarCampeonatoActivity.class);
+				 intent.putExtra("usuario", usuario);
+				intent.putExtra("editarCampeonato", campeonatos.get(i));
+				startActivity(intent);
 			}
 		}
 	}
@@ -283,11 +283,11 @@ public class MeusCampeonatosActivity extends Activity implements
 					.getNome()
 					.equals(campeonato.substring(0,
 							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this,
-				// StatusCampeonatoActivity.class);
-				// campeonatos.get(i).setUsuario(usuario);
-				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
+				 Intent intent = new Intent(this,
+				 StatusCampeonatoActivity.class);
+				intent.putExtra("usuario", usuario);
+				 intent.putExtra("editarCampeonato", campeonatos.get(i));
+				 startActivity(intent);
 			}
 		}
 	}

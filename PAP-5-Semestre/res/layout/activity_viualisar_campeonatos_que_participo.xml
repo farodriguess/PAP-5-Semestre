@@ -152,7 +152,7 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/avancar"
+                android:id="@+id/btnIrFase1"
            		android:layout_width="195dp"
                 android:layout_height="wrap_content"
                 android:typeface="serif"
@@ -162,7 +162,7 @@
                 android:text="Regras" />
 
             <Button
-                android:id="@+id/incluirTime"
+                android:id="@+id/btnIrFase2"
                 android:layout_width="195dp"
                 android:layout_height="wrap_content"
                 android:typeface="serif"

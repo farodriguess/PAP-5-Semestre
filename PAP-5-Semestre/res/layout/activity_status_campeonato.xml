@@ -39,6 +39,10 @@
             android:orientation="vertical" 
             android:layout_marginTop="15dp">
 
+           <RadioGroup
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" > 
             <RadioButton
                 android:id="@+id/radioButton1"
                 android:layout_width="wrap_content"
@@ -49,6 +53,7 @@
                 android:id="@+id/radioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="true"
                 android:text="1 ° Fase" />
 
             <RadioButton
@@ -62,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Finalizado" />
+             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
@@ -71,12 +77,13 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/avancar"
+                android:id="@+id/btnIrFase1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"
                 android:typeface="serif"
                 android:textStyle="bold"
+                android:onClick="btnAtualizarStatus"
                 android:text="Atualizar status" />
 
         </LinearLayout>

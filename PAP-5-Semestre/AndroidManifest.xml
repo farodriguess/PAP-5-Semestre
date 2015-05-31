@@ -65,7 +65,9 @@
         <activity android:name=".activity.CriarPartidaGrupoD" >
         </activity>
         <activity android:name=".activity.ResultadoOitavas" >
-        </activity>
+        </activity>     
+        <activity android:name=".activity.ResultadoGrupoA" >
+        </activity>   
         <activity android:name=".activity.RecuperarSenha" >
         </activity>
         <activity android:name=".activity.ParticiparDeCampeonatos" >
@@ -95,6 +97,9 @@
         </activity>
           <activity
             android:name="com.bm.pap.activity.SelecionarResultadoActivity" >
+        </activity>    
+         <activity
+            android:name="com.bm.pap.activity.StatusCampeonatoActivity" >
         </activity>                
     </application>
 

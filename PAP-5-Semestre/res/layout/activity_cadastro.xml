@@ -91,7 +91,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/avancar"
+        android:id="@+id/btnIrFase1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout1"
@@ -123,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/avancar"
+        android:layout_below="@+id/btnIrFase1"
         android:src="@drawable/iniciopartida" />
 
 </RelativeLayout>

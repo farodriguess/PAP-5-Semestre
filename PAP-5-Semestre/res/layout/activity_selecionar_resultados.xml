@@ -61,13 +61,15 @@
             android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/avancar"
+                android:id="@+id/btnIrFase1"
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"
-                android:typeface="serif"
+                android:onClick="irFase1"
+                android:text="Ir para 1° fase"
                 android:textStyle="bold"
-                android:text="Ir para 1° fase" />
+                android:typeface="serif" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -98,13 +100,13 @@
              android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/incluirTime"
+                android:id="@+id/btnIrFase2"
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"
-                android:typeface="serif"
+                android:text="Ir para 2° fase"
                 android:textStyle="bold"
-                android:text="Ir para 2° fase" />
+                android:typeface="serif" />
 
         </LinearLayout>
 

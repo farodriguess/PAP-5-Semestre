@@ -141,7 +141,7 @@
                     android:orientation="vertical" >
 
                     <Button
-                        android:id="@+id/avancar"
+                        android:id="@+id/btnIrFase1"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
@@ -290,7 +290,7 @@
                     android:orientation="vertical" >
 
                     <Button
-                        android:id="@+id/incluirTime"
+                        android:id="@+id/btnIrFase2"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"

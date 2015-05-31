@@ -277,7 +277,7 @@
                     android:orientation="vertical" >
 
                     <Button
-                        android:id="@+id/avancar"
+                        android:id="@+id/btnIrFase1"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shap_button"

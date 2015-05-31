@@ -611,7 +611,7 @@
                     android:layout_marginTop="10dp" >
 
                     <Button
-                        android:id="@+id/avancar"
+                        android:id="@+id/btnIrFase1"
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

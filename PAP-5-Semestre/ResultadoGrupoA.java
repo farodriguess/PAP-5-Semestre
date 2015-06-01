@@ -1,14 +1,14 @@
 package com.bm.pap.activity;
 
-import com.bm.pap.R;
-
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class ApostaGrupo_B extends Activity{
-	
+import com.bm.pap.R;
+
+public class ResultadoGrupoA extends Activity {
 	private Spinner spinner1;
 	private Spinner spinner2;
 	private Spinner spinner3;
@@ -98,5 +98,4 @@ public class ApostaGrupo_B extends Activity{
 		spinner12.setAdapter(adapter);
 		spinner12.setSelection(adapter.getPosition("2"));
 	}
-
 }

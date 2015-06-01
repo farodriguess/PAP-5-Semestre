@@ -48,9 +48,6 @@ public class MeusCampeonatosActivity extends Activity implements
 		usuario = (Usuario) bundle.getSerializable("usuario");
 
 		if (usuario != null) {
-
-			// fazer lógica para carregar lista de campeonato e colocar na list
-			// List<Campeonato>e= new ArrayList<Equipe>();
 			ClientPostWSTask task = new ClientPostWSTask(this,
 					CAMINHOCAMPEONATOS, this, new Gson().toJson(usuario),
 					CAMPEONATOS);
@@ -96,7 +93,7 @@ public class MeusCampeonatosActivity extends Activity implements
 
 		nomeCampeonato = new ArrayList();
 		for (Campeonato c : campeonatos) {
-			nomeCampeonato.add(c.getNome() + "\nStatus: " + c.getStatus());
+			nomeCampeonato.add(c.getNome() + "\nStatus: " + c.getStatus()+"\nUsuário: "+usuario.getNome());
 		}
 
 		adapter = new ArrayAdapter<String>(this,

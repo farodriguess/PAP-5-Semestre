@@ -14,7 +14,7 @@
          android:typeface="serif"
         android:textStyle="bold"
         android:gravity="center_horizontal"
-        android:text="Tela aposta:"
+        android:text="Apostas:"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
@@ -65,9 +65,11 @@
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"
-                android:typeface="serif"
+                android:onClick="irFase1"
+                android:text="Ir para 1° fase"
                 android:textStyle="bold"
-                android:text="Ir para 1° fase" />
+                android:typeface="serif" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -102,9 +104,9 @@
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shap_button"
-                android:typeface="serif"
+                android:text="Ir para 2° fase"
                 android:textStyle="bold"
-                android:text="Ir para 2° fase" />
+                android:typeface="serif" />
 
         </LinearLayout>
 

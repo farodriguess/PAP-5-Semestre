@@ -68,9 +68,13 @@
         </activity>     
         <activity android:name=".activity.ResultadoGrupoA" >
         </activity>   
+           <activity android:name=".activity.VerResultadoGrupoA" >
+        </activity> 
         <activity android:name=".activity.RecuperarSenha" >
         </activity>
         <activity android:name=".activity.ParticiparDeCampeonatos" >
+        </activity>
+         <activity android:name=".activity.CampeonatosQueParticipo" >
         </activity>
         <activity
             android:name=".activity.EditarCampeonatoActivity"
@@ -98,6 +102,12 @@
           <activity
             android:name="com.bm.pap.activity.SelecionarResultadoActivity" >
         </activity>    
+         <activity
+            android:name="com.bm.pap.activity.SelecionarVerResultadosActivity" >
+        </activity> 
+         <activity
+            android:name="com.bm.pap.activity.SelecionarApostaActivity" >
+        </activity>
          <activity
             android:name="com.bm.pap.activity.StatusCampeonatoActivity" >
         </activity>                

@@ -2,12 +2,25 @@ package com.bm.pap.activity;
 
 import com.bm.pap.R;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class ApostaGrupo_A extends PrincipalActivity {
-	
+public class ApostaGrupo_A extends Activity {
+	private Spinner spinner1;
+	private Spinner spinner2;
+	private Spinner spinner3;
+	private Spinner spinner4;
+	private Spinner spinner5;
+	private Spinner spinner6;
+	private Spinner spinner7;
+	private Spinner spinner8;
+	private Spinner spinner9;
+	private Spinner spinner10;	
+	private Spinner spinner11;
+	private Spinner spinner12;
+	ArrayAdapter<CharSequence> adapter;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
@@ -15,30 +28,90 @@ public class ApostaGrupo_A extends PrincipalActivity {
 		
 		
 		
-		Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
-	    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-	    this, R.array.Gols, android.R.layout.simple_spinner_item);
-	    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner1.setAdapter(adapter);
-	    
-	    Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
-	    ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(
-	    this, R.array.Gols, android.R.layout.simple_spinner_item);
-	    adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner2.setAdapter(adapter2);
-	    
-	    Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
-	    ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(
-	    this, R.array.Gols, android.R.layout.simple_spinner_item);
-	    adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner3.setAdapter(adapter3);
+		// brasil vs japão
+		adapter = ArrayAdapter.createFromResource(this, R.array.Gols,
+				android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		// resultado brasil
+		spinner1 = (Spinner) findViewById(R.id.spinner1);
+		spinner1.setAdapter(adapter);
+		spinner1.setSelection(adapter.getPosition("3"));
 
-	    
-	    Spinner spinner4 = (Spinner) findViewById(R.id.spinner4);
-	    ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(
-	    this, R.array.Gols, android.R.layout.simple_spinner_item);
-	    adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner4.setAdapter(adapter4);
+		// resultado japão
+		spinner2 = (Spinner) findViewById(R.id.spinner2);
+		spinner2.setAdapter(adapter);
+		;
+		spinner2.setSelection(adapter.getPosition("0"));
+
+		// méxico vs italia
+		// resultado méxico
+		spinner3 = (Spinner) findViewById(R.id.spinner3);
+		spinner3.setAdapter(adapter);
+		spinner3.setSelection(adapter.getPosition("1"));
+
+		// resultado itália
+		spinner4 = (Spinner) findViewById(R.id.spinner4);
+		spinner4.setAdapter(adapter);
+		spinner4.setSelection(adapter.getPosition("2"));
+
+		// brasil vs mexico
+
+		// resultado brasil
+		spinner5 = (Spinner) findViewById(R.id.spinner5);
+		spinner5.setAdapter(adapter);
+		spinner5.setSelection(adapter.getPosition("2"));
+
+		// resultado mexico
+		spinner6 = (Spinner) findViewById(R.id.spinner6);
+		spinner6.setAdapter(adapter);
+		spinner6.setSelection(adapter.getPosition("0"));
+
+		// italia vs japão
+		// resultado itália
+		spinner7 = (Spinner) findViewById(R.id.spinner7);
+		spinner7.setAdapter(adapter);
+		spinner7.setSelection(adapter.getPosition("4"));
+
+		// resultado japão
+		spinner8 = (Spinner) findViewById(R.id.spinner8);
+		spinner8.setAdapter(adapter);
+		spinner8.setSelection(adapter.getPosition("3"));
+
+		// italia vs brasil
+		// resultado itália
+		spinner9 = (Spinner) findViewById(R.id.spinner9);
+		spinner9.setAdapter(adapter);
+		spinner9.setSelection(adapter.getPosition("2"));
+
+		// resultado brasil
+		spinner10 = (Spinner) findViewById(R.id.spinner10);
+		spinner10.setAdapter(adapter);
+		spinner10.setSelection(adapter.getPosition("4"));
+
+		// japão vs méxico
+		// resultado japão
+		spinner11 = (Spinner) findViewById(R.id.spinner11);
+		spinner11.setAdapter(adapter);
+		spinner11.setSelection(adapter.getPosition("1"));
+
+		// resultado méxico
+		spinner12 = (Spinner) findViewById(R.id.spinner12);
+		spinner12.setAdapter(adapter);
+		spinner12.setSelection(adapter.getPosition("2"));
+
+spinner1.setEnabled(false);
+spinner2.setEnabled(false);
+spinner3.setEnabled(false);
+spinner4.setEnabled(false);
+spinner5.setEnabled(false);
+spinner6.setEnabled(false);
+spinner7.setEnabled(false);
+spinner8.setEnabled(false);
+spinner9.setEnabled(false);
+spinner10.setEnabled(false);
+spinner11.setEnabled(false);
+spinner12.setEnabled(false);
+
 
 
 }

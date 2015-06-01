@@ -44,22 +44,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:gravity="center" >
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="       Nome:"
+                    android:layout_gravity="end"
+                    android:text="Campeonatos Criados"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="191dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:text="Status"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
             </LinearLayout>
 
             <ScrollView

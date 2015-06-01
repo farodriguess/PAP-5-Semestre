@@ -19,7 +19,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class ParticiparDeCampeonatos extends Activity {
+public class CampeonatosQueParticipo extends Activity {
 
 	private List<Campeonato> campeonatos;
 	private ArrayAdapter<String> adapter;
@@ -31,7 +31,7 @@ public class ParticiparDeCampeonatos extends Activity {
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_partcipar_de_campeonatos);
+		setContentView(R.layout.activity_campeonatos_que_participo);
 
 
 		carregarGrid();
@@ -45,16 +45,6 @@ public class ParticiparDeCampeonatos extends Activity {
 		});
 	}
 
-	public void btnPesquisar(View v){
-//		Intent i = new Intent(this,Pesquisar.class);
-//		startActivity(i);		
-	}
-	
-	public void btnCampeonatosQueParticipo(View v){
-		Intent i = new Intent(this,CampeonatosQueParticipo.class);
-		startActivity(i);		
-	}
-	
 	private void carregarGrid() {
 		nomeCampeonato = new ArrayList();
 //		for (Campeonato c : campeonatos) {
@@ -75,7 +65,8 @@ public class ParticiparDeCampeonatos extends Activity {
 		itens.add("Ver Partidas");
 		itens.add("Ranking");
 		itens.add("Regras");
-		itens.add("Participar");
+		itens.add("Minhas Apostas");
+		itens.add("Deixar de Participar");
 
 		ArrayAdapter arrayAdapter = new ArrayAdapter(this,
 				R.layout.item_alerta, itens);
@@ -99,7 +90,10 @@ public class ParticiparDeCampeonatos extends Activity {
 							regras();
 						}
 						if (arg1 == 4) {
-							participar();
+							apostar();
+						}
+						if (arg1 == 5) {
+							confirmarExclusao();
 						}
 						alerta.dismiss();
 					}
@@ -109,78 +103,95 @@ public class ParticiparDeCampeonatos extends Activity {
 	}
 
 	public void verInfoCampeonato() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
 				Intent intent = new Intent(this, EditarCampeonatoActivity.class);
-				intent.putExtra("usuario", usuario);
-				intent.putExtra("editarCampeonato", campeonatos.get(i));
+//				intent.putExtra("usuario", usuario);
+//				intent.putExtra("editarCampeonato", campeonatos.get(i));
 				startActivity(intent);
-			}
-		}
+//			}
+//		}
 	}
 
 	public void verPartidas() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this,
-				// EditarPartidaGAActivity.class);
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+				 Intent intent = new Intent(this,
+				 SelecionarVerResultadosActivity.class);
 				// campeonatos.get(i).setUsuario(usuario);
 				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
-			}
-		}
+				 startActivity(intent);
+//			}
+//		}
 	}
 
-	public void participar() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				Intent intent = new Intent(this, VerParticipantesActivity.class);
-				intent.putExtra("usuario", usuario);
-				intent.putExtra("editarCampeonato", campeonatos.get(i));
+	public void apostar() {
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+				Intent intent = new Intent(this, SelecionarApostaActivity.class);
+//				intent.putExtra("usuario", usuario);
+//				intent.putExtra("editarCampeonato", campeonatos.get(i));
 				startActivity(intent);
-			}
-		}
+//			}
+//		}
 	}
 
 	public void ranking() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
 				Intent intent = new Intent(this, RankingActivity.class);
-				intent.putExtra("usuario", usuario);
-				intent.putExtra("editarCampeonato", campeonatos.get(i));
+//				intent.putExtra("usuario", usuario);
+//				intent.putExtra("editarCampeonato", campeonatos.get(i));
 				startActivity(intent);
-			}
-		}
+//			}
+//		}
 	}
 
 	public void regras() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this, VerRegrasActivity.class);
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+//				 Intent intent = new Intent(this, VerRegrasActivity.class);
 				// campeonatos.get(i).setUsuario(usuario);
 				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
+//				 startActivity(intent);
+//			}
+//		}
+	}
+	
+	public AlertDialog confirmarExclusao() {
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("REMOVER CAMPEONATO");
+		builder.setMessage("Deseja remover o campeonato?");
+		builder.setPositiveButton("sim", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// FAZER LÓGICA DE REMOVER CAMPEONATO DO BANCO
+				nomeCampeonato.remove(campeonato);
+				adapter.notifyDataSetChanged();
 			}
-		}
+		});
+
+		builder.setNegativeButton("não", null);
+		return builder.create();
 	}
 }

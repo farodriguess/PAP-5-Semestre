@@ -1,14 +1,14 @@
 package com.bm.pap.activity;
 
-import com.bm.pap.R;
-
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class ApostaGrupo_B extends Activity{
-	
+import com.bm.pap.R;
+
+public class VerResultadoGrupoA extends Activity {
 	private Spinner spinner1;
 	private Spinner spinner2;
 	private Spinner spinner3;
@@ -25,7 +25,7 @@ public class ApostaGrupo_B extends Activity{
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_resultado_grupo_a);
+		setContentView(R.layout.activity_ver_resultado_grupo_a);
 
 		// brasil vs japão
 		adapter = ArrayAdapter.createFromResource(this, R.array.Gols,
@@ -97,6 +97,18 @@ public class ApostaGrupo_B extends Activity{
 		spinner12 = (Spinner) findViewById(R.id.spinner12);
 		spinner12.setAdapter(adapter);
 		spinner12.setSelection(adapter.getPosition("2"));
+		
+		spinner1.setEnabled(false);
+		spinner2.setEnabled(false);
+		spinner3.setEnabled(false);
+		spinner4.setEnabled(false);
+		spinner5.setEnabled(false);
+		spinner6.setEnabled(false);
+		spinner7.setEnabled(false);
+		spinner8.setEnabled(false);
+		spinner9.setEnabled(false);
+		spinner10.setEnabled(false);
+		spinner11.setEnabled(false);
+		spinner12.setEnabled(false);
 	}
-
 }

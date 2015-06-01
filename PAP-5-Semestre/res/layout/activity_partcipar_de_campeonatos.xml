@@ -5,10 +5,7 @@
     android:gravity="center_vertical|center_horizontal|center"
     android:orientation="vertical" >
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="395dp" >
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,16 +41,7 @@
                         android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="       Nome"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.87"
-                        android:gravity="right"
-                        android:text="Status     "
+                        android:text="Campeonatos Disponíveis"
                         android:textAppearance="?android:attr/textAppearanceLarge" />
                 </LinearLayout>
 
@@ -70,7 +58,7 @@
                         <ListView
                             android:id="@+id/list"
                             android:layout_width="260dp"
-                            android:layout_height="372dp"
+                            android:layout_height="334dp"
                             android:layout_gravity="center_horizontal"
                             android:divider="#FFECECEC"
                             android:dividerHeight="2sp" >
@@ -80,7 +68,7 @@
             </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
+   
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -97,7 +85,7 @@
             android:background="@drawable/shap_button"
             android:typeface="serif"
                 android:textStyle="bold"
-            android:text="Visualizar" />
+            android:text="Pesquisar" />
 
         <Button
             android:id="@+id/btnIrFase2"
@@ -108,7 +96,8 @@
             android:text="Campeonatos que participo"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:typeface="serif" />
+            android:typeface="serif" 
+            android:onClick="btnCampeonatosQueParticipo"/>
 
     </LinearLayout>
 

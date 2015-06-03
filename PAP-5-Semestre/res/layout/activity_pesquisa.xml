@@ -40,14 +40,13 @@
                     android:layout_marginTop="10dp"
                     android:text="Filtrar por:"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_weight="1.64"
-                android:layout_marginTop="10dp" >
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.64" >
 
                 <CheckBox
                     android:id="@+id/checkBox1"
@@ -59,8 +58,8 @@
                     android:id="@+id/campoNomeCampeonato"
                     android:layout_width="155dp"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:background="@drawable/shap_button"
+                    android:ems="10"
                     android:inputType="textPersonName" />
             </LinearLayout>
 
@@ -107,16 +106,17 @@
                         android:layout_height="40dp"
                         android:layout_marginLeft="12dp"
                         android:background="@drawable/shap_button"
+                        android:onClick="setDataFim"
                         android:text="Final"
                         android:textStyle="bold"
                         android:typeface="serif" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/lblFim"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="TextView" />
+                        android:text="" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -133,17 +133,18 @@
                     android:layout_marginLeft="84dp"
                     android:layout_marginTop="3dp"
                     android:background="@drawable/shap_button"
+                    android:onClick="setDataInicio"
                     android:text="Inícial"
                     android:textStyle="bold"
                     android:typeface="serif" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/lblInicio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="3dp"
-                    android:text="TextView" />
+                    android:text="" />
             </LinearLayout>
         </LinearLayout>
 

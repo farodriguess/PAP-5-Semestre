@@ -22,15 +22,16 @@ public class SelecionarVerResultadosActivity extends Activity {
 	private Campeonato campeonato;
 	private ArrayAdapter<CharSequence> adapter;
 	private Spinner spinner1;
+	private Spinner spinner2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_selecionar_resultados);
 		Intent intencao = getIntent();
-//		Bundle info = intencao.getExtras();
-//		usuario = (Usuario) info.getSerializable("usuario");
-//		campeonato = (Campeonato) info.getSerializable("editarCampeonato");
+		// Bundle info = intencao.getExtras();
+		// usuario = (Usuario) info.getSerializable("usuario");
+		// campeonato = (Campeonato) info.getSerializable("editarCampeonato");
 
 		List<String> fase1 = new ArrayList();
 		fase1.add("Grupo A");
@@ -47,24 +48,43 @@ public class SelecionarVerResultadosActivity extends Activity {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner1.setAdapter(adapter);
 
-		Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+		spinner2 = (Spinner) findViewById(R.id.spinner2);
 		ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, fase2);
 		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner2.setAdapter(adapter2);
-		
-//		Button b =(Button)findViewById(R.id.btnIrFase2);
-//		b.setEnabled(false);
-//		spinner2.setEnabled(false);
+
+		// Button b =(Button)findViewById(R.id.btnIrFase2);
+		// b.setEnabled(false);
+		// spinner2.setEnabled(false);
 
 	}
-	
-	public void irFase1(View v){
-		
-		Intent i = new Intent(this, VerResultadoGrupoA.class);
-		startActivity(i);
+
+	public void irFase1(View v) {
+		if (spinner1.getSelectedItem().toString().equals("Grupo A")) {
+			Intent i = new Intent(this, VerResultadoGrupoA.class);
+			startActivity(i);
+		}
+		if (spinner1.getSelectedItem().toString().equals("Grupo B")) {
+			Intent i = new Intent(this, VerResultadoGrupoB.class);
+			startActivity(i);
+		}
 	}
 
+	public void irFase2(View v) {
+		if (spinner2.getSelectedItem().toString().equals("Semi Finais")) {
+//			Intent i = new Intent(this, ApostaSemifinal.class);
+//			startActivity(i);
+		}
+		if (spinner2.getSelectedItem().toString().equals("Finais")) {
+//			Intent i = new Intent(this, ApostaFinal.class);
+//			startActivity(i);
+		}
+		if (spinner2.getSelectedItem().toString().equals("Terceiro Lugar")) {
+//			Intent i = new Intent(this, ApostaTerceiroLugar.class);
+//			startActivity(i);
+		}
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

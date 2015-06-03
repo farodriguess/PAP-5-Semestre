@@ -101,6 +101,11 @@ public class CampeonatosQueParticipo extends Activity {
 		alerta = builder.create();
 		alerta.show();
 	}
+	public void btnPesquisar(View v){
+		Intent t = new Intent(this,PesquisarActivity.class);
+		startActivity(t);
+		
+	}
 
 	public void verInfoCampeonato() {
 //		for (int i = 0; i < campeonatos.size(); i++) {
@@ -109,7 +114,7 @@ public class CampeonatosQueParticipo extends Activity {
 //					.getNome()
 //					.equals(campeonato.substring(0,
 //							campeonato.indexOf("Status") - 1))) {
-				Intent intent = new Intent(this, EditarCampeonatoActivity.class);
+				Intent intent = new Intent(this, VerInfoCampeonatoActivity.class);
 //				intent.putExtra("usuario", usuario);
 //				intent.putExtra("editarCampeonato", campeonatos.get(i));
 				startActivity(intent);
@@ -170,10 +175,10 @@ public class CampeonatosQueParticipo extends Activity {
 //					.getNome()
 //					.equals(campeonato.substring(0,
 //							campeonato.indexOf("Status") - 1))) {
-//				 Intent intent = new Intent(this, VerRegrasActivity.class);
+				 Intent intent = new Intent(this, VerRegrasActivity.class);
 				// campeonatos.get(i).setUsuario(usuario);
 				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-//				 startActivity(intent);
+				 startActivity(intent);
 //			}
 //		}
 	}

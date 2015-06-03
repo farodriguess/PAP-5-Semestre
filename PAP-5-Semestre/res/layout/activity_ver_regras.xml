@@ -38,7 +38,7 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/lblInicio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Acertar o placar do jogo:"
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content" >
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/lblFim"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                       
@@ -61,7 +61,7 @@
                         android:id="@+id/textView18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="10" />
 
                 </LinearLayout>
 
@@ -94,7 +94,7 @@
                         android:id="@+id/textView19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="5" />
 
                 </LinearLayout>
 
@@ -128,7 +128,7 @@
                         android:id="@+id/textView20rsr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="10" />
 
                 </LinearLayout>
 
@@ -161,7 +161,7 @@
                         android:id="@+id/dataPartida1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="5" />
 
                 </LinearLayout>
 
@@ -195,7 +195,7 @@
                         android:id="@+id/dataPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="20" />
 
                 </LinearLayout>
 
@@ -228,7 +228,7 @@
                         android:id="@+id/dataPartida3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="10" />
 
                 </LinearLayout>
 
@@ -261,7 +261,7 @@
                         android:id="@+id/dataPartida4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="5" />
 
                 </LinearLayout>
 
@@ -294,7 +294,7 @@
                         android:id="@+id/dataPartida5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="2" />
 
                 </LinearLayout>
 
@@ -303,16 +303,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:orientation="vertical" >
-
-                    <Button
-                        android:id="@+id/btnIrFase1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shap_button"
-                        android:typeface="serif"
-                android:textStyle="bold"
-                        android:text="Salvar" />
-
                 </LinearLayout>
 
             </LinearLayout>

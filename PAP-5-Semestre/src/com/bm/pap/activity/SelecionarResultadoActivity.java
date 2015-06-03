@@ -59,11 +59,32 @@ public class SelecionarResultadoActivity extends Activity {
 
 	}
 	
-	public void irFase1(View v){
-		
-		Intent i = new Intent(this, ResultadoGrupoA.class);
-		startActivity(i);
+	public void irFase1(View v) {
+		if (spinner1.getSelectedItem().toString().equals("Grupo A")) {
+			Intent i = new Intent(this, ResultadoGrupoA.class);
+			startActivity(i);
+		}
+		if (spinner1.getSelectedItem().toString().equals("Grupo B")) {
+			Intent i = new Intent(this, ResultadoGrupoB.class);
+			startActivity(i);
+		}
 	}
+
+	public void irFase2(View v) {
+//		if (spinner2.getSelectedItem().toString().equals("Semi Finais")) {
+//			Intent i = new Intent(this, ApostaSemifinal.class);
+//			startActivity(i);
+//		}
+//		if (spinner2.getSelectedItem().toString().equals("Finais")) {
+//			Intent i = new Intent(this, ApostaFinal.class);
+//			startActivity(i);
+//		}
+//		if (spinner2.getSelectedItem().toString().equals("Terceiro Lugar")) {
+//			Intent i = new Intent(this, ApostaTerceiroLugar.class);
+//			startActivity(i);
+//		}
+	}
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

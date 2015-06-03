@@ -24,16 +24,16 @@ private ArrayAdapter<String> adapter;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_ranking);
-		Intent intencao = getIntent();
-		Bundle info = intencao.getExtras();
-		usuario = (Usuario) info.getSerializable("usuario");
-		campeonato = (Campeonato) info.getSerializable("editarCampeonato");
+//		Intent intencao = getIntent();
+//		Bundle info = intencao.getExtras();
+//		usuario = (Usuario) info.getSerializable("usuario");
+//		campeonato = (Campeonato) info.getSerializable("editarCampeonato");
 		
 		TextView campeonato=(TextView)findViewById(R.id.campeonato);
-		campeonato.setText(this.campeonato.getNome());
+		campeonato.setText("COPA DAS CONFEDERAÇÕES 2013");
 		
 		List<String> ranking = new ArrayList<String>();
-		ranking.add("1º Francisco 100pts");
+		ranking.add("1º Francisco 80pts");
 		
 		ListView lista = (ListView) findViewById(R.id.list);
 		adapter = new ArrayAdapter<String>(this,

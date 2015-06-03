@@ -116,6 +116,14 @@
         <item>19</item>
         <item>20</item>
     </string-array>
+    
+        <string-array name="Status">
+        <item>Aguardando Iniciar</item>
+        <item>1º Fase</item>
+        <item>2º Fase</item>
+        <item>Finalizado</item>
+      
+    </string-array>
 
     <string name="title_activity_ranking">RankingActivity</string>
 

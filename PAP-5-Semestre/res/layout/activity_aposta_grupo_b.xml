@@ -42,13 +42,13 @@
                     android:gravity="center_horizontal" >
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/lblInicio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BRASIL" />
+                        android:text="ESPANHA" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/lblFim"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -59,7 +59,7 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="JAPÃO" />
+                        android:text="URUGUAI" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -142,7 +142,7 @@
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MÉXICO" />
+                        android:text="TAITI" />
 
                     <TextView
                         android:id="@+id/localPartida6"
@@ -156,7 +156,7 @@
                         android:id="@+id/textView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ITÁLIA" />
+                        android:text="NIGÉRIA" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -243,7 +243,7 @@
                         android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BRASIL" />
+                        android:text="ESPANHA" />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -257,7 +257,7 @@
                         android:id="@+id/textView16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MÉXICO" />
+                        android:text="TAITI" />
 
                 </LinearLayout>
 
@@ -326,7 +326,7 @@
                         android:id="@+id/textView20rsr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ITÁLIA" />
+                        android:text="NIGÉRIA" />
 
                     <TextView
                         android:id="@+id/dataPartida1"
@@ -340,7 +340,7 @@
                         android:id="@+id/dataPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="JAPÃO" />
+                        android:text="URUGUAI" />
 
                 </LinearLayout>
 
@@ -428,7 +428,7 @@
                         android:id="@+id/dataPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ITÁLIA" />
+                        android:text="NIGÉRIA" />
 
                     <TextView
                         android:id="@+id/textView27"
@@ -442,7 +442,7 @@
                         android:id="@+id/textView28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BRASIL" />
+                        android:text="ESPANHA" />
 
                 </LinearLayout>
 
@@ -513,7 +513,7 @@
                         android:id="@+id/textView32"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="JAPÃO" />
+                        android:text="URUGUAI" />
 
                     <TextView
                         android:id="@+id/textView33"
@@ -527,7 +527,7 @@
                         android:id="@+id/textView34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MÉXICO" />
+                        android:text="TAITI" />
 
                 </LinearLayout>
 

@@ -5,15 +5,15 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="match_parent"
+         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
-        android:text="Apostas Grupo C"
         android:typeface="serif"
         android:textStyle="bold"
+        android:text="Partidas/Resultados Grupo B"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
@@ -45,7 +45,7 @@
                         android:id="@+id/lblInicio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 1" />
+                        android:text="ESPANHA" />
 
                     <TextView
                         android:id="@+id/lblFim"
@@ -59,7 +59,7 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 2" />
+                        android:text="URUGUAI" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,9 +69,9 @@
 
                     <Spinner
                         android:id="@+id/spinner1"
-                       android:layout_width="60dp"
+                        android:layout_width="60dp"
                         android:layout_height="40dp" />
-
+                    
                     <TextView
                         android:id="@+id/textView7"
                         android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                         android:text="DATA:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/localPartida1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -116,8 +116,8 @@
                         android:text="LOCAL:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
-                        android:id="@+id/editText1"
+                    <TextView
+                        android:id="@+id/TextView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -142,7 +142,7 @@
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 1" />
+                        android:text="TAITI" />
 
                     <TextView
                         android:id="@+id/localPartida6"
@@ -156,7 +156,7 @@
                         android:id="@+id/textView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 2" />
+                        android:text="NIGÉRIA" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -166,7 +166,7 @@
 
                     <Spinner
                         android:id="@+id/spinner3"
-                        android:layout_width="60dp"
+                         android:layout_width="60dp"
                         android:layout_height="40dp" />
 
                     <TextView
@@ -178,7 +178,7 @@
 
                     <Spinner
                         android:id="@+id/spinner4"
-                       android:layout_width="60dp"
+                        android:layout_width="60dp"
                         android:layout_height="40dp" />
                 </LinearLayout>
 
@@ -193,8 +193,8 @@
                         android:text="DATA:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
-                        android:id="@+id/editText4"
+                    <TextView
+                        android:id="@+id/TextView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -213,7 +213,7 @@
                         android:text="LOCAL:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/localPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
                         android:inputType="textPersonName" >
 
                         <requestFocus />
-                    </EditText>
+                    </TextView>
                 </LinearLayout>
             </LinearLayout>
 
@@ -243,7 +243,7 @@
                         android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 1" />
+                        android:text="ESPANHA" />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -257,7 +257,7 @@
                         android:id="@+id/textView16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 2" />
+                        android:text="TAITI" />
 
                 </LinearLayout>
 
@@ -268,8 +268,9 @@
 
                     <Spinner
                         android:id="@+id/spinner5"
-                      android:layout_width="60dp"
+                       android:layout_width="60dp"
                         android:layout_height="40dp" />
+
                     <TextView
                         android:id="@+id/textView17"
                         android:layout_width="wrap_content"
@@ -279,7 +280,7 @@
 
                     <Spinner
                         android:id="@+id/spinner6"
-                         android:layout_width="60dp"
+                        android:layout_width="60dp"
                         android:layout_height="40dp" />
                 </LinearLayout>
 
@@ -325,7 +326,7 @@
                         android:id="@+id/textView20rsr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 1" />
+                        android:text="NIGÉRIA" />
 
                     <TextView
                         android:id="@+id/dataPartida1"
@@ -339,7 +340,7 @@
                         android:id="@+id/dataPartida2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 2" />
+                        android:text="URUGUAI" />
 
                 </LinearLayout>
 
@@ -350,7 +351,7 @@
 
                     <Spinner
                         android:id="@+id/spinner7"
-                         android:layout_width="60dp"
+                        android:layout_width="60dp"
                         android:layout_height="40dp" />
 
                     <TextView
@@ -362,7 +363,7 @@
 
                     <Spinner
                         android:id="@+id/spinner8"
-                        android:layout_width="60dp"
+                      android:layout_width="60dp"
                         android:layout_height="40dp" />
                     
                 </LinearLayout>
@@ -378,8 +379,8 @@
                         android:text="DATA:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
-                        android:id="@+id/editText6"
+                    <TextView
+                        android:id="@+id/TextView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -399,7 +400,7 @@
                         android:text="LOCAL:"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                    <EditText
+                    <TextView
                         android:id="@+id/localPartida3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -427,7 +428,7 @@
                         android:id="@+id/dataPartida6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 1" />
+                        android:text="NIGÉRIA" />
 
                     <TextView
                         android:id="@+id/textView27"
@@ -441,7 +442,7 @@
                         android:id="@+id/textView28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 2" />
+                        android:text="ESPANHA" />
 
                 </LinearLayout>
 
@@ -464,7 +465,7 @@
 
                     <Spinner
                         android:id="@+id/spinner10"
-                         android:layout_width="60dp"
+                          android:layout_width="60dp"
                         android:layout_height="40dp" />
                 </LinearLayout>
 
@@ -512,7 +513,7 @@
                         android:id="@+id/textView32"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 1" />
+                        android:text="URUGUAI" />
 
                     <TextView
                         android:id="@+id/textView33"
@@ -526,7 +527,7 @@
                         android:id="@+id/textView34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TIME 2" />
+                        android:text="TAITI" />
 
                 </LinearLayout>
 
@@ -537,9 +538,9 @@
 
                     <Spinner
                         android:id="@+id/spinner11"
-                       android:layout_width="60dp"
+                      android:layout_width="60dp"
                         android:layout_height="40dp" />
-
+                    
                     <TextView
                         android:id="@+id/textView35"
                        android:layout_width="wrap_content"
@@ -579,26 +580,10 @@
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 </LinearLayout>
-                
-                 <Button
-                    android:id="@+id/btnIrFase1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/shap_button"
-                    android:typeface="serif"
-                android:textStyle="bold"
-                    android:text="CONCLUIR" />
+
+ 
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" 
-                android:layout_marginTop="10dp">
-            </LinearLayout>
-
         </LinearLayout>
 
     </ScrollView>

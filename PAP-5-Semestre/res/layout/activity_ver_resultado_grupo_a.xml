@@ -13,7 +13,7 @@
         android:gravity="center_horizontal"
         android:typeface="serif"
         android:textStyle="bold"
-        android:text="Resultado Grupo A"
+        android:text="Partidas/Resultados Grupo A"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ScrollView
@@ -42,13 +42,13 @@
                     android:gravity="center_horizontal" >
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/lblInicio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="BRASIL" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/lblFim"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -581,15 +581,7 @@
 
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/btnIrFase1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shap_button"
-                    android:layout_marginTop="10dp"
-                    android:typeface="serif"
-                android:textStyle="bold"
-                    android:text="CONCLUIR" />
+ 
 
             </LinearLayout>
         </LinearLayout>
@@ -597,3 +589,4 @@
     </ScrollView>
 
 </RelativeLayout>
+

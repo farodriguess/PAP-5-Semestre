@@ -217,11 +217,11 @@ public class MeusCampeonatosActivity extends Activity implements
 					.getNome()
 					.equals(campeonato.substring(0,
 							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this,
-				// EditarPartidaGAActivity.class);
-				// campeonatos.get(i).setUsuario(usuario);
-				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
+				 Intent intent = new Intent(this,
+				 EditarPartidaGrupoA.class);
+				 intent.putExtra("usuario", usuario);
+				 intent.putExtra("campeonato", campeonatos.get(i));
+				 startActivity(intent);
 			}
 		}
 	}
@@ -296,10 +296,10 @@ public class MeusCampeonatosActivity extends Activity implements
 					.getNome()
 					.equals(campeonato.substring(0,
 							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this, VerRegrasActivity.class);
+				 Intent intent = new Intent(this, VerRegrasActivity.class);
 				// campeonatos.get(i).setUsuario(usuario);
 				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
+				 startActivity(intent);
 			}
 		}
 	}

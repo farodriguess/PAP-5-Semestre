@@ -1,13 +1,14 @@
 package com.bm.pap.activity;
 
-import com.bm.pap.R;
-
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class ApostaGrupo_A extends Activity {
+import com.bm.pap.R;
+
+public class VerResultadoGrupoB extends Activity {
 	private Spinner spinner1;
 	private Spinner spinner2;
 	private Spinner spinner3;
@@ -17,87 +18,86 @@ public class ApostaGrupo_A extends Activity {
 	private Spinner spinner7;
 	private Spinner spinner8;
 	private Spinner spinner9;
-	private Spinner spinner10;
+	private Spinner spinner10;	
 	private Spinner spinner11;
 	private Spinner spinner12;
 	ArrayAdapter<CharSequence> adapter;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_ver_resultado_grupo_b);
 
-		setContentView(R.layout.activity_aposta_grupo_a);
-
-		// brasil vs japão
+		// espanha vs uruguai
 		adapter = ArrayAdapter.createFromResource(this, R.array.Gols,
 				android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		// resultado brasil
+		// resultado espanha
 		spinner1 = (Spinner) findViewById(R.id.spinner1);
 		spinner1.setAdapter(adapter);
-		spinner1.setSelection(adapter.getPosition("3"));
+		spinner1.setSelection(adapter.getPosition("2"));
 
-		// resultado japão
+		// resultado uruguai
 		spinner2 = (Spinner) findViewById(R.id.spinner2);
 		spinner2.setAdapter(adapter);
 		;
-		spinner2.setSelection(adapter.getPosition("0"));
+		spinner2.setSelection(adapter.getPosition("1"));
 
-		// méxico vs italia
-		// resultado méxico
+		// taiti vs nigéria
+		// resultado taiti
 		spinner3 = (Spinner) findViewById(R.id.spinner3);
 		spinner3.setAdapter(adapter);
 		spinner3.setSelection(adapter.getPosition("1"));
 
-		// resultado itália
+		// resultado nigéria
 		spinner4 = (Spinner) findViewById(R.id.spinner4);
 		spinner4.setAdapter(adapter);
-		spinner4.setSelection(adapter.getPosition("2"));
+		spinner4.setSelection(adapter.getPosition("6"));
 
-		// brasil vs mexico
+		// espanha vs taiti
 
-		// resultado brasil
+		// resultado espanha
 		spinner5 = (Spinner) findViewById(R.id.spinner5);
 		spinner5.setAdapter(adapter);
-		spinner5.setSelection(adapter.getPosition("2"));
+		spinner5.setSelection(adapter.getPosition("10"));
 
-		// resultado mexico
+		// resultado taiti
 		spinner6 = (Spinner) findViewById(R.id.spinner6);
 		spinner6.setAdapter(adapter);
 		spinner6.setSelection(adapter.getPosition("0"));
 
-		// italia vs japão
-		// resultado itália
+		// nigéria vs uruguai
+		// resultado nigeria
 		spinner7 = (Spinner) findViewById(R.id.spinner7);
 		spinner7.setAdapter(adapter);
-		spinner7.setSelection(adapter.getPosition("3"));
+		spinner7.setSelection(adapter.getPosition("1"));
 
-		// resultado japão
+		// resultado uruguai
 		spinner8 = (Spinner) findViewById(R.id.spinner8);
 		spinner8.setAdapter(adapter);
-		spinner8.setSelection(adapter.getPosition("0"));
+		spinner8.setSelection(adapter.getPosition("2"));
 
-		// italia vs brasil
-		// resultado itália
+		// nigéria vs espanha
+		// resultado nigéria
 		spinner9 = (Spinner) findViewById(R.id.spinner9);
 		spinner9.setAdapter(adapter);
-		spinner9.setSelection(adapter.getPosition("1"));
+		spinner9.setSelection(adapter.getPosition("0"));
 
-		// resultado brasil
+		// resultado espanha
 		spinner10 = (Spinner) findViewById(R.id.spinner10);
 		spinner10.setAdapter(adapter);
-		spinner10.setSelection(adapter.getPosition("2"));
+		spinner10.setSelection(adapter.getPosition("3"));
 
-		// japão vs méxico
-		// resultado japão
+		// uruguai vs taiti
+		// resultado uruguai
 		spinner11 = (Spinner) findViewById(R.id.spinner11);
 		spinner11.setAdapter(adapter);
-		spinner11.setSelection(adapter.getPosition("0"));
+		spinner11.setSelection(adapter.getPosition("8"));
 
-		// resultado méxico
+		// resultado taiti
 		spinner12 = (Spinner) findViewById(R.id.spinner12);
 		spinner12.setAdapter(adapter);
-		spinner12.setSelection(adapter.getPosition("2"));
-
+		spinner12.setSelection(adapter.getPosition("0"));
+		
 		spinner1.setEnabled(false);
 		spinner2.setEnabled(false);
 		spinner3.setEnabled(false);
@@ -110,6 +110,5 @@ public class ApostaGrupo_A extends Activity {
 		spinner10.setEnabled(false);
 		spinner11.setEnabled(false);
 		spinner12.setEnabled(false);
-
 	}
 }

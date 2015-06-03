@@ -31,7 +31,7 @@ public class ParticiparDeCampeonatos extends Activity {
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_partcipar_de_campeonatos);
+		setContentView(R.layout.activity_participar_de_campeonatos);
 
 
 		carregarGrid();
@@ -46,8 +46,8 @@ public class ParticiparDeCampeonatos extends Activity {
 	}
 
 	public void btnPesquisar(View v){
-//		Intent i = new Intent(this,Pesquisar.class);
-//		startActivity(i);		
+		Intent i = new Intent(this,PesquisarActivity.class);
+		startActivity(i);		
 	}
 	
 	public void btnCampeonatosQueParticipo(View v){
@@ -109,78 +109,78 @@ public class ParticiparDeCampeonatos extends Activity {
 	}
 
 	public void verInfoCampeonato() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				Intent intent = new Intent(this, EditarCampeonatoActivity.class);
-				intent.putExtra("usuario", usuario);
-				intent.putExtra("editarCampeonato", campeonatos.get(i));
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+				Intent intent = new Intent(this, VerInfoCampeonatoActivity.class);
+//				intent.putExtra("usuario", usuario);
+//				intent.putExtra("editarCampeonato", campeonatos.get(i));
 				startActivity(intent);
-			}
-		}
+//			}
+//		}
 	}
 
 	public void verPartidas() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this,
-				// EditarPartidaGAActivity.class);
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+				 Intent intent = new Intent(this,
+				 SelecionarVerResultadosActivity.class);
 				// campeonatos.get(i).setUsuario(usuario);
 				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
-			}
-		}
+				 startActivity(intent);
+//			}
+//		}
 	}
 
 	public void participar() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				Intent intent = new Intent(this, VerParticipantesActivity.class);
-				intent.putExtra("usuario", usuario);
-				intent.putExtra("editarCampeonato", campeonatos.get(i));
-				startActivity(intent);
-			}
-		}
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+//				Intent intent = new Intent(this, VerParticipantesActivity.class);
+//				intent.putExtra("usuario", usuario);
+//				intent.putExtra("editarCampeonato", campeonatos.get(i));
+//				startActivity(intent);
+//			}
+//		}
 	}
 
 	public void ranking() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				Intent intent = new Intent(this, RankingActivity.class);
-				intent.putExtra("usuario", usuario);
-				intent.putExtra("editarCampeonato", campeonatos.get(i));
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+				Intent intent = new Intent(this,RankingActivity.class);
+//				intent.putExtra("usuario", usuario);
+//				intent.putExtra("editarCampeonato", campeonatos.get(i));
 				startActivity(intent);
-			}
-		}
+//			}
+//		}
 	}
 
 	public void regras() {
-		for (int i = 0; i < campeonatos.size(); i++) {
-			if (campeonatos
-					.get(i)
-					.getNome()
-					.equals(campeonato.substring(0,
-							campeonato.indexOf("Status") - 1))) {
-				// Intent intent = new Intent(this, VerRegrasActivity.class);
+//		for (int i = 0; i < campeonatos.size(); i++) {
+//			if (campeonatos
+//					.get(i)
+//					.getNome()
+//					.equals(campeonato.substring(0,
+//							campeonato.indexOf("Status") - 1))) {
+				 Intent intent = new Intent(this, VerRegrasActivity.class);
 				// campeonatos.get(i).setUsuario(usuario);
 				// intent.putExtra("editarCampeonato", campeonatos.get(i));
-				// startActivity(intent);
-			}
-		}
+				 startActivity(intent);
+//			}
+//		}
 	}
 }

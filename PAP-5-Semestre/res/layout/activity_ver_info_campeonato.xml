@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="14dp"
         android:gravity="center_horizontal"
-        android:text="Editar Campeonato"
+        android:text="Informações do Campeonato"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
         android:typeface="serif" />
@@ -41,66 +41,49 @@
             android:text="Nome:"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <EditText
+        <TextView
             android:id="@+id/campoNomeCampeonato"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1.26"
             android:background="@drawable/selector_button"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:hint="Nome do campeonato"
+            android:text="COPA DAS CONFEDERAÇÕES 2013"
             android:inputType="textPersonName"
             android:textSize="18sp" >
 
             <requestFocus />
-        </EditText>
+        </TextView>
 
         <TextView
             android:id="@+id/lblFim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
-            android:text="Selecione a quantidade de equipes:"
+            android:layout_marginTop="10dp"
+            android:text="Quantidade de equipes: 8"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <!-- Adicionado RadioGroup (Jeferson) -->
-        <RadioGroup
-            android:id="@+id/qtdEquipes"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
-
-            <RadioButton
-                android:id="@+id/radioButton1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="8 Equipes" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="16 Equipes" />
-        </RadioGroup>
+        <TextView
+            android:id="@+id/lblStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Status: 1º Fase"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1.83"
+            android:layout_marginTop="10dp"
             android:gravity="left" >
 
-            <Button
+            <TextView
                 android:id="@+id/btnInicio"
-                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shap_button"
-                android:onClick="setDataInicio"
-                android:text="Data início"
-                android:textStyle="bold"
-                android:typeface="serif" />
+                android:text="Data início:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
                 android:id="@+id/datainicio"
@@ -108,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1.69"
-                android:text=" DATA DE INICIO"
+                android:text=""
                 android:textSize="25sp" />
         </LinearLayout>
 
@@ -117,18 +100,14 @@
             android:layout_height="wrap_content"
             android:gravity="left" >
 
-            <Button
+            <TextView
                 android:id="@+id/btnFim"
-                style="?android:attr/buttonStyleSmall"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:layout_weight="0.54"
-                android:background="@drawable/shap_button"
-                android:onClick="setDataFim"
-                android:text="Data fim"
-                android:textStyle="bold"
-                android:typeface="serif" />
+                android:layout_weight="0.10"
+                android:text="Data fim:" />
 
             <TextView
                 android:id="@+id/datafim"
@@ -136,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1.43"
-                android:text=" DATA DE FIM"
+                android:text=""
                 android:textSize="25sp" />
         </LinearLayout>
 
@@ -145,29 +124,6 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
-
-            <Button
-                android:id="@+id/removerTime"
-                android:layout_width="195dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="0.86"
-                android:background="@drawable/shap_button"
-                android:onClick="btnAjustarRegras"
-                android:text="Ajustar regras"
-                android:textStyle="bold"
-                android:typeface="serif" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="195dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:background="@drawable/shap_button"
-                android:onClick="btnAtualizar"
-                android:text="Atualizar"
-                android:textStyle="bold"
-                android:typeface="serif" />
         </LinearLayout>
     </LinearLayout>
 

@@ -28,7 +28,7 @@
                     android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
                     android:padding="10sp"
-                    android:text="Campeoatos que participo"
+                    android:text="Campeonatos que participo"
                     android:textAppearance="?android:attr/textAppearanceLarge"
             		android:typeface="serif"
         			android:textStyle="bold" />
@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
-                    android:text="Lista de Times"
+                    android:text="Lista de Campeonatos"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                 	android:typeface="serif"
        				android:textStyle="bold" />
@@ -47,22 +47,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal" >
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="       Nome"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.87"
-                        android:gravity="right"
-                        android:text="Status     "
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
 
                 </LinearLayout>
 
@@ -108,8 +92,8 @@
             android:background="@drawable/shap_button"
             android:typeface="serif"
                 android:textStyle="bold"
-          
-            android:text="Visualizar" />
+          android:onClick="btnPesquisar"
+            android:text="Pesquisar" />
     </LinearLayout>
 
 </AbsoluteLayout>

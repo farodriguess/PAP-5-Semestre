@@ -64,21 +64,31 @@
         </activity>
         <activity android:name=".activity.CriarPartidaGrupoD" >
         </activity>
+        <activity android:name=".activity.EditarPartidaGrupoA" >
+        </activity>
+        <activity android:name=".activity.EditarPartidaGrupoB" >
+        </activity>
         <activity android:name=".activity.ResultadoOitavas" >
-        </activity>     
+        </activity>
         <activity android:name=".activity.ResultadoGrupoA" >
-        </activity>   
-           <activity android:name=".activity.VerResultadoGrupoA" >
-        </activity> 
+        </activity>
+        <activity android:name=".activity.ResultadoGrupoB" >
+        </activity>
+        <activity android:name=".activity.VerResultadoGrupoA" >
+        </activity>
+        <activity android:name=".activity.VerResultadoGrupoB" >
+        </activity>
         <activity android:name=".activity.RecuperarSenha" >
         </activity>
         <activity android:name=".activity.ParticiparDeCampeonatos" >
         </activity>
-         <activity android:name=".activity.CampeonatosQueParticipo" >
+        <activity android:name=".activity.CampeonatosQueParticipo" >
         </activity>
         <activity
             android:name=".activity.EditarCampeonatoActivity"
             android:label="@string/title_activity_tela_editar_campeonato" >
+        </activity>
+        <activity android:name=".activity.VerInfoCampeonatoActivity" >
         </activity>
         <activity
             android:name=".activity.NovoCampeonatoActivity"
@@ -88,6 +98,8 @@
             android:name=".activity.RegrasActivity"
             android:label="@string/title_activity_regras" >
         </activity>
+        <activity android:name=".activity.VerRegrasActivity" >
+        </activity>
         <activity
             android:name=".activity.MeusTimesActivity"
             android:label="@string/title_activity_meus_times" >
@@ -96,21 +108,18 @@
             android:name="com.bm.pap.activity.RankingActivity"
             android:label="@string/title_activity_ranking" >
         </activity>
-           <activity
-            android:name="com.bm.pap.activity.VerParticipantesActivity" >
+        <activity android:name="com.bm.pap.activity.PesquisarActivity" >
         </activity>
-          <activity
-            android:name="com.bm.pap.activity.SelecionarResultadoActivity" >
-        </activity>    
-         <activity
-            android:name="com.bm.pap.activity.SelecionarVerResultadosActivity" >
-        </activity> 
-         <activity
-            android:name="com.bm.pap.activity.SelecionarApostaActivity" >
+        <activity android:name="com.bm.pap.activity.VerParticipantesActivity" >
         </activity>
-         <activity
-            android:name="com.bm.pap.activity.StatusCampeonatoActivity" >
-        </activity>                
+        <activity android:name="com.bm.pap.activity.SelecionarResultadoActivity" >
+        </activity>
+        <activity android:name="com.bm.pap.activity.SelecionarVerResultadosActivity" >
+        </activity>
+        <activity android:name="com.bm.pap.activity.SelecionarApostaActivity" >
+        </activity>
+        <activity android:name="com.bm.pap.activity.StatusCampeonatoActivity" >
+        </activity>
     </application>
 
 </manifest>

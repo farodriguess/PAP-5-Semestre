@@ -40,13 +40,13 @@
                     android:gravity="center_horizontal" >
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/lblInicio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TIME 1" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/lblFim"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"

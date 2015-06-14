@@ -15,7 +15,7 @@ import android.util.Log;
 
 public class ClientPostWSTask extends AsyncTask<Object, Object, String> {
 
-	private static final String URI = "http://franciscoanderson.com:8080/BolaoWebService/webresources/";
+	private static final String URI = "http://franciscoanderson.com/BolaoWebService/webresources/";
 	private static final String TAG = "ClientPosTWSTask.java";
 
 	private String obj;
@@ -50,7 +50,7 @@ public class ClientPostWSTask extends AsyncTask<Object, Object, String> {
 			// Cria uma instancia de httpget passando a url
 			HttpPost requisicaoPost = new HttpPost(URI + caminho);
 
-			StringEntity reqEntity = new StringEntity(req);
+			StringEntity reqEntity = new StringEntity(req,"UTF-8");
 
 			reqEntity.setContentType("application/json");
 

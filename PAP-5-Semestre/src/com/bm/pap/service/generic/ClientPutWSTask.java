@@ -12,7 +12,7 @@ import android.util.Log;
 
 public class ClientPutWSTask extends AsyncTask<Object, Object, String> {
 
-	private static final String URI = "http://franciscoanderson.com:8080/BolaoWebService/webresources/";
+	private static final String URI = "http://franciscoanderson.com/BolaoWebService/webresources/";
 	private static final String TAG = "ClientPutWSTask.java";
 
 	private String obj;
@@ -48,9 +48,9 @@ public class ClientPutWSTask extends AsyncTask<Object, Object, String> {
 
 			HttpPut requisicaoPut = new HttpPut(URI + caminho);
 
-			StringEntity reqEntity = new StringEntity(req);
+			StringEntity reqEntity = new StringEntity(req,"UTF-8");
 
-			reqEntity.setContentType("application/json");
+			reqEntity.setContentType("application/json");			
 			requisicaoPut.setEntity(reqEntity);
 			cliente.execute(requisicaoPut);
 			obj = "Time Cadastrado com Sucesso";
